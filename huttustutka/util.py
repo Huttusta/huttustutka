@@ -53,7 +53,7 @@ def check_huttunen(huttuset):
             "icon": url_for("static", filename=huttusukko),
             "lat": store['latitude'],
             "lng": store['longitude'],
-            "infobox": "asdasd",
+            "infobox": f'{store["name"]} Huttusta {h["amount"]} kpl.',
             "scale": 0.1
         })
 
