@@ -1,0 +1,3560 @@
+[
+  {
+    "id": "2440",
+    "name": "Alko Akaa Toijala",
+    "address": "Valtatie 1, 37800 TOIJALA",
+    "latitude": 61.16822725,
+    "longitude": 23.867348111468285
+  },
+  {
+    "id": "2277",
+    "name": "Alko Alajärvi",
+    "address": "Yrittäjäntie 5, 62900 ALAJÄRVI",
+    "latitude": 63.0043868,
+    "longitude": 23.801924
+  },
+  {
+    "id": "2282",
+    "name": "Alko Alavus Tuuri",
+    "address": "Onnentie 7, 63610 TUURI",
+    "latitude": 62.6029424,
+    "longitude": 23.7261206
+  },
+  {
+    "id": "2274",
+    "name": "Alko Alavus keskusta",
+    "address": "Vähtärintie 2, 63300 ALAVUS",
+    "latitude": 62.5871325,
+    "longitude": 23.6142203
+  },
+  {
+    "id": "2428",
+    "name": "Alko Asikkala Vääksy",
+    "address": "Maakaupantie 1, 17200 VÄÄKSY",
+    "latitude": 61.1728977,
+    "longitude": 25.5466174
+  },
+  {
+    "id": "2223",
+    "name": "Alko Aura",
+    "address": "Savirannankuja 2, 21380 AURA",
+    "latitude": 60.64741015,
+    "longitude": 22.59120735818742
+  },
+  {
+    "id": "2888",
+    "name": "Alko Enontekiö Hetta",
+    "address": "Kustaavantie 1, 99400 ENONTEKIÖ",
+    "latitude": 68.38453344999999,
+    "longitude": 23.63886776603119
+  },
+  {
+    "id": "2890",
+    "name": "Alko Enontekiö Kilpisjärvi",
+    "address": "Käsivarrentie 14205, 99490 KILPISJÄRVI",
+    "latitude": 69.0168016,
+    "longitude": 20.8756302
+  },
+  {
+    "id": "2154",
+    "name": "Alko Espoo Espoon keskus Entresse",
+    "address": "Siltakatu 11, 02770 ESPOO",
+    "latitude": 60.2035392,
+    "longitude": 24.6587759
+  },
+  {
+    "id": "2156",
+    "name": "Alko Espoo Espoonlahti Lippulaiva",
+    "address": "Espoonlahdenkatu 4, 02320 ESPOO",
+    "latitude": 60.1485116,
+    "longitude": 24.657676843553297
+  },
+  {
+    "id": "2157",
+    "name": "Alko Espoo Kauklahti",
+    "address": "Räävelintie 2, 02780 ESPOO",
+    "latitude": 60.188296949999994,
+    "longitude": 24.587431871946833
+  },
+  {
+    "id": "2153",
+    "name": "Alko Espoo Leppävaara Sello",
+    "address": "Leppävaarankatu 3-9, 02600 ESPOO",
+    "latitude": 60.2185602,
+    "longitude": 24.8143645
+  },
+  {
+    "id": "2149",
+    "name": "Alko Espoo Lähderanta",
+    "address": "Lähderanta 1, 02720 ESPOO",
+    "latitude": 60.2406398,
+    "longitude": 24.7406702
+  },
+  {
+    "id": "2160",
+    "name": "Alko Espoo Mankkaa",
+    "address": "Sinikalliontie 1-3, 02630 ESPOO",
+    "latitude": 60.2043726,
+    "longitude": 24.7667148
+  },
+  {
+    "id": "2158",
+    "name": "Alko Espoo Matinkylä Iso Omena",
+    "address": "Piispansilta 11, 02230 ESPOO",
+    "latitude": 60.160398,
+    "longitude": 24.7399483
+  },
+  {
+    "id": "2155",
+    "name": "Alko Espoo Niittykumpu",
+    "address": "Merituulentie 36, 02200 ESPOO",
+    "latitude": 60.1704647,
+    "longitude": 24.762891733897497
+  },
+  {
+    "id": "2150",
+    "name": "Alko Espoo Olari Prisma",
+    "address": "Komeetankatu 2, 02210 ESPOO",
+    "latitude": 60.16649735,
+    "longitude": 24.734205144186053
+  },
+  {
+    "id": "2195",
+    "name": "Alko Espoo Otaniemi",
+    "address": "Otaniementie 12, 02150 ESPOO",
+    "latitude": 60.1851019,
+    "longitude": 24.8246978
+  },
+  {
+    "id": "2152",
+    "name": "Alko Espoo Tapiola Ainoa",
+    "address": "Tapionaukio 4, 02100 ESPOO",
+    "latitude": 60.175116349999996,
+    "longitude": 24.80474456981601
+  },
+  {
+    "id": "2266",
+    "name": "Alko Eura",
+    "address": "Satakunnankatu 4, 27510 EURA",
+    "latitude": 61.1308542,
+    "longitude": 22.1273186
+  },
+  {
+    "id": "2264",
+    "name": "Alko Eurajoki",
+    "address": "Riikontie 2, 27100 EURAJOKI",
+    "latitude": 61.20281315,
+    "longitude": 21.727676138897372
+  },
+  {
+    "id": "2406",
+    "name": "Alko Forssa Kutomo",
+    "address": "Yhtiönkatu, 30100 FORSSA",
+    "latitude": 60.8124602,
+    "longitude": 23.6328422
+  },
+  {
+    "id": "2405",
+    "name": "Alko Forssa Prismakeskus",
+    "address": "Tapulikuja 6, 30100 FORSSA",
+    "latitude": 60.81226325,
+    "longitude": 23.635846450966053
+  },
+  {
+    "id": "2807",
+    "name": "Alko Haapajärvi",
+    "address": "Kirkkokatu 1, 85800 HAAPAJÄRVI",
+    "latitude": 63.74754995,
+    "longitude": 25.315248123513562
+  },
+  {
+    "id": "2811",
+    "name": "Alko Haapavesi",
+    "address": "Vanhatie 48, 86600 HAAPAVESI",
+    "latitude": 64.1387241,
+    "longitude": 25.363307289813577
+  },
+  {
+    "id": "2772",
+    "name": "Alko Hamina",
+    "address": "Isoympyränkatu 15, 49400 HAMINA"
+  },
+  {
+    "id": "2498",
+    "name": "Alko Hankasalmi",
+    "address": "Keskustie 35, 41520 HANKASALMI",
+    "latitude": 62.3900732,
+    "longitude": 26.4357022
+  },
+  {
+    "id": "2171",
+    "name": "Alko Hanko",
+    "address": "Revellinkatu 2, 10900 HANKO",
+    "latitude": 59.8292254,
+    "longitude": 22.9641645
+  },
+  {
+    "id": "2262",
+    "name": "Alko Harjavalta",
+    "address": "Teollisuuskatu 4, 29200 HARJAVALTA",
+    "latitude": 61.309481649999995,
+    "longitude": 22.13673003830522
+  },
+  {
+    "id": "2418",
+    "name": "Alko Hartola",
+    "address": "Keskustie 50, 19600 HARTOLA",
+    "latitude": 61.6006083,
+    "longitude": 26.0089676
+  },
+  {
+    "id": "2413",
+    "name": "Alko Hausjärvi Oitti",
+    "address": "Tammitie 5, 12100 OITTI",
+    "latitude": 60.78816215,
+    "longitude": 25.02810044004329
+  },
+  {
+    "id": "2414",
+    "name": "Alko Heinola Citymarket",
+    "address": "Hevossaarentie 1, 18100 HEINOLA",
+    "latitude": 61.19218145,
+    "longitude": 25.99925768319887
+  },
+  {
+    "id": "2411",
+    "name": "Alko Heinola keskusta",
+    "address": "Savontie 5, 18100 HEINOLA",
+    "latitude": 61.2030628,
+    "longitude": 26.0303252
+  },
+  {
+    "id": "2727",
+    "name": "Alko Heinävesi",
+    "address": "Kermantie 2, 79700 HEINÄVESI",
+    "latitude": 62.4241341,
+    "longitude": 28.6390928
+  },
+  {
+    "id": "2116",
+    "name": "Alko Helsinki Arabianranta Arabia",
+    "address": "Hämeentie 109-111 B 9, 00560 HELSINKI"
+  },
+  {
+    "id": "2104",
+    "name": "Alko Helsinki Bulevardi",
+    "address": "Hietalahdenranta 5, 00120 HELSINKI",
+    "latitude": 60.1613165,
+    "longitude": 24.930053
+  },
+  {
+    "id": "2120",
+    "name": "Alko Helsinki Hakaniemi Ympyrätalo",
+    "address": "Siltasaarenkatu 18-20, 00530 HELSINKI",
+    "latitude": 60.180336350000005,
+    "longitude": 24.948899994132645
+  },
+  {
+    "id": "2131",
+    "name": "Alko Helsinki Herttoniemi Hertta",
+    "address": "Hiihtäjäntie 2, 00810 HELSINKI",
+    "latitude": 60.1942632,
+    "longitude": 25.0280029
+  },
+  {
+    "id": "2137",
+    "name": "Alko Helsinki Itäkeskus Easton",
+    "address": "Kauppakartanonkatu 3, 00930 HELSINKI",
+    "latitude": 60.2094594,
+    "longitude": 25.082802286180105
+  },
+  {
+    "id": "2133",
+    "name": "Alko Helsinki Itäkeskus Itis Stockmann",
+    "address": "Itäkatu 1, 00930 HELSINKI",
+    "latitude": 60.2130988,
+    "longitude": 25.085064434281314
+  },
+  {
+    "id": "2134",
+    "name": "Alko Helsinki Itäkeskus Prisma",
+    "address": "Vanhanlinnantie 1, 00900 HELSINKI",
+    "latitude": 60.2132159,
+    "longitude": 25.0879999
+  },
+  {
+    "id": "2146",
+    "name": "Alko Helsinki Jakomäki",
+    "address": "Jakomäentie 1, 00770 HELSINKI",
+    "latitude": 60.2619537,
+    "longitude": 25.074400235672112
+  },
+  {
+    "id": "2196",
+    "name": "Alko Helsinki Kalasatama Redi",
+    "address": "Hermannin rantatie 5A, PL 2, 00580 HELSINKI"
+  },
+  {
+    "id": "2138",
+    "name": "Alko Helsinki Kalasatama Tukkutori",
+    "address": "Vanha Talvitie 12, 00580 HELSINKI",
+    "latitude": 60.192047,
+    "longitude": 24.9758948
+  },
+  {
+    "id": "2107",
+    "name": "Alko Helsinki Kallio",
+    "address": "Helsinginkatu 15, 00500 HELSINKI",
+    "latitude": 60.1873527,
+    "longitude": 24.9551553
+  },
+  {
+    "id": "2132",
+    "name": "Alko Helsinki Kannelmäki Kaari",
+    "address": "Kantelettarentie 1, 00420 HELSINKI",
+    "latitude": 60.2366017,
+    "longitude": 24.892675
+  },
+  {
+    "id": "2103",
+    "name": "Alko Helsinki Kasarmitori",
+    "address": "Fabianinkatu 9-11, 00130 HELSINKI",
+    "latitude": 60.165234,
+    "longitude": 24.9497366
+  },
+  {
+    "id": "2303",
+    "name": "Alko Helsinki Katajanokka",
+    "address": "Kruunuvuorenkatu 4, 00160 HELSINKI",
+    "latitude": 60.1666461,
+    "longitude": 24.9651976
+  },
+  {
+    "id": "2142",
+    "name": "Alko Helsinki Konalan Portti",
+    "address": "Hankasuontie 2, 00390 HELSINKI",
+    "latitude": 60.2446741,
+    "longitude": 24.846404
+  },
+  {
+    "id": "2135",
+    "name": "Alko Helsinki Kontula",
+    "address": "Ostostie 4, 00940 HELSINKI",
+    "latitude": 60.2377166,
+    "longitude": 25.0851575
+  },
+  {
+    "id": "2117",
+    "name": "Alko Helsinki Kruununhaka",
+    "address": "Maurinkatu 8-12, 00170 HELSINKI",
+    "latitude": 60.1745908,
+    "longitude": 24.9594921
+  },
+  {
+    "id": "2110",
+    "name": "Alko Helsinki Käpylä",
+    "address": "Panuntie 11, 00620 HELSINKI",
+    "latitude": 60.2215986,
+    "longitude": 24.9475997
+  },
+  {
+    "id": "2197",
+    "name": "Alko Helsinki Laajasalo",
+    "address": "Yliskylän puistokatu 4, 00840 HELSINKI",
+    "latitude": 60.1796563,
+    "longitude": 25.0513767
+  },
+  {
+    "id": "2119",
+    "name": "Alko Helsinki Lauttasaari",
+    "address": "Lauttasaarentie 28, 00200 HELSINKI",
+    "latitude": 60.1600668,
+    "longitude": 24.8808871
+  },
+  {
+    "id": "2130",
+    "name": "Alko Helsinki Malmi Nova",
+    "address": "Ala-Malmin tori 5, 00700 HELSINKI",
+    "latitude": 60.2509753,
+    "longitude": 25.013143
+  },
+  {
+    "id": "2139",
+    "name": "Alko Helsinki Mannerheimintie",
+    "address": "Mannerheimintie 96, 00250 HELSINKI",
+    "latitude": 60.1882244,
+    "longitude": 24.917988
+  },
+  {
+    "id": "2140",
+    "name": "Alko Helsinki Mellunmäki",
+    "address": "Pallaksentie 2, 00970 HELSINKI",
+    "latitude": 60.238096,
+    "longitude": 25.1105807
+  },
+  {
+    "id": "2118",
+    "name": "Alko Helsinki Munkkivuori",
+    "address": "Raumantie 1, 00350 HELSINKI",
+    "latitude": 60.2055252,
+    "longitude": 24.8793687
+  },
+  {
+    "id": "2199",
+    "name": "Alko Helsinki Myllypuro",
+    "address": "Kiviparintie 2, 00920 HELSINKI",
+    "latitude": 60.2241485,
+    "longitude": 25.0731173
+  },
+  {
+    "id": "2121",
+    "name": "Alko Helsinki Pakila",
+    "address": "Pakilantie 46-48, 00660 HELSINKI",
+    "latitude": 60.236654,
+    "longitude": 24.9287317
+  },
+  {
+    "id": "2198",
+    "name": "Alko Helsinki Pasila Tripla",
+    "address": "Tornikuja 1 B, 00520 HELSINKI",
+    "latitude": 60.2054168,
+    "longitude": 24.7219334
+  },
+  {
+    "id": "2141",
+    "name": "Alko Helsinki Pikku Huopalahti",
+    "address": "Tilkanvierto 7, 00300 HELSINKI",
+    "latitude": 60.1973541,
+    "longitude": 24.8996903
+  },
+  {
+    "id": "2123",
+    "name": "Alko Helsinki Pitäjänmäki",
+    "address": "Takomotie 33, 00380 HELSINKI",
+    "latitude": 60.218088449999996,
+    "longitude": 24.86955493391907
+  },
+  {
+    "id": "2115",
+    "name": "Alko Helsinki Ruoholahti",
+    "address": "Itämerenkatu 21, 00180 HELSINKI",
+    "latitude": 60.163708,
+    "longitude": 24.9133723
+  },
+  {
+    "id": "2143",
+    "name": "Alko Helsinki Taivallahti",
+    "address": "Pohjoinen Hesperiankatu 33, 00260 HELSINKI",
+    "latitude": 60.176753,
+    "longitude": 24.9162261
+  },
+  {
+    "id": "2122",
+    "name": "Alko Helsinki Töölöntori",
+    "address": "Sandelsinkatu 4, 00260 HELSINKI",
+    "latitude": 60.1786758,
+    "longitude": 24.9238768
+  },
+  {
+    "id": "2106",
+    "name": "Alko Helsinki Ullanlinna",
+    "address": "Vuorimiehenkatu 33, 00140 HELSINKI",
+    "latitude": 60.1593104,
+    "longitude": 24.9438814
+  },
+  {
+    "id": "2126",
+    "name": "Alko Helsinki Viikki Prisma",
+    "address": "Viikintori 3, 00790 HELSINKI",
+    "latitude": 60.2275152,
+    "longitude": 25.0096967
+  },
+  {
+    "id": "2136",
+    "name": "Alko Helsinki Vuosaari Columbus",
+    "address": "Vuotie 45, 00980 HELSINKI",
+    "latitude": 60.2067472,
+    "longitude": 25.1457791
+  },
+  {
+    "id": "2113",
+    "name": "Alko Helsinki Wanha Kauppahalli",
+    "address": "Eteläranta, 00130 HELSINKI",
+    "latitude": 60.1656711,
+    "longitude": 24.952394
+  },
+  {
+    "id": "2102",
+    "name": "Alko Helsinki keskusta Arkadia",
+    "address": "Salomonkatu 1, 00100 HELSINKI",
+    "latitude": 60.1706496,
+    "longitude": 24.9349837
+  },
+  {
+    "id": "2105",
+    "name": "Alko Helsinki keskusta Citycenter",
+    "address": "Kaivokatu 8, 00100 HELSINKI",
+    "latitude": 60.16988715,
+    "longitude": 24.94179130070015
+  },
+  {
+    "id": "2129",
+    "name": "Alko Helsinki keskusta Eteläesplanadi",
+    "address": "Eteläesplanadi 20 B, 00130 HELSINKI",
+    "latitude": 60.1671771,
+    "longitude": 24.9478371
+  },
+  {
+    "id": "2144",
+    "name": "Alko Helsinki keskusta Kamppi",
+    "address": "Urho Kekkosen Katu 1 A 24, 00100 HELSINKI",
+    "latitude": 60.1694465,
+    "longitude": 24.932871
+  },
+  {
+    "id": "2124",
+    "name": "Alko Helsinki keskusta Sokos",
+    "address": "Mannerheimintie 9, 00100 HELSINKI",
+    "latitude": 60.1706546,
+    "longitude": 24.9386883
+  },
+  {
+    "id": "2128",
+    "name": "Alko Helsinki keskusta Stockmann",
+    "address": "Aleksanterinkatu 52.b, 00100 HELSINKI",
+    "latitude": 60.1684594,
+    "longitude": 24.9412483
+  },
+  {
+    "id": "2425",
+    "name": "Alko Hollola Salpakangas",
+    "address": "Kansankatu 8, 15870 HOLLOLA",
+    "latitude": 60.98939335,
+    "longitude": 25.515407291540743
+  },
+  {
+    "id": "2268",
+    "name": "Alko Huittinen",
+    "address": "Särmänkatu 1, 32700 HUITTINEN",
+    "latitude": 61.1783931,
+    "longitude": 22.6975256
+  },
+  {
+    "id": "2824",
+    "name": "Alko Hyrynsalmi",
+    "address": "Hyryntie 45, 89400 HYRYNSALMI",
+    "latitude": 64.6754136,
+    "longitude": 28.505315013635773
+  },
+  {
+    "id": "2186",
+    "name": "Alko Hyvinkää Willa Citymarket",
+    "address": "Hämeenkatu 9, 05800 HYVINKÄÄ",
+    "latitude": 60.6321584,
+    "longitude": 24.8625111
+  },
+  {
+    "id": "2188",
+    "name": "Alko Hyvinkää Willa Prisma",
+    "address": "Torikatu 9, 05800 HYVINKÄÄ",
+    "latitude": 60.6300996,
+    "longitude": 24.8663142
+  },
+  {
+    "id": "2475",
+    "name": "Alko Hämeenkyrö",
+    "address": "Härkikuja 4, 39100 HÄMEENKYRÖ",
+    "latitude": 61.6387091,
+    "longitude": 23.1969583
+  },
+  {
+    "id": "2402",
+    "name": "Alko Hämeenlinna Goodman",
+    "address": "Kaivokatu 7, 13100 HÄMEENLINNA",
+    "latitude": 60.9943678,
+    "longitude": 24.4569775
+  },
+  {
+    "id": "2403",
+    "name": "Alko Hämeenlinna Hauho",
+    "address": "Hauhontie 16, 14700 HAUHO",
+    "latitude": 61.17100215,
+    "longitude": 24.562680989234924
+  },
+  {
+    "id": "2417",
+    "name": "Alko Hämeenlinna Idänpää",
+    "address": "Laaniitynkatu 2, 13210 HÄMEENLINNA",
+    "latitude": 61.0067763,
+    "longitude": 24.5068958231929
+  },
+  {
+    "id": "2407",
+    "name": "Alko Hämeenlinna Lammi",
+    "address": "Mommilantie 1, 16900 LAMMI",
+    "latitude": 61.0793775,
+    "longitude": 25.011176
+  },
+  {
+    "id": "2401",
+    "name": "Alko Hämeenlinna Tiiriö Citymarket",
+    "address": "Katsastusmiehentie 6, 13130 HÄMEENLINNA",
+    "latitude": 61.0080461,
+    "longitude": 24.4224441
+  },
+  {
+    "id": "2300",
+    "name": "Alko Hämeenlinna Tiiriö Prisma",
+    "address": "Wartiamäentie 2, 13130 HÄMEENLINNA",
+    "latitude": 61.0126395,
+    "longitude": 24.4127847
+  },
+  {
+    "id": "2840",
+    "name": "Alko Ii",
+    "address": "Kisatie 2, 91100 II",
+    "latitude": 65.32060225000001,
+    "longitude": 25.372913184056074
+  },
+  {
+    "id": "2741",
+    "name": "Alko Iisalmi",
+    "address": "Satamakatu 10, 74100 IISALMI",
+    "latitude": 63.5561789,
+    "longitude": 27.1902395
+  },
+  {
+    "id": "2769",
+    "name": "Alko Iitti Kausala",
+    "address": "Kauppakatu 13, 47400 KAUSALA",
+    "latitude": 60.8892557,
+    "longitude": 26.34200201337522
+  },
+  {
+    "id": "2438",
+    "name": "Alko Ikaalinen",
+    "address": "Teollisuustalontie 2, 39500 IKAALINEN",
+    "latitude": 61.7614382,
+    "longitude": 23.07167297454898
+  },
+  {
+    "id": "2271",
+    "name": "Alko Ilmajoki",
+    "address": "Kauppatie 20, 60800 ILMAJOKI",
+    "latitude": 62.7301134,
+    "longitude": 22.578927501861433
+  },
+  {
+    "id": "2708",
+    "name": "Alko Ilomantsi",
+    "address": "Mantsintie 1-3, 82900 ILOMANTSI",
+    "latitude": 62.6720905,
+    "longitude": 30.9348727
+  },
+  {
+    "id": "2795",
+    "name": "Alko Imatra Mansikkala",
+    "address": "Karhumäenkatu 1, 55120 IMATRA",
+    "latitude": 61.1893345,
+    "longitude": 28.7659627
+  },
+  {
+    "id": "2796",
+    "name": "Alko Imatra Vuoksenniska",
+    "address": "Torikatu 8, 55800 IMATRA",
+    "latitude": 61.22464265000001,
+    "longitude": 28.835428640598344
+  },
+  {
+    "id": "2851",
+    "name": "Alko Inari Ivalo",
+    "address": "Petsamontie 2, 99800 IVALO",
+    "latitude": 68.6592791,
+    "longitude": 27.5403767
+  },
+  {
+    "id": "2852",
+    "name": "Alko Inari Saariselkä",
+    "address": "Kelotie 2, 99830 SAARISELKÄ",
+    "latitude": 68.4218063,
+    "longitude": 27.410485
+  },
+  {
+    "id": "2174",
+    "name": "Alko Inkoo",
+    "address": "Rantatie 3, 10210 INKOO",
+    "latitude": 60.0433564,
+    "longitude": 24.0067686
+  },
+  {
+    "id": "2404",
+    "name": "Alko Janakkala Turenki",
+    "address": "Harvialantie 5, 14200 TURENKI",
+    "latitude": 60.9220495,
+    "longitude": 24.64832442857218
+  },
+  {
+    "id": "2705",
+    "name": "Alko Joensuu Eno",
+    "address": "Kauppatie 11, 81200 ENO",
+    "latitude": 62.7977039,
+    "longitude": 30.1459692
+  },
+  {
+    "id": "2702",
+    "name": "Alko Joensuu Käpykangas Prisma",
+    "address": "Voimatie 2, 80100 JOENSUU",
+    "latitude": 62.6172403,
+    "longitude": 29.777146
+  },
+  {
+    "id": "2703",
+    "name": "Alko Joensuu Pilkko Citymarket",
+    "address": "Linjatie 2, 80140 JOENSUU",
+    "latitude": 62.6277949,
+    "longitude": 29.7038336
+  },
+  {
+    "id": "2701",
+    "name": "Alko Joensuu keskusta Sokos",
+    "address": "Rantakatu 19, 80100 JOENSUU",
+    "latitude": 62.6014277,
+    "longitude": 29.7651835
+  },
+  {
+    "id": "2246",
+    "name": "Alko Jomala Maxinge Center",
+    "address": "Sparvägen 1, 22150 JOMALA",
+    "latitude": 60.13006875,
+    "longitude": 19.933207346884007
+  },
+  {
+    "id": "2497",
+    "name": "Alko Joutsa",
+    "address": "Yhdystie 9, 19650 JOUTSA",
+    "latitude": 61.7433426,
+    "longitude": 26.1069578
+  },
+  {
+    "id": "2717",
+    "name": "Alko Juuka",
+    "address": "Karjalantie 3 B, 83900 JUUKA",
+    "latitude": 63.2484728,
+    "longitude": 29.2627972
+  },
+  {
+    "id": "2725",
+    "name": "Alko Juva",
+    "address": "Piikkiläntie 8, 51900 JUVA",
+    "latitude": 61.8963821,
+    "longitude": 27.85544389999999
+  },
+  {
+    "id": "2493",
+    "name": "Alko Jyväskylä Keljo Keljon kauppakeskus",
+    "address": "Kylmälahdentie 6, 40500 JYVÄSKYLÄ",
+    "latitude": 62.2157236,
+    "longitude": 25.7210991
+  },
+  {
+    "id": "2490",
+    "name": "Alko Jyväskylä Palokka Prisma",
+    "address": "Palokanorsi 1, 40270 PALOKKA",
+    "latitude": 62.2882843,
+    "longitude": 25.7165051
+  },
+  {
+    "id": "2458",
+    "name": "Alko Jyväskylä Seppä",
+    "address": "Ahjokatu 3-5, 40320 JYVÄSKYLÄ",
+    "latitude": 62.2561582,
+    "longitude": 25.7764188
+  },
+  {
+    "id": "2456",
+    "name": "Alko Jyväskylä Seppälä Citymarket",
+    "address": "Vasarakatu 29, 40320 JYVÄSKYLÄ",
+    "latitude": 62.2658368,
+    "longitude": 25.7776307
+  },
+  {
+    "id": "2492",
+    "name": "Alko Jyväskylä Tourula Minimani",
+    "address": "Vapaaherrantie 11, 40320 JYVÄSKYLÄ",
+    "latitude": 62.2541197,
+    "longitude": 25.7646668
+  },
+  {
+    "id": "2495",
+    "name": "Alko Jyväskylä Vaajakoski",
+    "address": "Asematie 1, 40800 VAAJAKOSKI",
+    "latitude": 62.24740505,
+    "longitude": 25.876030693085756
+  },
+  {
+    "id": "2491",
+    "name": "Alko Jyväskylä keskusta Sokkari",
+    "address": "Asemakatu 8, 40100 JYVÄSKYLÄ",
+    "latitude": 62.2422821,
+    "longitude": 25.7485775
+  },
+  {
+    "id": "2496",
+    "name": "Alko Jämsä",
+    "address": "Siltakatu 10, 42100 JÄMSÄ",
+    "latitude": 61.86590895,
+    "longitude": 25.197051146445812
+  },
+  {
+    "id": "2183",
+    "name": "Alko Järvenpää Citymarket",
+    "address": "Helsingintie 41, 04410 JÄRVENPÄÄ",
+    "latitude": 60.4769605,
+    "longitude": 25.1030767
+  },
+  {
+    "id": "2185",
+    "name": "Alko Järvenpää Prisma",
+    "address": "Rantakatu 5, 04400 JÄRVENPÄÄ",
+    "latitude": 60.4700784,
+    "longitude": 25.0857497
+  },
+  {
+    "id": "2210",
+    "name": "Alko Kaarina",
+    "address": "Hovirinnantie 5, 20780 KAARINA",
+    "latitude": 60.4083009,
+    "longitude": 22.3601797
+  },
+  {
+    "id": "2218",
+    "name": "Alko Kaarina Piikkiö",
+    "address": "Lukkarintie 2, 21500 PIIKKIÖ",
+    "latitude": 60.4257927,
+    "longitude": 22.51423
+  },
+  {
+    "id": "2757",
+    "name": "Alko Kaavi",
+    "address": "Kaavintie 5, 73600 KAAVI",
+    "latitude": 62.974851,
+    "longitude": 28.478648
+  },
+  {
+    "id": "2821",
+    "name": "Alko Kajaani Prisma",
+    "address": "Veturitie 1, 87100 KAJAANI",
+    "latitude": 64.2207525,
+    "longitude": 27.74547341055228
+  },
+  {
+    "id": "2825",
+    "name": "Alko Kajaani keskusta Citymarket",
+    "address": "Kauppakatu 10, 87100 KAJAANI",
+    "latitude": 64.2236516,
+    "longitude": 27.7357442
+  },
+  {
+    "id": "2802",
+    "name": "Alko Kalajoki",
+    "address": "Merenojantie 2, 85100 KALAJOKI",
+    "latitude": 64.26116200000001,
+    "longitude": 23.949134912292347
+  },
+  {
+    "id": "2476",
+    "name": "Alko Kangasala Prisma",
+    "address": "Mäkirinteentie 10, 36220 KANGASALA",
+    "latitude": 61.4755622,
+    "longitude": 23.9789926
+  },
+  {
+    "id": "2467",
+    "name": "Alko Kangasala keskusta",
+    "address": "Finnentie 1, 36200 KANGASALA",
+    "latitude": 61.4649439,
+    "longitude": 24.0483826
+  },
+  {
+    "id": "2723",
+    "name": "Alko Kangasniemi",
+    "address": "Otto Mannisen tie 10, 51200 KANGASNIEMI",
+    "latitude": 61.9879517,
+    "longitude": 26.642621
+  },
+  {
+    "id": "2260",
+    "name": "Alko Kankaanpää",
+    "address": "Asemakatu 2, 38700 KANKAANPÄÄ",
+    "latitude": 61.8123261,
+    "longitude": 22.376753480488347
+  },
+  {
+    "id": "2801",
+    "name": "Alko Kannus",
+    "address": "Torikuja 3, 69100 KANNUS",
+    "latitude": 63.901771,
+    "longitude": 23.9177914
+  },
+  {
+    "id": "2178",
+    "name": "Alko Karkkila",
+    "address": "Mäntylänkatu 1, 03600 KARKKILA",
+    "latitude": 60.534112,
+    "longitude": 24.2322101
+  },
+  {
+    "id": "2484",
+    "name": "Alko Karstula",
+    "address": "Keskustie 2, 43500 KARSTULA",
+    "latitude": 62.879399500000005,
+    "longitude": 24.80320587699692
+  },
+  {
+    "id": "2281",
+    "name": "Alko Kauhajoki",
+    "address": "Puistotie 70, 61800 KAUHAJOKI",
+    "latitude": 62.428428,
+    "longitude": 22.1780704
+  },
+  {
+    "id": "2283",
+    "name": "Alko Kauhava Alahärmä",
+    "address": "Jorma Lillbackantie 21, 62300 KAUHAVA",
+    "latitude": 63.2300549,
+    "longitude": 22.8444639
+  },
+  {
+    "id": "2275",
+    "name": "Alko Kauhava keskusta",
+    "address": "Heimolankuja 2, 62200 KAUHAVA",
+    "latitude": 63.1010646,
+    "longitude": 23.0542139
+  },
+  {
+    "id": "2165",
+    "name": "Alko Kauniainen",
+    "address": "Kauniaistentie 7, 02700 KAUNIAINEN",
+    "latitude": 60.2101787,
+    "longitude": 24.7288341
+  },
+  {
+    "id": "2806",
+    "name": "Alko Kaustinen",
+    "address": "Terveystie 1, 69600 KAUSTINEN",
+    "latitude": 63.54820495,
+    "longitude": 23.690256991300465
+  },
+  {
+    "id": "2865",
+    "name": "Alko Kemi",
+    "address": "Karjalahdenkatu / Prisma, 94600 KEMI"
+  },
+  {
+    "id": "2885",
+    "name": "Alko Kemijärvi",
+    "address": "Kirkkokatu 2-4, 98100 KEMIJÄRVI",
+    "latitude": 66.71572295,
+    "longitude": 27.428456873807573
+  },
+  {
+    "id": "2866",
+    "name": "Alko Keminmaa",
+    "address": "Jokisuuntie 8, 94450 KEMINMAA",
+    "latitude": 65.7901072,
+    "longitude": 24.5166038
+  },
+  {
+    "id": "2235",
+    "name": "Alko Kemiönsaari Kemiö",
+    "address": "Engelsbyntie 15, 25700 KEMIÖ",
+    "latitude": 60.163839100000004,
+    "longitude": 22.73684035
+  },
+  {
+    "id": "2236",
+    "name": "Alko Kemiönsaari Taalintehdas Dalsbruk",
+    "address": "Kolapakantie 2, 25900 TAALINTEHDAS",
+    "latitude": 60.0202996,
+    "longitude": 22.5088474
+  },
+  {
+    "id": "2835",
+    "name": "Alko Kempele",
+    "address": "Myllytie 3, 90440 KEMPELE",
+    "latitude": 64.9046432,
+    "longitude": 25.5417042
+  },
+  {
+    "id": "2189",
+    "name": "Alko Kerava Citymarket",
+    "address": "Nikonkatu 1, 04200 KERAVA",
+    "latitude": 60.4003164,
+    "longitude": 25.1008844
+  },
+  {
+    "id": "2182",
+    "name": "Alko Kerava Prisma",
+    "address": "Kauppakaari 2, 04200 KERAVA",
+    "latitude": 60.40158525,
+    "longitude": 25.103852674546722
+  },
+  {
+    "id": "2482",
+    "name": "Alko Keuruu",
+    "address": "Tervantie 2, 42700 KEURUU",
+    "latitude": 62.2607176,
+    "longitude": 24.6937943
+  },
+  {
+    "id": "2159",
+    "name": "Alko Kirkkonummi Munkinmäki Prisma",
+    "address": "Munkinmäentie 29, 02400 KIRKKONUMMI",
+    "latitude": 60.1180072,
+    "longitude": 24.4462866
+  },
+  {
+    "id": "2707",
+    "name": "Alko Kitee",
+    "address": "Kiteentie 6, 82500 KITEE",
+    "latitude": 62.0969097,
+    "longitude": 30.1425876
+  },
+  {
+    "id": "2881",
+    "name": "Alko Kittilä Levi",
+    "address": "Leviraitti 18, 99130 SIRKKA",
+    "latitude": 67.808937,
+    "longitude": 24.806525352176035
+  },
+  {
+    "id": "2878",
+    "name": "Alko Kittilä keskusta",
+    "address": "Valtatie 68, 99100 KITTILÄ",
+    "latitude": 67.6665133,
+    "longitude": 24.8903526
+  },
+  {
+    "id": "2744",
+    "name": "Alko Kiuruvesi",
+    "address": "Kukkomäentie 17, 74700 KIURUVESI",
+    "latitude": 63.6502213,
+    "longitude": 26.6209217
+  },
+  {
+    "id": "2267",
+    "name": "Alko Kokemäki",
+    "address": "Haapionkatu 17, 32800 KOKEMÄKI",
+    "latitude": 61.2554711,
+    "longitude": 22.3456906
+  },
+  {
+    "id": "2803",
+    "name": "Alko Kokkola Kosila Prisma",
+    "address": "Prismantie 1, 67700 KOKKOLA",
+    "latitude": 63.8322377,
+    "longitude": 23.1264442
+  },
+  {
+    "id": "2813",
+    "name": "Alko Kokkola keskusta K-Supermarket",
+    "address": "Rautatienkatu 10, 67100 KOKKOLA",
+    "latitude": 63.8359297,
+    "longitude": 23.1423785
+  },
+  {
+    "id": "2882",
+    "name": "Alko Kolari Ylläs Äkäslompolo",
+    "address": "Sannanrannantie 3, 95970 ÄKÄSLOMPOLO",
+    "latitude": 67.60522639999999,
+    "longitude": 24.154874447108647
+  },
+  {
+    "id": "2880",
+    "name": "Alko Kolari keskusta",
+    "address": "Jokijalantie 2 A, 95900 KOLARI",
+    "latitude": 67.3361709,
+    "longitude": 23.8099823
+  },
+  {
+    "id": "2783",
+    "name": "Alko Kotka Karhula Lidl",
+    "address": "Karhukuja 4, 48600 KOTKA",
+    "latitude": 60.5134507,
+    "longitude": 26.935816264485556
+  },
+  {
+    "id": "2781",
+    "name": "Alko Kotka Pasaati",
+    "address": "Kirkkokatu 7, 48100 KOTKA",
+    "latitude": 60.4666225,
+    "longitude": 26.9434846
+  },
+  {
+    "id": "2782",
+    "name": "Alko Kotka Sutela Prisma",
+    "address": "Hakamäentie 1, 48400 KOTKA",
+    "latitude": 60.5009065,
+    "longitude": 26.868017306892376
+  },
+  {
+    "id": "2765",
+    "name": "Alko Kouvola Inkeroinen",
+    "address": "Lauttatie 1, 46900 INKEROINEN",
+    "latitude": 60.692405,
+    "longitude": 26.837931208313954
+  },
+  {
+    "id": "2768",
+    "name": "Alko Kouvola Korjala Prisma",
+    "address": "Tommolankatu 9, 45130 KOUVOLA",
+    "latitude": 60.872494,
+    "longitude": 26.657204777900763
+  },
+  {
+    "id": "2762",
+    "name": "Alko Kouvola Kuusankoski",
+    "address": "Kymenlaaksonkatu 2, 45700 KUUSANKOSKI",
+    "latitude": 60.9066434,
+    "longitude": 26.6261769
+  },
+  {
+    "id": "2763",
+    "name": "Alko Kouvola Tervaskangas",
+    "address": "Tervasharjunkatu 1, 45720 KUUSANKOSKI",
+    "latitude": 60.876562199999995,
+    "longitude": 26.652206500150697
+  },
+  {
+    "id": "2761",
+    "name": "Alko Kouvola Valkeala",
+    "address": "Kalevantie 1, 45370 VALKEALA",
+    "latitude": 60.929933,
+    "longitude": 26.79934363562267
+  },
+  {
+    "id": "2767",
+    "name": "Alko Kouvola keskusta",
+    "address": "Kouvolankatu 15, 45100 KOUVOLA",
+    "latitude": 60.8674847,
+    "longitude": 26.7072878
+  },
+  {
+    "id": "2280",
+    "name": "Alko Kristiinankaupunki",
+    "address": "Merikatu 4, 64100 KRISTIINANKAUPUNKI",
+    "latitude": 62.2748401,
+    "longitude": 21.3806574
+  },
+  {
+    "id": "2823",
+    "name": "Alko Kuhmo",
+    "address": "Torikatu 24, 88900 KUHMO",
+    "latitude": 64.1277953,
+    "longitude": 29.520734
+  },
+  {
+    "id": "2499",
+    "name": "Alko Kuhmoinen",
+    "address": "Toritie 54, 17800 KUHMOINEN",
+    "latitude": 61.5656701,
+    "longitude": 25.1816556
+  },
+  {
+    "id": "2753",
+    "name": "Alko Kuopio Haapaniemi",
+    "address": "Tehdaskatu 12, 70620 KUOPIO",
+    "latitude": 62.8802874,
+    "longitude": 27.6675485
+  },
+  {
+    "id": "2758",
+    "name": "Alko Kuopio Karttula",
+    "address": "Kissakuusentie 2 C 21, 72100 KARTTULA"
+  },
+  {
+    "id": "2305",
+    "name": "Alko Kuopio Kolmisoppi Citymarket",
+    "address": "Kolmisopentie 1, 71780 KUOPIO"
+  },
+  {
+    "id": "2739",
+    "name": "Alko Kuopio Matkus Shopping Center",
+    "address": "Matkuksentie 60 L 2, 70800 KUOPIO"
+  },
+  {
+    "id": "2747",
+    "name": "Alko Kuopio Nilsiä",
+    "address": "Laitilantie 27, 73300 NILSIÄ",
+    "latitude": 63.20107075,
+    "longitude": 28.089599908097824
+  },
+  {
+    "id": "2751",
+    "name": "Alko Kuopio Petonen",
+    "address": "Petosentie 4, 70820 KUOPIO",
+    "latitude": 62.840014,
+    "longitude": 27.647481329708903
+  },
+  {
+    "id": "2755",
+    "name": "Alko Kuopio Päiväranta Citymarket",
+    "address": "Päivärannantie 18, 70420 KUOPIO",
+    "latitude": 62.932621,
+    "longitude": 27.6761931
+  },
+  {
+    "id": "2754",
+    "name": "Alko Kuopio Savilahti Prisma",
+    "address": "Savilahdentie 10, PL 1050, 70700 KUOPIO"
+  },
+  {
+    "id": "2752",
+    "name": "Alko Kuopio keskusta Sokos",
+    "address": "Haapaniemenkatu 24-26, 70110 KUOPIO",
+    "latitude": 62.8925291,
+    "longitude": 27.6762956
+  },
+  {
+    "id": "2276",
+    "name": "Alko Kurikka",
+    "address": "Laurintie 22, 61300 KURIKKA",
+    "latitude": 62.6159036,
+    "longitude": 22.3944912
+  },
+  {
+    "id": "2279",
+    "name": "Alko Kurikka Jalasjärvi",
+    "address": "Koskitie 21, 61600 JALASJÄRVI",
+    "latitude": 62.487790000000004,
+    "longitude": 22.75072119285473
+  },
+  {
+    "id": "2220",
+    "name": "Alko Kustavi",
+    "address": "Pleikiläntie 2, 23360 KUSTAVI",
+    "latitude": 60.5453498,
+    "longitude": 21.353796015403066
+  },
+  {
+    "id": "2848",
+    "name": "Alko Kuusamo Ruka",
+    "address": "Rukanriutta 7, 93830 RUKATUNTURI",
+    "latitude": 66.1648835,
+    "longitude": 29.1209834
+  },
+  {
+    "id": "2846",
+    "name": "Alko Kuusamo keskusta",
+    "address": "Luomantie 1-3, 93600 KUUSAMO",
+    "latitude": 65.95684245000001,
+    "longitude": 29.162091523248094
+  },
+  {
+    "id": "2480",
+    "name": "Alko Kyyjärvi",
+    "address": "Vaasantie 2, 43700 KYYJÄRVI",
+    "latitude": 63.0422421,
+    "longitude": 24.5585091
+  },
+  {
+    "id": "2410",
+    "name": "Alko Kärkölä Järvelä",
+    "address": "Ruukintie 1, 16600 JÄRVELÄ",
+    "latitude": 60.8711275,
+    "longitude": 25.2765869
+  },
+  {
+    "id": "2814",
+    "name": "Alko Kärsämäki",
+    "address": "Haapajärventie 1, 86710 KÄRSÄMÄKI",
+    "latitude": 63.9745277,
+    "longitude": 25.7595143
+  },
+  {
+    "id": "2424",
+    "name": "Alko Lahti Holma",
+    "address": "Johanneksenkatu 4, 15240 LAHTI",
+    "latitude": 61.00637639999999,
+    "longitude": 25.678377584438447
+  },
+  {
+    "id": "2419",
+    "name": "Alko Lahti Karisma",
+    "address": "Kauppiaankatu 2, 15160 LAHTI",
+    "latitude": 60.9823923,
+    "longitude": 25.7382862
+  },
+  {
+    "id": "2420",
+    "name": "Alko Lahti Laune Citymarket",
+    "address": "Ajokatu 53, 15500 LAHTI",
+    "latitude": 60.96496895,
+    "longitude": 25.658236879030326
+  },
+  {
+    "id": "2423",
+    "name": "Alko Lahti Laune Prisma",
+    "address": "Ajokatu 83, 15610 LAHTI",
+    "latitude": 60.9593072,
+    "longitude": 25.656283442311135
+  },
+  {
+    "id": "2426",
+    "name": "Alko Lahti Nastola Rakokivi",
+    "address": "Muurarintie 3, 15550 NASTOLA",
+    "latitude": 60.9368928,
+    "longitude": 25.9623831
+  },
+  {
+    "id": "2422",
+    "name": "Alko Lahti Sokos",
+    "address": "Aleksanterinkatu 19-21, 15110 LAHTI",
+    "latitude": 60.9832966,
+    "longitude": 25.6529203
+  },
+  {
+    "id": "2421",
+    "name": "Alko Lahti Syke",
+    "address": "Kauppakatu 18, 15140 LAHTI",
+    "latitude": 60.9875605,
+    "longitude": 25.6644351
+  },
+  {
+    "id": "2295",
+    "name": "Alko Laihia",
+    "address": "Kauppatie 6, 66400 LAIHIA",
+    "latitude": 62.979000299999996,
+    "longitude": 22.007726600263236
+  },
+  {
+    "id": "2222",
+    "name": "Alko Laitila",
+    "address": "Kauppakatu 3, 23800 LAITILA",
+    "latitude": 60.875782,
+    "longitude": 21.697192
+  },
+  {
+    "id": "2742",
+    "name": "Alko Lapinlahti",
+    "address": "Linnansalmentie 12, 73100 LAPINLAHTI",
+    "latitude": 63.3665182,
+    "longitude": 27.3974991
+  },
+  {
+    "id": "2270",
+    "name": "Alko Lappajärvi",
+    "address": "Kärnäntie 6, 62600 LAPPAJÄRVI",
+    "latitude": 63.2187351,
+    "longitude": 23.624221
+  },
+  {
+    "id": "2792",
+    "name": "Alko Lappeenranta Citymarket",
+    "address": "Toikansuontie 4, 53500 LAPPEENRANTA",
+    "latitude": 61.04499045,
+    "longitude": 28.202661346499852
+  },
+  {
+    "id": "2794",
+    "name": "Alko Lappeenranta Joutseno",
+    "address": "Keskuskatu 4, 54100 JOUTSENO",
+    "latitude": 61.1174276,
+    "longitude": 28.5010671
+  },
+  {
+    "id": "2793",
+    "name": "Alko Lappeenranta Leiri Prisma",
+    "address": "Puhakankatu 9-11, 53600 LAPPEENRANTA",
+    "latitude": 61.0504086,
+    "longitude": 28.179106840644323
+  },
+  {
+    "id": "2791",
+    "name": "Alko Lappeenranta keskusta Iso Kristiina",
+    "address": "Kaivokatu 5, 53100 LAPPEENRANTA",
+    "latitude": 61.0571426,
+    "longitude": 28.1937583
+  },
+  {
+    "id": "2278",
+    "name": "Alko Lapua",
+    "address": "Latojantie 9, 62100 LAPUA",
+    "latitude": 62.9746196,
+    "longitude": 23.0235447093889
+  },
+  {
+    "id": "2494",
+    "name": "Alko Laukaa",
+    "address": "Vuojärventie 1, 41340 LAUKAA",
+    "latitude": 62.414237650000004,
+    "longitude": 25.94794978217199
+  },
+  {
+    "id": "2478",
+    "name": "Alko Lempäälä Ideapark",
+    "address": "Ideaparkinkatu 4, 37570 LEMPÄÄLÄ",
+    "latitude": 61.3601133,
+    "longitude": 23.7956944
+  },
+  {
+    "id": "2469",
+    "name": "Alko Lempäälä keskusta",
+    "address": "Puistokatu 4, 37500 LEMPÄÄLÄ",
+    "latitude": 61.3135308,
+    "longitude": 23.7586194
+  },
+  {
+    "id": "2737",
+    "name": "Alko Leppävirta",
+    "address": "Leppävirrantie 26, 79100 LEPPÄVIRTA",
+    "latitude": 62.4908078,
+    "longitude": 27.7856066
+  },
+  {
+    "id": "2715",
+    "name": "Alko Lieksa",
+    "address": "Pielisentie 34, 81700 LIEKSA",
+    "latitude": 63.3184933,
+    "longitude": 30.023092
+  },
+  {
+    "id": "2211",
+    "name": "Alko Lieto",
+    "address": "Hyvättyläntie 2, 21420 LIETO",
+    "latitude": 60.503985549999996,
+    "longitude": 22.457325458608747
+  },
+  {
+    "id": "2820",
+    "name": "Alko Liminka",
+    "address": "Pitkäkoskentie 15, 91900 LIMINKA",
+    "latitude": 64.8070113,
+    "longitude": 25.4526979
+  },
+  {
+    "id": "2704",
+    "name": "Alko Liperi",
+    "address": "Heinävedentie 1, 83100 LIPERI",
+    "latitude": 62.52826835,
+    "longitude": 29.38405158826395
+  },
+  {
+    "id": "2176",
+    "name": "Alko Lohja Ojamo",
+    "address": "Reunakatu 1, 08200 LOHJA",
+    "latitude": 60.226076899999995,
+    "longitude": 24.02753246679298
+  },
+  {
+    "id": "2177",
+    "name": "Alko Lohja keskusta Lohi",
+    "address": "Suurlohjankatu 11, 08100 LOHJA",
+    "latitude": 60.2506808,
+    "longitude": 24.0741787
+  },
+  {
+    "id": "2238",
+    "name": "Alko Loimaa",
+    "address": "Aleksis Kivenkatu 7, 32200 LOIMAA",
+    "latitude": 60.8566586,
+    "longitude": 23.0457106
+  },
+  {
+    "id": "2409",
+    "name": "Alko Loppi",
+    "address": "Yhdystie 3, 12700 LOPPI",
+    "latitude": 60.72072385,
+    "longitude": 24.44163063187456
+  },
+  {
+    "id": "2192",
+    "name": "Alko Loviisa",
+    "address": "Mariankatu 33, 07900 LOVIISA",
+    "latitude": 60.4586933,
+    "longitude": 26.2274827
+  },
+  {
+    "id": "2790",
+    "name": "Alko Luumäki Taavetti",
+    "address": "Linnalantie 42, 54500 TAAVETTI",
+    "latitude": 60.9217614,
+    "longitude": 27.5674832
+  },
+  {
+    "id": "2247",
+    "name": "Alko Maarianhamina Sittkoff",
+    "address": "Torggatan 13, 22100 MAARIANHAMINA",
+    "latitude": 60.099122300000005,
+    "longitude": 19.942611632541627
+  },
+  {
+    "id": "2255",
+    "name": "Alko Merikarvia",
+    "address": "Kauppatie 51, 29900 MERIKARVIA",
+    "latitude": 61.86005555,
+    "longitude": 21.503591803299777
+  },
+  {
+    "id": "2732",
+    "name": "Alko Mikkeli Graani",
+    "address": "Graanintie 1, 50190 MIKKELI",
+    "latitude": 61.6864665,
+    "longitude": 27.2963021
+  },
+  {
+    "id": "2720",
+    "name": "Alko Mikkeli Ristiina",
+    "address": "Brahentie 14, 52300 RISTIINA",
+    "latitude": 61.5111272,
+    "longitude": 27.2474201
+  },
+  {
+    "id": "2722",
+    "name": "Alko Mikkeli keskusta Stella",
+    "address": "Savilahdenkatu 8, 50100 MIKKELI",
+    "latitude": 61.689741,
+    "longitude": 27.2716135
+  },
+  {
+    "id": "2837",
+    "name": "Alko Muhos",
+    "address": "Valtatie 20, 91500 MUHOS",
+    "latitude": 64.8075095,
+    "longitude": 25.9912742
+  },
+  {
+    "id": "2879",
+    "name": "Alko Muonio",
+    "address": "Lahenrannantie 1, 99300 MUONIO",
+    "latitude": 67.9559844,
+    "longitude": 23.683454417713353
+  },
+  {
+    "id": "2479",
+    "name": "Alko Muurame",
+    "address": "Setäläntie 2, 40950 MUURAME",
+    "latitude": 62.13690235,
+    "longitude": 25.67327233875765
+  },
+  {
+    "id": "2224",
+    "name": "Alko Mynämäki",
+    "address": "Valtakatu 1, 23100 MYNÄMÄKI",
+    "latitude": 60.68471595,
+    "longitude": 21.989179241346527
+  },
+  {
+    "id": "2184",
+    "name": "Alko Mäntsälä",
+    "address": "Sälinkääntie 2, 04600 MÄNTSÄLÄ",
+    "latitude": 60.6372936,
+    "longitude": 25.3170556
+  },
+  {
+    "id": "2451",
+    "name": "Alko Mänttä",
+    "address": "Hallituskatu 25, 35800 MÄNTTÄ",
+    "latitude": 62.0297164,
+    "longitude": 24.6246328
+  },
+  {
+    "id": "2724",
+    "name": "Alko Mäntyharju",
+    "address": "Liiketie 1, 52700 MÄNTYHARJU",
+    "latitude": 61.41646755,
+    "longitude": 26.87915760178545
+  },
+  {
+    "id": "2225",
+    "name": "Alko Naantali",
+    "address": "Tuulensuunkatu 12, 21100 NAANTALI",
+    "latitude": 60.4678748,
+    "longitude": 22.032691
+  },
+  {
+    "id": "2810",
+    "name": "Alko Nivala",
+    "address": "Toritie 13, 85500 NIVALA",
+    "latitude": 63.928594000000004,
+    "longitude": 24.969493218477773
+  },
+  {
+    "id": "2435",
+    "name": "Alko Nokia",
+    "address": "Yrittäjäkatu 10, 37100 NOKIA",
+    "latitude": 61.4784062,
+    "longitude": 23.525970970185313
+  },
+  {
+    "id": "2711",
+    "name": "Alko Nurmes",
+    "address": "Porokylänkatu 21, 75500 NURMES",
+    "latitude": 63.5562934,
+    "longitude": 29.1046681
+  },
+  {
+    "id": "2180",
+    "name": "Alko Nurmijärvi Kirkonkylä",
+    "address": "Kauppanummentie 2, 01900 NURMIJÄRVI",
+    "latitude": 60.4581288,
+    "longitude": 24.8215819
+  },
+  {
+    "id": "2181",
+    "name": "Alko Nurmijärvi Klaukkala Citymarket",
+    "address": "Viirintie 9, 01800 KLAUKKALA",
+    "latitude": 60.3780686,
+    "longitude": 24.7586854
+  },
+  {
+    "id": "2290",
+    "name": "Alko Närpiö",
+    "address": "Närpesvägen 27, 64200 NÄRPIÖ",
+    "latitude": 62.477547,
+    "longitude": 21.337451
+  },
+  {
+    "id": "2427",
+    "name": "Alko Orimattila",
+    "address": "Erkontie 16, 16300 ORIMATTILA",
+    "latitude": 60.804952099999994,
+    "longitude": 25.730166407084354
+  },
+  {
+    "id": "2453",
+    "name": "Alko Orivesi",
+    "address": "Keskustie 36, 35300 ORIVESI",
+    "latitude": 61.6784096,
+    "longitude": 24.357431314350272
+  },
+  {
+    "id": "2805",
+    "name": "Alko Oulainen",
+    "address": "Oulaistenkatu 15-17, 86300 OULAINEN",
+    "latitude": 64.2680317,
+    "longitude": 24.8252986
+  },
+  {
+    "id": "2836",
+    "name": "Alko Oulu Haukipudas",
+    "address": "Revontie 8, 90830 HAUKIPUDAS",
+    "latitude": 65.175925,
+    "longitude": 25.34832605780047
+  },
+  {
+    "id": "2829",
+    "name": "Alko Oulu Kaakkuri",
+    "address": "Metsokankaantie 5, 90420 OULU",
+    "latitude": 64.95638704999999,
+    "longitude": 25.527709544025043
+  },
+  {
+    "id": "2831",
+    "name": "Alko Oulu Keskusta Pekuri",
+    "address": "Kauppurienkatu 10, 90100 OULU",
+    "latitude": 65.0119143,
+    "longitude": 25.4686162
+  },
+  {
+    "id": "2838",
+    "name": "Alko Oulu Kiiminki",
+    "address": "Kauppareitti 2, 90900 KIIMINKI",
+    "latitude": 65.1274834,
+    "longitude": 25.7782242
+  },
+  {
+    "id": "2833",
+    "name": "Alko Oulu Limingantulli",
+    "address": "Nuottasaarentie 1, 90400 OULU",
+    "latitude": 64.99425325,
+    "longitude": 25.461888114485042
+  },
+  {
+    "id": "2830",
+    "name": "Alko Oulu Linnanmaa",
+    "address": "Kauppalinnankuja 1-3, 90570 OULU",
+    "latitude": 65.0540746,
+    "longitude": 25.45542050785024
+  },
+  {
+    "id": "2832",
+    "name": "Alko Oulu Raksila",
+    "address": "Tehtaankatu 1, 90130 OULU",
+    "latitude": 65.01088515000001,
+    "longitude": 25.488930411291566
+  },
+  {
+    "id": "2812",
+    "name": "Alko Oulu Rusko Citymarket",
+    "address": "Laakeritie 4, 90620 OULU",
+    "latitude": 65.0394332,
+    "longitude": 25.5529654
+  },
+  {
+    "id": "2834",
+    "name": "Alko Oulu Välivainio",
+    "address": "Revonkuja 2, 90530 OULU",
+    "latitude": 65.0306393,
+    "longitude": 25.4711793
+  },
+  {
+    "id": "2706",
+    "name": "Alko Outokumpu",
+    "address": "Kummunkatu 9, 83500 OUTOKUMPU",
+    "latitude": 62.7265697,
+    "longitude": 29.0139998
+  },
+  {
+    "id": "2429",
+    "name": "Alko Padasjoki",
+    "address": "Kauppatie 2, 17500 PADASJOKI",
+    "latitude": 61.3491817,
+    "longitude": 25.267742777897574
+  },
+  {
+    "id": "2217",
+    "name": "Alko Paimio",
+    "address": "Asematie 1, 21530 PAIMIO",
+    "latitude": 60.458346,
+    "longitude": 22.6888311
+  },
+  {
+    "id": "2826",
+    "name": "Alko Paltamo",
+    "address": "Rinnekuja 2, 88300 PALTAMO",
+    "latitude": 64.40334945000001,
+    "longitude": 27.836896439244363
+  },
+  {
+    "id": "2228",
+    "name": "Alko Parainen Nauvo",
+    "address": "Kirkkomäki, 21660 NAUVO"
+  },
+  {
+    "id": "2227",
+    "name": "Alko Parainen keskusta",
+    "address": "Kirkkoesplanadi 32, 21600 PARAINEN",
+    "latitude": 60.3085295,
+    "longitude": 22.3073129
+  },
+  {
+    "id": "2798",
+    "name": "Alko Parikkala",
+    "address": "Parikkalantie 19, 59100 PARIKKALA",
+    "latitude": 61.557013999999995,
+    "longitude": 29.499904651450503
+  },
+  {
+    "id": "2437",
+    "name": "Alko Parkano",
+    "address": "Humalankatu 2, 39700 PARKANO",
+    "latitude": 62.0067666,
+    "longitude": 23.0112947
+  },
+  {
+    "id": "2877",
+    "name": "Alko Pello",
+    "address": "Pellontie 23, 95700 PELLO",
+    "latitude": 66.7737806,
+    "longitude": 23.9640259
+  },
+  {
+    "id": "2730",
+    "name": "Alko Pertunmaa Kuortti",
+    "address": "Mäyrätie 1, 19410 KUORTTI",
+    "latitude": 61.4207395,
+    "longitude": 26.4350531
+  },
+  {
+    "id": "2731",
+    "name": "Alko Pieksämäki",
+    "address": "Keskuskatu 3, 76100 PIEKSÄMÄKI",
+    "latitude": 62.301557700000004,
+    "longitude": 27.16103499261173
+  },
+  {
+    "id": "2743",
+    "name": "Alko Pielavesi",
+    "address": "Puustellintie 21, 72400 PIELAVESI",
+    "latitude": 63.2324304,
+    "longitude": 26.7554459
+  },
+  {
+    "id": "2286",
+    "name": "Alko Pietarsaari",
+    "address": "Koulukatu 4, 68600 PIETARSAARI",
+    "latitude": 63.6773019,
+    "longitude": 22.7164516
+  },
+  {
+    "id": "2487",
+    "name": "Alko Pihtipudas",
+    "address": "Asematie 1, 44800 PIHTIPUDAS",
+    "latitude": 63.368951550000006,
+    "longitude": 25.58494569253721
+  },
+  {
+    "id": "2477",
+    "name": "Alko Pirkkala Partola",
+    "address": "Palmrothintie 2, 33960 PIRKKALA",
+    "latitude": 61.46579715,
+    "longitude": 23.722417922019076
+  },
+  {
+    "id": "2473",
+    "name": "Alko Pirkkala keskusta",
+    "address": "Suupantie 10, 33960 PIRKKALA",
+    "latitude": 61.4659265,
+    "longitude": 23.6430749
+  },
+  {
+    "id": "2252",
+    "name": "Alko Pori Eteläväylä",
+    "address": "Eteläväylä 9, 28610 PORI",
+    "latitude": 61.471364,
+    "longitude": 21.7535547
+  },
+  {
+    "id": "2254",
+    "name": "Alko Pori Itäkeskus Prisma",
+    "address": "Itäkeskuksenkaari 6, 28130 PORI",
+    "latitude": 61.45346035,
+    "longitude": 21.83890761859589
+  },
+  {
+    "id": "2257",
+    "name": "Alko Pori Noormarkku",
+    "address": "Finpyyntie 10, 29600 NOORMARKKU",
+    "latitude": 61.5919255,
+    "longitude": 21.870331425939995
+  },
+  {
+    "id": "2259",
+    "name": "Alko Pori Puuvilla",
+    "address": "Siltapuistokatu 14, 28100 PORI",
+    "latitude": 61.4948613,
+    "longitude": 21.8014899
+  },
+  {
+    "id": "2251",
+    "name": "Alko Pori keskusta Sokos",
+    "address": "Liisankatu 2-4, 28100 PORI",
+    "latitude": 61.4836209,
+    "longitude": 21.797718
+  },
+  {
+    "id": "2190",
+    "name": "Alko Porvoo Näsi",
+    "address": "Aleksanterinkaari 1, 06100 PORVOO",
+    "latitude": 60.38727,
+    "longitude": 25.6520426
+  },
+  {
+    "id": "2191",
+    "name": "Alko Porvoo Tarmola",
+    "address": "Asentajantie 1, 06150 PORVOO",
+    "latitude": 60.3998717,
+    "longitude": 25.68685468862568
+  },
+  {
+    "id": "2304",
+    "name": "Alko Porvoo vanhakaupunki",
+    "address": "Välikatu 1, 06100 PORVOO",
+    "latitude": 60.3942749,
+    "longitude": 25.6598269
+  },
+  {
+    "id": "2859",
+    "name": "Alko Posio",
+    "address": "Posiontie 49, 97900 POSIO",
+    "latitude": 66.11224594999999,
+    "longitude": 28.157076575000026
+  },
+  {
+    "id": "2843",
+    "name": "Alko Pudasjärvi",
+    "address": "Kauppatie 8, 93100 PUDASJÄRVI",
+    "latitude": 65.3599314,
+    "longitude": 26.9960743
+  },
+  {
+    "id": "2808",
+    "name": "Alko Pulkkila",
+    "address": "Pulkkilantie 2 A, 92600 PULKKILA",
+    "latitude": 64.2771884,
+    "longitude": 25.8713656
+  },
+  {
+    "id": "2827",
+    "name": "Alko Puolanka",
+    "address": "Keskuskatu 2, 89200 PUOLANKA",
+    "latitude": 64.8702915,
+    "longitude": 27.6681543
+  },
+  {
+    "id": "2721",
+    "name": "Alko Puumala",
+    "address": "Keskustie 19, 52200 PUUMALA",
+    "latitude": 61.5234599,
+    "longitude": 28.1780432
+  },
+  {
+    "id": "2809",
+    "name": "Alko Pyhäjärvi",
+    "address": "Antintie 3, 86800 PYHÄSALMI",
+    "latitude": 63.6820595,
+    "longitude": 25.9804331
+  },
+  {
+    "id": "2815",
+    "name": "Alko Raahe",
+    "address": "Ollinkalliontie 2, 92120 RAAHE",
+    "latitude": 64.6820462,
+    "longitude": 24.4981173
+  },
+  {
+    "id": "2175",
+    "name": "Alko Raasepori Karjaa",
+    "address": "Ratakatu 59, 10300 KARJAA",
+    "latitude": 60.0711241,
+    "longitude": 23.6676244
+  },
+  {
+    "id": "2173",
+    "name": "Alko Raasepori Tammisaari",
+    "address": "Rautatienkatu 5, 10600 TAMMISAARI",
+    "latitude": 59.9784248,
+    "longitude": 23.44101401686371
+  },
+  {
+    "id": "2203",
+    "name": "Alko Raisio Mylly",
+    "address": "Myllynkatu 1005, 21280 RAISIO",
+    "latitude": 60.4902015,
+    "longitude": 22.2058999
+  },
+  {
+    "id": "2215",
+    "name": "Alko Raisio keskusta",
+    "address": "Voudinkatu 5, 21200 RAISIO",
+    "latitude": 60.4900812,
+    "longitude": 22.1704504
+  },
+  {
+    "id": "2728",
+    "name": "Alko Rantasalmi",
+    "address": "Kylätie 42-44, 58900 RANTASALMI",
+    "latitude": 62.0675098,
+    "longitude": 28.2993389
+  },
+  {
+    "id": "2858",
+    "name": "Alko Ranua",
+    "address": "Keskustie 1, 97700 RANUA",
+    "latitude": 65.9282151,
+    "longitude": 26.5163284
+  },
+  {
+    "id": "2265",
+    "name": "Alko Rauma keskusta",
+    "address": "Karjalankatu 5, 26100 RAUMA",
+    "latitude": 61.13297045,
+    "longitude": 21.50640141681241
+  },
+  {
+    "id": "2269",
+    "name": "Alko Rauma Äyhö",
+    "address": "Äyhönjärventie 1, 26100 RAUMA",
+    "latitude": 61.1319167,
+    "longitude": 21.5383794
+  },
+  {
+    "id": "2408",
+    "name": "Alko Riihimäki Atomikortteli",
+    "address": "Voimalankatu 2, 11130 RIIHIMÄKI",
+    "latitude": 60.7327033,
+    "longitude": 24.7794699
+  },
+  {
+    "id": "2415",
+    "name": "Alko Riihimäki Merkos",
+    "address": "Merkoksenkatu 5, 11710 RIIHIMÄKI",
+    "latitude": 60.7224643,
+    "longitude": 24.7348857
+  },
+  {
+    "id": "2857",
+    "name": "Alko Rovaniemi Eteläkeskus",
+    "address": "Teollisuustie 2, 96320 ROVANIEMI",
+    "latitude": 66.49255665,
+    "longitude": 25.68771601771136
+  },
+  {
+    "id": "2856",
+    "name": "Alko Rovaniemi Saarenkylä",
+    "address": "Pulkamontie 1, 96900 SAARENKYLÄ",
+    "latitude": 66.5185688,
+    "longitude": 25.753122627029704
+  },
+  {
+    "id": "2855",
+    "name": "Alko Rovaniemi keskusta",
+    "address": "Koskikatu 25, 96200 ROVANIEMI",
+    "latitude": 66.5025903,
+    "longitude": 25.7250341
+  },
+  {
+    "id": "2481",
+    "name": "Alko Ruovesi",
+    "address": "Ruovedentie 38, 34600 RUOVESI",
+    "latitude": 61.9848578,
+    "longitude": 24.0719249
+  },
+  {
+    "id": "2483",
+    "name": "Alko Saarijärvi",
+    "address": "Torikatu 5 a, 43100 SAARIJÄRVI",
+    "latitude": 62.7073115,
+    "longitude": 25.2565219552257
+  },
+  {
+    "id": "2887",
+    "name": "Alko Salla",
+    "address": "Kuusamontie 9, 98900 SALLA",
+    "latitude": 66.8318097,
+    "longitude": 28.670779
+  },
+  {
+    "id": "2232",
+    "name": "Alko Salo Halikko",
+    "address": "Prismantie 2, 24800 HALIKKO"
+  },
+  {
+    "id": "2231",
+    "name": "Alko Salo Keskusta",
+    "address": "Hämeentie 24-30, 24240 SALO",
+    "latitude": 60.390053449999996,
+    "longitude": 23.126544902961808
+  },
+  {
+    "id": "2234",
+    "name": "Alko Salo Perniö",
+    "address": "Haarlantie 21, 25500 PERNIÖ",
+    "latitude": 60.206109350000006,
+    "longitude": 23.114073139102388
+  },
+  {
+    "id": "2432",
+    "name": "Alko Sastamala Vammala",
+    "address": "Vammalantie 7, 38200 SASTAMALA",
+    "latitude": 61.3334186,
+    "longitude": 22.9268259
+  },
+  {
+    "id": "2797",
+    "name": "Alko Savitaipale",
+    "address": "Torikatu 6, 54800 SAVITAIPALE",
+    "latitude": 61.1977737,
+    "longitude": 27.681835975333335
+  },
+  {
+    "id": "2729",
+    "name": "Alko Savonlinna Kerimäki",
+    "address": "Puruvedentie 51, 58200 KERIMÄKI",
+    "latitude": 61.9118496,
+    "longitude": 29.2797046
+  },
+  {
+    "id": "2716",
+    "name": "Alko Savonlinna Nojanmaa Prisma",
+    "address": "Nojanmaantie 15, 57210 SAVONLINNA",
+    "latitude": 61.8764166,
+    "longitude": 28.948049496606863
+  },
+  {
+    "id": "2726",
+    "name": "Alko Savonlinna keskusta",
+    "address": "Olavinkatu 46, 57100 SAVONLINNA",
+    "latitude": 61.8698455,
+    "longitude": 28.8791927
+  },
+  {
+    "id": "2288",
+    "name": "Alko Seinäjoki Ideapark",
+    "address": "Suupohjantie 57, 60320 SEINÄJOKI",
+    "latitude": 62.7939348,
+    "longitude": 22.793295109205452
+  },
+  {
+    "id": "2287",
+    "name": "Alko Seinäjoki Nurmo Prisma",
+    "address": "Hyllykalliontie 2, 60510 HYLLYKALLIO",
+    "latitude": 62.8045803,
+    "longitude": 22.8803289
+  },
+  {
+    "id": "2289",
+    "name": "Alko Seinäjoki Pohja Minimani",
+    "address": "Tehtaantie 5, 60100 SEINÄJOKI",
+    "latitude": 62.7900203,
+    "longitude": 22.87987
+  },
+  {
+    "id": "2272",
+    "name": "Alko Seinäjoki keskusta Megakeskus",
+    "address": "Keskuskatu 3, 60100 SEINÄJOKI",
+    "latitude": 62.791818750000004,
+    "longitude": 22.840658661621887
+  },
+  {
+    "id": "2745",
+    "name": "Alko Siilinjärvi",
+    "address": "Toritie 12, 71800 SIILINJÄRVI",
+    "latitude": 63.0742987,
+    "longitude": 27.6578772
+  },
+  {
+    "id": "2187",
+    "name": "Alko Sipoo Nikkilä",
+    "address": "Pornaistentie 2, 04130 SIPOO",
+    "latitude": 60.3767393,
+    "longitude": 25.2708582
+  },
+  {
+    "id": "2193",
+    "name": "Alko Sipoo Söderkulla",
+    "address": "Rautatiekuja 4, 01150 SÖDERKULLA",
+    "latitude": 60.2977786,
+    "longitude": 25.329094079415864
+  },
+  {
+    "id": "2853",
+    "name": "Alko Sodankylä",
+    "address": "Haastajantie 1, 99600 SODANKYLÄ",
+    "latitude": 67.41404545,
+    "longitude": 26.58777099842097
+  },
+  {
+    "id": "2233",
+    "name": "Alko Somero",
+    "address": "Turuntie 6, 31400 SOMERO",
+    "latitude": 60.63303825,
+    "longitude": 23.51292801746725
+  },
+  {
+    "id": "2822",
+    "name": "Alko Sotkamo",
+    "address": "Kainuuntie 18, 88600 SOTKAMO",
+    "latitude": 64.1311369,
+    "longitude": 28.3826682
+  },
+  {
+    "id": "2738",
+    "name": "Alko Sulkava",
+    "address": "Alanteentie 38, 58700 SULKAVA",
+    "latitude": 61.78751665,
+    "longitude": 28.36998917538606
+  },
+  {
+    "id": "2828",
+    "name": "Alko Suomussalmi",
+    "address": "Ämmänkatu 2\n, 89600 SUOMUSSALMI",
+    "latitude": 64.88303429999999,
+    "longitude": 28.915690640554864
+  },
+  {
+    "id": "2756",
+    "name": "Alko Suonenjoki",
+    "address": "Rautalammintie 15, 77600 SUONENJOKI",
+    "latitude": 62.6256698,
+    "longitude": 27.1185971
+  },
+  {
+    "id": "2416",
+    "name": "Alko Sysmä",
+    "address": "Särkilahdentie 3, 19700 SYSMÄ",
+    "latitude": 61.5021688,
+    "longitude": 25.6847034
+  },
+  {
+    "id": "2263",
+    "name": "Alko Säkylä",
+    "address": "Palomiehentie 9, 27800 SÄKYLÄ",
+    "latitude": 61.044772699999996,
+    "longitude": 22.357456064753315
+  },
+  {
+    "id": "2847",
+    "name": "Alko Taivalkoski",
+    "address": "Kauppatie 11, 93400 TAIVALKOSKI",
+    "latitude": 65.57538625000001,
+    "longitude": 28.243635862774905
+  },
+  {
+    "id": "2470",
+    "name": "Alko Tampere Hervanta Duo",
+    "address": "Pietilänkatu 2, 33720 TAMPERE",
+    "latitude": 61.4507754,
+    "longitude": 23.8501155
+  },
+  {
+    "id": "2463",
+    "name": "Alko Tampere Kaleva Prisma",
+    "address": "Sammonkatu 75, 33540 TAMPERE",
+    "latitude": 61.49105055,
+    "longitude": 23.821637619054925
+  },
+  {
+    "id": "2466",
+    "name": "Alko Tampere Koivistonkylä Prisma",
+    "address": "Lempääläntie 21, 33820 TAMPERE",
+    "latitude": 61.4681719,
+    "longitude": 23.7767151
+  },
+  {
+    "id": "2471",
+    "name": "Alko Tampere Lielahti Citymarket",
+    "address": "Harjuntausta 7, 33400 TAMPERE",
+    "latitude": 61.51488155,
+    "longitude": 23.666487132101807
+  },
+  {
+    "id": "2468",
+    "name": "Alko Tampere Linnainmaa Prisma",
+    "address": "Liikekatu 3, 33580 TAMPERE",
+    "latitude": 61.4957253,
+    "longitude": 23.8831282
+  },
+  {
+    "id": "2461",
+    "name": "Alko Tampere Puutarhakatu",
+    "address": "Puutarhakatu 10, 33210 TAMPERE",
+    "latitude": 61.4999178,
+    "longitude": 23.755789
+  },
+  {
+    "id": "2457",
+    "name": "Alko Tampere Ratina",
+    "address": "Vuolteenkatu 1, 33100 TAMPERE",
+    "latitude": 61.4926173,
+    "longitude": 23.7683259
+  },
+  {
+    "id": "2464",
+    "name": "Alko Tampere Sokos",
+    "address": "Hämeenkatu 21, 33200 TAMPERE",
+    "latitude": 61.49677775,
+    "longitude": 23.758009865981666
+  },
+  {
+    "id": "2462",
+    "name": "Alko Tampere Stockmann",
+    "address": "Hämeenkatu 4, 33100 TAMPERE",
+    "latitude": 61.4991825,
+    "longitude": 23.770336558443866
+  },
+  {
+    "id": "2465",
+    "name": "Alko Tampere Tammela",
+    "address": "Kullervonkatu 9, 33100 TAMPERE",
+    "latitude": 61.5032115,
+    "longitude": 23.7786579
+  },
+  {
+    "id": "2460",
+    "name": "Alko Tampere Tesoma",
+    "address": "Tesomankatu 4, 33310 TAMPERE",
+    "latitude": 61.505038,
+    "longitude": 23.6284251
+  },
+  {
+    "id": "2472",
+    "name": "Alko Tampere Turtola Citymarket",
+    "address": "Martinpojankatu 4, 33710 TAMPERE",
+    "latitude": 61.4755424,
+    "longitude": 23.8400721
+  },
+  {
+    "id": "2285",
+    "name": "Alko Teuva",
+    "address": "Mikkiläntie 12, 64700 TEUVA",
+    "latitude": 62.48713795,
+    "longitude": 21.739068593824438
+  },
+  {
+    "id": "2875",
+    "name": "Alko Tornio",
+    "address": "Länsiranta 10 as 1610, 95400 TORNIO"
+  },
+  {
+    "id": "2213",
+    "name": "Alko Turku Hirvensalo",
+    "address": "Vanha Kakskerrantie 1, 20900 TURKU",
+    "latitude": 60.4187399,
+    "longitude": 22.229636
+  },
+  {
+    "id": "2202",
+    "name": "Alko Turku Itäharju",
+    "address": "Kalevantie 41, 20520 TURKU",
+    "latitude": 60.4460973,
+    "longitude": 22.323757
+  },
+  {
+    "id": "2204",
+    "name": "Alko Turku Kupittaa",
+    "address": "Uudenmaantie 17, 20700 TURKU",
+    "latitude": 60.44175225,
+    "longitude": 22.286315192180048
+  },
+  {
+    "id": "2207",
+    "name": "Alko Turku Länsikeskus Citymarket",
+    "address": "Markulantie 150, 20320 TURKU",
+    "latitude": 60.4720418,
+    "longitude": 22.2338855
+  },
+  {
+    "id": "2205",
+    "name": "Alko Turku Manhattan",
+    "address": "Pitkämäenkatu 4, 20250 TURKU",
+    "latitude": 60.457508,
+    "longitude": 22.2335554
+  },
+  {
+    "id": "2209",
+    "name": "Alko Turku Skanssi",
+    "address": "Skanssinkatu 10, 20730 TURKU",
+    "latitude": 60.4303126,
+    "longitude": 22.3230041
+  },
+  {
+    "id": "2214",
+    "name": "Alko Turku Tampereentie",
+    "address": "Vanha Tampereentie 108, 20300 TURKU",
+    "latitude": 60.4744003,
+    "longitude": 22.2864783
+  },
+  {
+    "id": "2201",
+    "name": "Alko Turku keskusta Kauppahalli",
+    "address": "Eerikinkatu 16 H, 20100 TURKU",
+    "latitude": 60.4493665,
+    "longitude": 22.2666173
+  },
+  {
+    "id": "2208",
+    "name": "Alko Turku keskusta Stockmann",
+    "address": "Yliopistonkatu 22, 20100 TURKU",
+    "latitude": 60.450691,
+    "longitude": 22.2628898
+  },
+  {
+    "id": "2206",
+    "name": "Alko Turku keskusta Wiklund",
+    "address": "Kauppiaskatu 9, 20100 TURKU",
+    "latitude": 60.4522819,
+    "longitude": 22.2679517
+  },
+  {
+    "id": "2170",
+    "name": "Alko Tuusula Hyrylä",
+    "address": "Hyrylänkatu 6, 04300 TUUSULA",
+    "latitude": 60.3967801,
+    "longitude": 25.0198023
+  },
+  {
+    "id": "2256",
+    "name": "Alko Ulvila",
+    "address": "Vanha Helsingintie 4, 28400 ULVILA",
+    "latitude": 61.426862299999996,
+    "longitude": 21.876937996391657
+  },
+  {
+    "id": "2441",
+    "name": "Alko Urjala",
+    "address": "Tampereentie 1, 31760 URJALA",
+    "latitude": 61.08030995,
+    "longitude": 23.55003529469801
+  },
+  {
+    "id": "2883",
+    "name": "Alko Utsjoki Karigasniemi",
+    "address": "Ylätenontie 24, 99950 KARIGASNIEMI",
+    "latitude": 69.39868430000001,
+    "longitude": 25.852882645697328
+  },
+  {
+    "id": "2889",
+    "name": "Alko Utsjoki Nuorgam",
+    "address": "Nuorgamintie 4298, 99990 NUORGAM",
+    "latitude": 70.0805256,
+    "longitude": 27.8583874
+  },
+  {
+    "id": "2284",
+    "name": "Alko Uusikaarlepyy",
+    "address": "Myllytie 24, 66900 UUSIKAARLEPYY",
+    "latitude": 63.529191,
+    "longitude": 22.5388346
+  },
+  {
+    "id": "2221",
+    "name": "Alko Uusikaupunki",
+    "address": "Ketunkalliontie 1, 23500 UUSIKAUPUNKI",
+    "latitude": 60.8050705,
+    "longitude": 21.4252573
+  },
+  {
+    "id": "2841",
+    "name": "Alko Vaala",
+    "address": "Vaalantie 26, 91700 VAALA",
+    "latitude": 64.56008514999999,
+    "longitude": 26.842969054381037
+  },
+  {
+    "id": "2773",
+    "name": "Alko Vaalimaa",
+    "address": "Rajahovintie 1, 49930 VAALIMAA",
+    "latitude": 60.6012938,
+    "longitude": 27.8388632
+  },
+  {
+    "id": "2292",
+    "name": "Alko Vaasa Asevelikylä Prisma",
+    "address": "Jukolantie 1, 65300 VAASA",
+    "latitude": 63.102771,
+    "longitude": 21.6460481
+  },
+  {
+    "id": "2293",
+    "name": "Alko Vaasa Kivihaka Citymarket",
+    "address": "Kokkokalliontie 2-6, 65300 VAASA",
+    "latitude": 63.1088563,
+    "longitude": 21.651438
+  },
+  {
+    "id": "2301",
+    "name": "Alko Vaasa Liisanlehto",
+    "address": "Elementtitehtaantie 1, 65380 VAASA",
+    "latitude": 63.0728967,
+    "longitude": 21.700458
+  },
+  {
+    "id": "2291",
+    "name": "Alko Vaasa keskusta Citymarket",
+    "address": "Hovioikeudenpuistikko 17, 65100 VAASA",
+    "latitude": 63.0969445,
+    "longitude": 21.615856
+  },
+  {
+    "id": "2442",
+    "name": "Alko Valkeakoski",
+    "address": "Valtakatu 9-11, 37600 VALKEAKOSKI",
+    "latitude": 61.2667661,
+    "longitude": 24.0291934
+  },
+  {
+    "id": "2166",
+    "name": "Alko Vantaa Hämeenkylä",
+    "address": "Ainontie 1, 01630 VANTAA",
+    "latitude": 60.2718153,
+    "longitude": 24.8038174
+  },
+  {
+    "id": "2194",
+    "name": "Alko Vantaa Koivuhaka",
+    "address": "Kuriiritie 23-25, 01300 VANTAA",
+    "latitude": 60.2882806,
+    "longitude": 24.9984277
+  },
+  {
+    "id": "2172",
+    "name": "Alko Vantaa Koivukylä Citymarket",
+    "address": "Ojalehdonkuja 1, 01400 VANTAA",
+    "latitude": 60.3239011,
+    "longitude": 25.0575654
+  },
+  {
+    "id": "2163",
+    "name": "Alko Vantaa Korso",
+    "address": "Minkkikuja 4, 01450 VANTAA",
+    "latitude": 60.3503301,
+    "longitude": 25.0792257
+  },
+  {
+    "id": "2162",
+    "name": "Alko Vantaa Myyrmäki Myyrmanni",
+    "address": "Iskoskuja 3, 01600 VANTAA",
+    "latitude": 60.260192849999996,
+    "longitude": 24.85347337756786
+  },
+  {
+    "id": "2164",
+    "name": "Alko Vantaa Pakkala Jumbo",
+    "address": "Vantaanportinkatu 3, 01510 VANTAA",
+    "latitude": 60.292453,
+    "longitude": 24.9628243
+  },
+  {
+    "id": "2168",
+    "name": "Alko Vantaa Tammisto Citymarket",
+    "address": "Tammiston Kauppatie 9, 01510 VANTAA",
+    "latitude": 60.2731038,
+    "longitude": 24.9735514
+  },
+  {
+    "id": "2161",
+    "name": "Alko Vantaa Tikkurila",
+    "address": "Peltolantie 1, 01300 VANTAA",
+    "latitude": 60.294025,
+    "longitude": 25.0317839
+  },
+  {
+    "id": "2736",
+    "name": "Alko Varkaus",
+    "address": "Kauppakatu 74, 78200 VARKAUS",
+    "latitude": 62.3151698,
+    "longitude": 27.8748346
+  },
+  {
+    "id": "2179",
+    "name": "Alko Vihti Nummela Citymarket",
+    "address": "Tuusankaari 1, 03100 NUMMELA",
+    "latitude": 60.3325977,
+    "longitude": 24.330335554107315
+  },
+  {
+    "id": "2485",
+    "name": "Alko Viitasaari",
+    "address": "Pappilantie 14, 44500 VIITASAARI",
+    "latitude": 63.07587255,
+    "longitude": 25.8635676037694
+  },
+  {
+    "id": "2436",
+    "name": "Alko Virrat",
+    "address": "Pääskyntie 13, 34800 VIRRAT",
+    "latitude": 62.2410057,
+    "longitude": 23.77943861785714
+  },
+  {
+    "id": "2876",
+    "name": "Alko Ylitornio",
+    "address": "Alkkulanraitti 75, 95600 YLITORNIO",
+    "latitude": 66.3139501,
+    "longitude": 23.668705
+  },
+  {
+    "id": "2804",
+    "name": "Alko Ylivieska",
+    "address": "Savarinkatu 9, 84100 YLIVIESKA",
+    "latitude": 64.06044349999999,
+    "longitude": 24.55715339960387
+  },
+  {
+    "id": "2474",
+    "name": "Alko Ylöjärvi",
+    "address": "Lähdevainiontie 1, 33480 YLÖJÄRVI",
+    "latitude": 61.5644127,
+    "longitude": 23.5952099
+  },
+  {
+    "id": "2273",
+    "name": "Alko Ähtäri",
+    "address": "Oikotie 8, 63700 ÄHTÄRI",
+    "latitude": 62.5500914,
+    "longitude": 24.0865555
+  },
+  {
+    "id": "2455",
+    "name": "Alko Äänekoski Hirvaskangas",
+    "address": "Suonenjoentie 10, 44250 ÄÄNEKOIVISTO",
+    "latitude": 62.5175805,
+    "longitude": 25.6899334
+  },
+  {
+    "id": "2488",
+    "name": "Alko Äänekoski keskusta",
+    "address": "Työskintie 3, 44100 ÄÄNEKOSKI",
+    "latitude": 62.6027005,
+    "longitude": 25.7234852
+  },
+  {
+    "id": "329030",
+    "name": "Noutopiste Ametistikauppa",
+    "address": "Luostontie 4, 99555 LUOSTO",
+    "latitude": 67.1562963,
+    "longitude": 26.9159541
+  },
+  {
+    "id": "334017",
+    "name": "Noutopiste Anssin kauppa",
+    "address": "Miemolantie 8, 36720 AITOO",
+    "latitude": 61.3392554,
+    "longitude": 24.4917554099876
+  },
+  {
+    "id": "272202",
+    "name": "Noutopiste Anttolan Kone ja Urheilu",
+    "address": "Satamatie 10, 52100 ANTTOLA"
+  },
+  {
+    "id": "329028",
+    "name": "Noutopiste Auto- ja konekorjaamo Marjakangas",
+    "address": "Keskustie 15, 85200 ALAVIESKA",
+    "latitude": 64.16544,
+    "longitude": 24.3073694
+  },
+  {
+    "id": "222701",
+    "name": "Noutopiste BMA Miljö",
+    "address": "Kauppamiehentie 6, 21710 KORPPOO",
+    "latitude": 60.1624703,
+    "longitude": 21.5598432
+  },
+  {
+    "id": "217503",
+    "name": "Noutopiste Barösunds Boden",
+    "address": "Valhallantie 20, 10270 BARÖSUND",
+    "latitude": 59.9765504,
+    "longitude": 23.8820889
+  },
+  {
+    "id": "323005",
+    "name": "Noutopiste Brändö Andelshandel",
+    "address": "Brändö by, 22920 BRÄNDÖ"
+  },
+  {
+    "id": "323010",
+    "name": "Noutopiste Café Lasikello",
+    "address": "Lasitehtaantie 5, 31640 HUMPPILA",
+    "latitude": 60.9420338,
+    "longitude": 23.3655464
+  },
+  {
+    "id": "228001",
+    "name": "Noutopiste Café Meteora",
+    "address": "Honkajoentie 14, 64900 ISOJOKI",
+    "latitude": 62.1091045,
+    "longitude": 21.9715016
+  },
+  {
+    "id": "325006",
+    "name": "Noutopiste Café Silja Marie (Seo Monninkylä)",
+    "address": "Meijeritie 2, 07230 MONNINKYLÄ",
+    "latitude": 60.4956965,
+    "longitude": 25.5531852
+  },
+  {
+    "id": "329022",
+    "name": "Noutopiste E. Kotilainen",
+    "address": "Haikolantie 14, 85410 SIEVI",
+    "latitude": 63.9051169,
+    "longitude": 24.5223278
+  },
+  {
+    "id": "325014",
+    "name": "Noutopiste Emäsalon Kyläpuoti",
+    "address": "Emäsalontie 715, 06950 EMÄSALO"
+  },
+  {
+    "id": "334012",
+    "name": "Noutopiste Evijärven Autohuolto",
+    "address": "Voltintie 1, 62500 EVIJÄRVI",
+    "latitude": 63.3621992,
+    "longitude": 23.4514529
+  },
+  {
+    "id": "248301",
+    "name": "Noutopiste Eväspesti Pylkönmäki",
+    "address": "Keskustie 28, 43440 PYLKÖNMÄKI",
+    "latitude": 62.6661515,
+    "longitude": 24.8049603
+  },
+  {
+    "id": "324004",
+    "name": "Noutopiste Fixus Isokyrö",
+    "address": "Pohjankyröntie 139, 61500 ISOKYRÖ",
+    "latitude": 63.000935,
+    "longitude": 22.323248679934746
+  },
+  {
+    "id": "278101",
+    "name": "Noutopiste Haapasaaren Osuuskauppa",
+    "address": "Haapasaari, 48100 KOTKA",
+    "latitude": 60.2883712,
+    "longitude": 27.189956188254722
+  },
+  {
+    "id": "334009",
+    "name": "Noutopiste Herkkujuustola",
+    "address": "Kurvosentie 3, 38420 SASTAMALA",
+    "latitude": 61.5012967,
+    "longitude": 23.0860946
+  },
+  {
+    "id": "281503",
+    "name": "Noutopiste Hilakivi",
+    "address": "Asematie 11, 86400 VIHANTI",
+    "latitude": 64.4862127,
+    "longitude": 24.9916187
+  },
+  {
+    "id": "328037",
+    "name": "Noutopiste Hotelli-Ravintola Tiilikka",
+    "address": "Kuusitie 2, 73900 RAUTAVAARA",
+    "latitude": 63.491224,
+    "longitude": 28.2977702
+  },
+  {
+    "id": "323013",
+    "name": "Noutopiste Hugo Andersson",
+    "address": "Mörbyvägen 1, 22240 HAMMARLAND",
+    "latitude": 60.2227382,
+    "longitude": 19.7111188
+  },
+  {
+    "id": "280801",
+    "name": "Noutopiste Huoltoasema Mäkelä",
+    "address": "Urheilutie 4, 92500 RANTSILA",
+    "latitude": 64.506551,
+    "longitude": 25.6564487
+  },
+  {
+    "id": "328012",
+    "name": "Noutopiste IT-Lähituki",
+    "address": "Roihankatu 12-14, 56800 SIMPELE",
+    "latitude": 61.4324072,
+    "longitude": 29.3530449
+  },
+  {
+    "id": "323016",
+    "name": "Noutopiste Iniö Lanthandel",
+    "address": "Norrby Hamn 9, 23390 INIÖ",
+    "latitude": 60.3965369,
+    "longitude": 21.3886921
+  },
+  {
+    "id": "329023",
+    "name": "Noutopiste Jarmix",
+    "address": "Perhontie 11, 69510 HALSUA",
+    "latitude": 63.4615864,
+    "longitude": 24.170256631672295
+  },
+  {
+    "id": "280102",
+    "name": "Noutopiste JiiPeen valinta",
+    "address": "Poikkitie 19, 69410 SYKÄRÄINEN",
+    "latitude": 63.6165438,
+    "longitude": 24.407451554091445
+  },
+  {
+    "id": "225102",
+    "name": "Noutopiste K-Market Ahlainen",
+    "address": "Ahlaistentie 658, 29700 AHLAINEN",
+    "latitude": 61.6706395,
+    "longitude": 21.6436419
+  },
+  {
+    "id": "288004",
+    "name": "Noutopiste K-Market Eelin Kauppa",
+    "address": "Tirroniementie 1, 95980 YLLÄSJÄRVI",
+    "latitude": 67.52442985,
+    "longitude": 24.305387347956092
+  },
+  {
+    "id": "332012",
+    "name": "Noutopiste K-Market Fiskars",
+    "address": "Fiskarsintie 34, 10470 FISKARI",
+    "latitude": 60.1296064,
+    "longitude": 23.5422293
+  },
+  {
+    "id": "323004",
+    "name": "Noutopiste K-Market Föglöbutiken",
+    "address": "Tingsvägen 6, 22710 FÖGLÖ",
+    "latitude": 60.0327384,
+    "longitude": 20.3921518
+  },
+  {
+    "id": "329027",
+    "name": "Noutopiste K-Market Hailuoto",
+    "address": "Luovontie 150, 90480 HAILUOTO",
+    "latitude": 65.0139435,
+    "longitude": 24.7313983
+  },
+  {
+    "id": "332002",
+    "name": "Noutopiste K-Market Honkajoki",
+    "address": "Karviantie 2, 38950 HONKAJOKI",
+    "latitude": 61.9929858,
+    "longitude": 22.2730091
+  },
+  {
+    "id": "285902",
+    "name": "Noutopiste K-Market Jokitori",
+    "address": "Vanttausjärventie 7, 97625 VANTTAUSKOSKI",
+    "latitude": 66.3772213,
+    "longitude": 26.6813202
+  },
+  {
+    "id": "332005",
+    "name": "Noutopiste K-Market Jämijärvi",
+    "address": "Jämijärventie 23, 38800 JÄMIJÄRVI",
+    "latitude": 61.8220156,
+    "longitude": 22.6862127
+  },
+  {
+    "id": "248403",
+    "name": "Noutopiste K-Market Kannontori",
+    "address": "Leppälänkyläntie 15, 43300 KANNONKOSKI",
+    "latitude": 62.97747115,
+    "longitude": 25.265782950000002
+  },
+  {
+    "id": "328036",
+    "name": "Noutopiste K-Market Korpilahti",
+    "address": "Korpilahdentie 13, 41800 KORPILAHTI",
+    "latitude": 62.0153353,
+    "longitude": 25.560721
+  },
+  {
+    "id": "328021",
+    "name": "Noutopiste K-Market Kruunu",
+    "address": "Kuusitie 2, 58500 PUNKAHARJU",
+    "latitude": 61.75495815,
+    "longitude": 29.392520124561706
+  },
+  {
+    "id": "325010",
+    "name": "Noutopiste K-Market Kuninkaanherkku",
+    "address": "Suurpellontie 2, 07700 KOSKENKYLÄN SAHA"
+  },
+  {
+    "id": "328032",
+    "name": "Noutopiste K-Market Lohiranta",
+    "address": "Myllytie 1, 72210 TERVO",
+    "latitude": 62.9558393,
+    "longitude": 26.7593213
+  },
+  {
+    "id": "229104",
+    "name": "Noutopiste K-Market Maalahti",
+    "address": "Viaksentie 99, 66140 ÖVERMALAX"
+  },
+  {
+    "id": "246504",
+    "name": "Noutopiste K-Market Narva",
+    "address": "Tuulikalliontie 47, 37370 NARVA",
+    "latitude": 61.2949399,
+    "longitude": 23.5040952
+  },
+  {
+    "id": "328034",
+    "name": "Noutopiste K-Market Perälä",
+    "address": "Toivakantie 30, 41660 TOIVAKKA",
+    "latitude": 62.095642,
+    "longitude": 26.0787487
+  },
+  {
+    "id": "332003",
+    "name": "Noutopiste K-Market Pomeranssi",
+    "address": "Vanhatie 28, 29630 POMARKKU",
+    "latitude": 61.697994050000005,
+    "longitude": 22.012328031158333
+  },
+  {
+    "id": "328024",
+    "name": "Noutopiste K-Market Porkkana",
+    "address": "Asematie 8, 41900 PETÄJÄVESI",
+    "latitude": 62.256177,
+    "longitude": 25.1870863
+  },
+  {
+    "id": "285303",
+    "name": "Noutopiste K-Market Pyhäntähti",
+    "address": "Kultakeronkatu 4, 98530 PYHÄTUNTURI",
+    "latitude": 67.0185744,
+    "longitude": 27.2506168
+  },
+  {
+    "id": "328038",
+    "name": "Noutopiste K-Market Riistaherkku",
+    "address": "Keskustie 15, 71160 RIISTAVESI",
+    "latitude": 62.91401015,
+    "longitude": 28.15868707140443
+  },
+  {
+    "id": "323019",
+    "name": "Noutopiste K-Market Sauvo",
+    "address": "Timperintie 1, 21570 SAUVO",
+    "latitude": 60.3414477,
+    "longitude": 22.68695530426782
+  },
+  {
+    "id": "328040",
+    "name": "Noutopiste K-Market Tiilikainen",
+    "address": "Kauppakatu 6, 82600 TOHMAJÄRVI",
+    "latitude": 62.2252442,
+    "longitude": 30.3309429
+  },
+  {
+    "id": "227701",
+    "name": "Noutopiste K-Market Veto",
+    "address": "Patruunantie 10 A, 62800 VIMPELI",
+    "latitude": 63.1594248,
+    "longitude": 23.8261698
+  },
+  {
+    "id": "328033",
+    "name": "Noutopiste K-Market Vilja",
+    "address": "Kenraalintie 9, 42300 JÄMSÄNKOSKI",
+    "latitude": 61.9189798,
+    "longitude": 25.1689426
+  },
+  {
+    "id": "334014",
+    "name": "Noutopiste K-Market Vöyri",
+    "address": "Vöyrintie 6 B, 66600 VÖYRI",
+    "latitude": 63.12984815,
+    "longitude": 22.250521313811944
+  },
+  {
+    "id": "323014",
+    "name": "Noutopiste K-Supermarket Mattssons",
+    "address": "Von Knorringsväg 2, 22410 GODBY"
+  },
+  {
+    "id": "329026",
+    "name": "Noutopiste K-market Simontori",
+    "address": "Ratatie 1, 95200 SIMO",
+    "latitude": 65.6624282,
+    "longitude": 25.0578852
+  },
+  {
+    "id": "329029",
+    "name": "Noutopiste K-market Utajärvi",
+    "address": "Vanhatie 52, 91600 UTAJÄRVI",
+    "latitude": 64.7587952,
+    "longitude": 26.4225528
+  },
+  {
+    "id": "285110",
+    "name": "Noutopiste Kaamasen kievari",
+    "address": "Kaamasentie 2855, 99910 KAAMANEN",
+    "latitude": 69.1030558,
+    "longitude": 27.1954602
+  },
+  {
+    "id": "328015",
+    "name": "Noutopiste Kahvila Savanni",
+    "address": "Keskustie 33, 42600 MULTIA",
+    "latitude": 62.4095144,
+    "longitude": 24.7991195
+  },
+  {
+    "id": "334016",
+    "name": "Noutopiste Karijoen Kurjenkello",
+    "address": "Palkkamäentie 1, 64350 KARIJOKI",
+    "latitude": 62.3088649,
+    "longitude": 21.7075219
+  },
+  {
+    "id": "278102",
+    "name": "Noutopiste Kaunissaaren kauppa",
+    "address": "Kaunissaari, 48100 KOTKA",
+    "latitude": 60.362347,
+    "longitude": 26.7792344
+  },
+  {
+    "id": "329021",
+    "name": "Noutopiste Kieringin lomakylä",
+    "address": "Tuirantie 4, 97390 KIERINKI"
+  },
+  {
+    "id": "334015",
+    "name": "Noutopiste Killinjätti",
+    "address": "Inkantie 47, 34980 KILLINKOSKI",
+    "latitude": 62.401353,
+    "longitude": 23.8902354
+  },
+  {
+    "id": "280101",
+    "name": "Noutopiste Kinnulan Parlamentti",
+    "address": "Jääjoentie 31, 43900 KINNULA",
+    "latitude": 63.3701348,
+    "longitude": 24.9746938
+  },
+  {
+    "id": "248402",
+    "name": "Noutopiste Kivijärven Grilli-Kahvio",
+    "address": "Keskustie 27, 43800 KIVIJÄRVI",
+    "latitude": 63.1198791,
+    "longitude": 25.0789722
+  },
+  {
+    "id": "328026",
+    "name": "Noutopiste Kouvon Baari",
+    "address": "Iitiäntie 4, 54710 LEMI",
+    "latitude": 61.0620856,
+    "longitude": 27.8091322
+  },
+  {
+    "id": "334006",
+    "name": "Noutopiste Krono Järn",
+    "address": "Rantatie 2, 68500 KRUUNUPYY",
+    "latitude": 63.7278625,
+    "longitude": 23.0379662
+  },
+  {
+    "id": "328006",
+    "name": "Noutopiste Kukka- ja sekatavarapuoti",
+    "address": "Enonkoskentie 7 T, 58175 ENONKOSKI",
+    "latitude": 62.0926268,
+    "longitude": 28.9361683
+  },
+  {
+    "id": "220502",
+    "name": "Noutopiste Kukkapuoti Vilhelmiina",
+    "address": "Ihattulantie 2 B, 23310 TAIVASSALO",
+    "latitude": 60.5607879,
+    "longitude": 21.6216305
+  },
+  {
+    "id": "323006",
+    "name": "Noutopiste Kumlinge Andelshandel",
+    "address": "Kumlingevägen 386, 22820 KUMLINGE",
+    "latitude": 60.2566287,
+    "longitude": 20.7380006
+  },
+  {
+    "id": "227204",
+    "name": "Noutopiste Kuortaneen Kirjakauppa",
+    "address": "Keskustie 30, 63100 KUORTANE",
+    "latitude": 62.8067891,
+    "longitude": 23.5069094
+  },
+  {
+    "id": "332011",
+    "name": "Noutopiste Kyrön Kulta-Kello",
+    "address": "Kyröntie 35, 21800 KYRÖ",
+    "latitude": 60.7045977,
+    "longitude": 22.7530998
+  },
+  {
+    "id": "323008",
+    "name": "Noutopiste Kökar Skärgårdsbutik",
+    "address": "Karlby, 22730 Kökar, 22730 KÖKAR",
+    "latitude": 59.9213364,
+    "longitude": 20.9091183
+  },
+  {
+    "id": "323003",
+    "name": "Noutopiste Lappo Handelslag",
+    "address": "Lappo by, 22840 LAPPO"
+  },
+  {
+    "id": "323021",
+    "name": "Noutopiste Letkun Puoti",
+    "address": "Härkätie 341, 31380 LETKU",
+    "latitude": 60.6989011,
+    "longitude": 23.722491631957865
+  },
+  {
+    "id": "328028",
+    "name": "Noutopiste Lounaskahvila Puulanaitta",
+    "address": "Kangastie 2, 52550 HIRVENSALMI",
+    "latitude": 61.6527886,
+    "longitude": 26.7703896
+  },
+  {
+    "id": "328030",
+    "name": "Noutopiste Lounaskahvila Sara",
+    "address": "Kolmitähkäntie 3, 58300 SAVONRANTA",
+    "latitude": 62.17341935,
+    "longitude": 29.208098850000013
+  },
+  {
+    "id": "323001",
+    "name": "Noutopiste M-Market Houtskär",
+    "address": "Näsbyvägen 178, 21760 HOUTSKÄR",
+    "latitude": 60.2231893,
+    "longitude": 21.3661641
+  },
+  {
+    "id": "328007",
+    "name": "Noutopiste M-Market Luhanka",
+    "address": "Rantatie 1, 19950 LUHANKA",
+    "latitude": 61.7961914,
+    "longitude": 25.7048801
+  },
+  {
+    "id": "328025",
+    "name": "Noutopiste M-Market Sukeva",
+    "address": "Sukevantie 16, 74340 SUKEVA",
+    "latitude": 63.8689273,
+    "longitude": 27.4404179
+  },
+  {
+    "id": "332007",
+    "name": "Noutopiste Matboden i Lumparland",
+    "address": "Lumpovägen 22, 22630 LUMPARLAND",
+    "latitude": 60.1214064,
+    "longitude": 20.2460822
+  },
+  {
+    "id": "323025",
+    "name": "Noutopiste Metsäkonehuolto Kähkönen",
+    "address": "Varjuksentie 217, 29250 NAKKILA",
+    "latitude": 61.3942325,
+    "longitude": 22.0430002
+  },
+  {
+    "id": "323009",
+    "name": "Noutopiste Mimosan Kukka",
+    "address": "Maskuntie 224, 21250 MASKU",
+    "latitude": 60.5460615,
+    "longitude": 22.1175751
+  },
+  {
+    "id": "328018",
+    "name": "Noutopiste Monimesta",
+    "address": "Kesälahdentie 37, 59800 KESÄLAHTI",
+    "latitude": 61.8897447,
+    "longitude": 29.8148933
+  },
+  {
+    "id": "325008",
+    "name": "Noutopiste Myrskylän Savu",
+    "address": "Kylänpääntie 45, 07600 MYRSKYLÄ",
+    "latitude": 60.660456,
+    "longitude": 25.8450757
+  },
+  {
+    "id": "329031",
+    "name": "Noutopiste Neste Inari",
+    "address": "Menesjärventie 1, 99870 INARI",
+    "latitude": 68.9048088,
+    "longitude": 27.0062392
+  },
+  {
+    "id": "226004",
+    "name": "Noutopiste Neste Karvia",
+    "address": "Ylä-Satakunnantie 12, 39930 KARVIA",
+    "latitude": 62.1325393,
+    "longitude": 22.5590531
+  },
+  {
+    "id": "334010",
+    "name": "Noutopiste Neste Lillby",
+    "address": "Lillbyvägen 161, 68940 LILLBY",
+    "latitude": 63.4793511,
+    "longitude": 23.008377
+  },
+  {
+    "id": "275602",
+    "name": "Noutopiste Neste Rautalampi",
+    "address": "Jyväskyläntie 12, 77700 RAUTALAMPI",
+    "latitude": 62.6259433,
+    "longitude": 26.8182872
+  },
+  {
+    "id": "285109",
+    "name": "Noutopiste Nord1Market",
+    "address": "Sevettijärventie 12206, 99940 NÄÄTÄMÖ",
+    "latitude": 69.6635911,
+    "longitude": 29.100026
+  },
+  {
+    "id": "323024",
+    "name": "Noutopiste Nötöboden",
+    "address": "Nötö 1, 21680 NÖTÖ",
+    "latitude": 36.893352,
+    "longitude": 15.0710944
+  },
+  {
+    "id": "328014",
+    "name": "Noutopiste Pekan Kone ja TV",
+    "address": "Yhdystie 2 a, 83700 POLVIJÄRVI",
+    "latitude": 62.8543321,
+    "longitude": 29.3647419
+  },
+  {
+    "id": "334000",
+    "name": "Noutopiste Pias Livs",
+    "address": "Näsvägen 2, 68560 LUOTO",
+    "latitude": 63.8058842,
+    "longitude": 22.7803097
+  },
+  {
+    "id": "328029",
+    "name": "Noutopiste Pienen Traktorin Puoti",
+    "address": "Rantatie 2, 73460 MUURUVESI",
+    "latitude": 63.0121625,
+    "longitude": 28.2110635
+  },
+  {
+    "id": "270101",
+    "name": "Noutopiste Pirana",
+    "address": "Virastotie 2 B, 82730 TUUPOVAARA",
+    "latitude": 62.4841623,
+    "longitude": 30.6140294
+  },
+  {
+    "id": "323018",
+    "name": "Noutopiste Pohojanportti",
+    "address": "Moisiontie 2, 21270 NOUSIAINEN",
+    "latitude": 60.59938365,
+    "longitude": 22.08263627352119
+  },
+  {
+    "id": "334008",
+    "name": "Noutopiste Pälkäneen Aapiskukko",
+    "address": "Tervapirtintie 7, 36600 PÄLKÄNE",
+    "latitude": 61.3459271,
+    "longitude": 24.2598505
+  },
+  {
+    "id": "201201",
+    "name": "Noutopiste Rantakulman Kahvila-ravintola ja suoramyynti",
+    "address": "Asematie 4, 72600 KEITELE",
+    "latitude": 63.1800169,
+    "longitude": 26.3500505
+  },
+  {
+    "id": "325001",
+    "name": "Noutopiste Rauta-Järn Österholm",
+    "address": "Lapinjärventie 14, 07800 LAPINJÄRVI",
+    "latitude": 60.6235353,
+    "longitude": 26.199126
+  },
+  {
+    "id": "324002",
+    "name": "Noutopiste Rauta-Maatalous Oiva Takala",
+    "address": "Alajärventie 13,, 63800 SOINI",
+    "latitude": 62.8749576,
+    "longitude": 24.2028442904259
+  },
+  {
+    "id": "328008",
+    "name": "Noutopiste Rautanet Konnevesi",
+    "address": "Vainiontie 2, 44300 KONNEVESI",
+    "latitude": 62.6245557,
+    "longitude": 26.2914202
+  },
+  {
+    "id": "328035",
+    "name": "Noutopiste Ravintola Liiteri",
+    "address": "Huoltotie 2, 74200 VIEREMÄ",
+    "latitude": 63.7422154,
+    "longitude": 27.0012148
+  },
+  {
+    "id": "325013",
+    "name": "Noutopiste Ravintola Olkkari Oy",
+    "address": "Keskustie 19, 07560 PUKKILA",
+    "latitude": 60.6397966,
+    "longitude": 25.5870559
+  },
+  {
+    "id": "328013",
+    "name": "Noutopiste Ruokolahden Rakennustarvike",
+    "address": "Rasilantie 38-40, 56100 RUOKOLAHTI",
+    "latitude": 61.3001906,
+    "longitude": 28.8178181
+  },
+  {
+    "id": "225104",
+    "name": "Noutopiste S-Market Luvia",
+    "address": "Lukkarilantie 1, 29100 LUVIA",
+    "latitude": 61.35976435,
+    "longitude": 21.623152670495784
+  },
+  {
+    "id": "281502",
+    "name": "Noutopiste S-Market Pyhäjoki",
+    "address": "Kokkolantie 53, 86100 PYHÄJOKI"
+  },
+  {
+    "id": "328039",
+    "name": "Noutopiste Sale Hurissalo",
+    "address": "Hurissalontie 188, 52230 HURISSALO",
+    "latitude": 61.4868308,
+    "longitude": 27.8513925
+  },
+  {
+    "id": "328041",
+    "name": "Noutopiste Sale Koli",
+    "address": "Kolintie 94, 83960 KOLI",
+    "latitude": 63.1133805,
+    "longitude": 29.7765479
+  },
+  {
+    "id": "226501",
+    "name": "Noutopiste Sale Pyhäranta",
+    "address": "Pajamäentie 3, 23950 PYHÄRANTA",
+    "latitude": 60.9505578,
+    "longitude": 21.4419856
+  },
+  {
+    "id": "285310",
+    "name": "Noutopiste Sale Savukoski",
+    "address": "Uittotie 1, 98800 SAVUKOSKI",
+    "latitude": 67.29223759999999,
+    "longitude": 28.15729030483874
+  },
+  {
+    "id": "286503",
+    "name": "Noutopiste Sale Tervola",
+    "address": "Kurjentie 1, 95300 TERVOLA",
+    "latitude": 66.0913762,
+    "longitude": 24.8140214
+  },
+  {
+    "id": "325011",
+    "name": "Noutopiste Sale Vierumäki",
+    "address": "Vääksyntie 5, 19110 VIERUMÄKI",
+    "latitude": 61.109363200000004,
+    "longitude": 25.93110213976211
+  },
+  {
+    "id": "323022",
+    "name": "Noutopiste Sale Ypäjä",
+    "address": "Perttulantie 2, 32100 YPÄJÄ",
+    "latitude": 60.8037112,
+    "longitude": 23.2807516
+  },
+  {
+    "id": "332006",
+    "name": "Noutopiste Sandis Saaristokauppa ja -kahvila",
+    "address": "Sandnäsuddintie 372, 10600 TAMMISAARI"
+  },
+  {
+    "id": "325002",
+    "name": "Noutopiste Sarina Kulma",
+    "address": "Kirkkotie 175 A4, 07170 PORNAINEN",
+    "latitude": 60.4852905,
+    "longitude": 25.3675011
+  },
+  {
+    "id": "328004",
+    "name": "Noutopiste Sawon Novas Rakennustarvikemyymälä",
+    "address": "Keskitie 12, 71200 TUUSNIEMI",
+    "latitude": 62.8148773,
+    "longitude": 28.4842518
+  },
+  {
+    "id": "323020",
+    "name": "Noutopiste Seglinge Andelshandel",
+    "address": "Seglinge, 22810 SEGLINGE",
+    "latitude": 60.2151558,
+    "longitude": 20.7100328
+  },
+  {
+    "id": "217701",
+    "name": "Noutopiste Seo Karjalohja",
+    "address": "Keskustie 57, 09120 KARJALOHJA",
+    "latitude": 60.2440977,
+    "longitude": 23.7310763
+  },
+  {
+    "id": "282501",
+    "name": "Noutopiste Seo Otanmäki Keisarin Kievari",
+    "address": "Vuorimiehentie 2, 88200 OTANMÄKI",
+    "latitude": 64.111048,
+    "longitude": 27.1047274
+  },
+  {
+    "id": "285305",
+    "name": "Noutopiste Seo Pelkosenniemi",
+    "address": "Sodankyläntie 9, 98500 PELKOSENNIEMI",
+    "latitude": 67.10958345,
+    "longitude": 27.516891325573198
+  },
+  {
+    "id": "332008",
+    "name": "Noutopiste Siikaisten huoltoasema",
+    "address": "Tuorilantie 11, 29810 SIIKAINEN",
+    "latitude": 61.8711824,
+    "longitude": 21.754675
+  },
+  {
+    "id": "332009",
+    "name": "Noutopiste Skafferi Ett",
+    "address": "Bromarvvägen 1855, 10570 BROMARV",
+    "latitude": 59.9887945,
+    "longitude": 23.0327243
+  },
+  {
+    "id": "323011",
+    "name": "Noutopiste Sottunga Andelshandel",
+    "address": "Sottunga by, 22720 SOTTUNGA"
+  },
+  {
+    "id": "329025",
+    "name": "Noutopiste Syötekylän kauppa",
+    "address": "Syötekyläntie 1257, 93280 SYÖTE",
+    "latitude": 65.6307043,
+    "longitude": 27.6509404
+  },
+  {
+    "id": "325009",
+    "name": "Noutopiste Söderby-Boden",
+    "address": "Vanha Söderbyntie 44, 07390 SUURPELLINKI",
+    "latitude": 60.2111278,
+    "longitude": 25.8532361
+  },
+  {
+    "id": "334005",
+    "name": "Noutopiste Södra Vallgrund Handelslag",
+    "address": "Sommarösundvägen 263, 65930 SÖDRA VALLGRUND",
+    "latitude": 63.1699854,
+    "longitude": 21.2680475
+  },
+  {
+    "id": "328011",
+    "name": "Noutopiste Tahko Spa",
+    "address": "Keitaankatu 1, 73310 TAHKOVUORI"
+  },
+  {
+    "id": "328005",
+    "name": "Noutopiste Taipalsaari Saimaanharjun PC",
+    "address": "Kuhatie 12-14, 54915 SAIMAANHARJU",
+    "latitude": 61.13633505,
+    "longitude": 28.10186096648942
+  },
+  {
+    "id": "332004",
+    "name": "Noutopiste Taukopaikka Lahnajärvi",
+    "address": "Helsingintie 3276, 25420 LAHNAJÄRVI",
+    "latitude": 60.372796750000006,
+    "longitude": 23.700356779211596
+  },
+  {
+    "id": "328022",
+    "name": "Noutopiste Teboil Joroinen",
+    "address": "Kuopiontie 66, 79600 JOROINEN",
+    "latitude": 62.1924529,
+    "longitude": 27.8470532
+  },
+  {
+    "id": "281501",
+    "name": "Noutopiste Teboil Siikajoki Ruukki",
+    "address": "Pekkalantie 1, 92400 RUUKKI",
+    "latitude": 64.6505779,
+    "longitude": 25.1152964
+  },
+  {
+    "id": "328002",
+    "name": "Noutopiste Teboil Vesanto",
+    "address": "Keskustie 23, 72300 VESANTO",
+    "latitude": 62.9305095,
+    "longitude": 26.4105015
+  },
+  {
+    "id": "222101",
+    "name": "Noutopiste Tee Tee Palvelut",
+    "address": "Vinkkiläntie 20, 23200 VINKKILÄ",
+    "latitude": 60.6868725,
+    "longitude": 21.7158562
+  },
+  {
+    "id": "332013",
+    "name": "Noutopiste Teijon Kyläkauppa",
+    "address": "Teijontie 67, 25570 TEIJO",
+    "latitude": 60.2538621,
+    "longitude": 22.9561998
+  },
+  {
+    "id": "332010",
+    "name": "Noutopiste Tiiranta",
+    "address": "Tiirantie 1, 25630 SÄRKISALO",
+    "latitude": 60.114645,
+    "longitude": 22.953701
+  },
+  {
+    "id": "219005",
+    "name": "Noutopiste Tirmon Saaristokeskus",
+    "address": "Tirmontie 611, 07360 TIRMO",
+    "latitude": 60.24669925,
+    "longitude": 25.897298935383468
+  },
+  {
+    "id": "217702",
+    "name": "Noutopiste Tonin kioski",
+    "address": "Siuntiontie 504, 02580 SIUNTIO",
+    "latitude": 60.1381282,
+    "longitude": 24.226392954103872
+  },
+  {
+    "id": "332001",
+    "name": "Noutopiste Utö Handel",
+    "address": "Utö Byväg 31, 21740 UTÖ"
+  },
+  {
+    "id": "328031",
+    "name": "Noutopiste Uukuniemen kyläkauppa",
+    "address": "Niukkalantie 1465, 59720 UUKUNIEMI"
+  },
+  {
+    "id": "285107",
+    "name": "Noutopiste Uulan Säästö",
+    "address": "Utsjoentie 1, 99980 UTSJOKI",
+    "latitude": 69.8084104,
+    "longitude": 27.0044293
+  },
+  {
+    "id": "325003",
+    "name": "Noutopiste VAn kyläpuoti",
+    "address": "Uudensillantie 2 A1, 49760 SUUR-MIEHIKKÄLÄ"
+  },
+  {
+    "id": "334013",
+    "name": "Noutopiste VKV Service",
+    "address": "Kärjentie 3, 61100 PERÄSEINÄJOKI",
+    "latitude": 62.5606554,
+    "longitude": 23.0635105
+  },
+  {
+    "id": "325004",
+    "name": "Noutopiste Veikon Kone Virolahti",
+    "address": "Itätie 5, 49900 VIROLAHTI",
+    "latitude": 60.5843339,
+    "longitude": 27.7155497
+  },
+  {
+    "id": "325007",
+    "name": "Noutopiste Vuolenkosken kyläkauppa",
+    "address": "Vuolenkoskentie 1471, 19160 HUUTOTÖYRY",
+    "latitude": 61.083303900000004,
+    "longitude": 26.17898660795239
+  },
+  {
+    "id": "323002",
+    "name": "Noutopiste Vårdö Närbutik Ab",
+    "address": "Drottning Kristinas gata 19, 22550 VÅRDÖ",
+    "latitude": 60.2461597,
+    "longitude": 20.3504863
+  },
+  {
+    "id": "328027",
+    "name": "Noutopiste Wanha Osula",
+    "address": "Keskustie 72, 51600 HAUKIVUORI",
+    "latitude": 62.0236461,
+    "longitude": 27.205871093454107
+  },
+  {
+    "id": "227202",
+    "name": "Noutopiste Ylistaron Kirjakauppa",
+    "address": "Kaukolanraitti 40, 61400 YLISTARO",
+    "latitude": 62.940456,
+    "longitude": 22.5163656
+  },
+  {
+    "id": "280201",
+    "name": "Noutopiste Yppärin Autohuolto",
+    "address": "Kokkolantie 1116, 86170 YPPÄRI"
+  }
+]
