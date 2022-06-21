@@ -1,4 +1,5 @@
 import csv
+import os
 import datetime
 from ..scrape_huttunen import ScrapeHuttunen
 
@@ -15,8 +16,11 @@ def count_average(amount):
     return sum([int(value) for value in amount.split('-')]) / 2
 
 
-def skip_statistics():
-    with open(STATISTICS_FILE, 'r') as csvfile:
+def skip_statistics(filepath):
+    if not os.path.isfile(filepath):
+        return False
+
+    with open(filepath, 'r') as csvfile:
         lines = csvfile.readlines()
         if not lines:
             return False
@@ -28,14 +32,14 @@ def skip_statistics():
         return False
 
 
-def run_statistics():
-    if skip_statistics():
+def run_statistics(filepath):
+    if skip_statistics(filepath):
         return
 
     scraper = ScrapeHuttunen()
     huttuset = scraper.how_much_huttunen()
 
-    with open(STATISTICS_FILE, 'a') as csvfile:
+    with open(filepath, 'a') as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=DELIMITER)
 
         for store in huttuset:
@@ -47,4 +51,4 @@ def run_statistics():
 
 
 if __name__ == '__main__':
-    run_statistics()
+    run_statistics(STATISTICS_FILE)
