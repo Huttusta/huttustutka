@@ -2,7 +2,7 @@ import re
 import json
 from flask import url_for
 
-
+ALKO_COORDINATES_PATH = 'static/alko_coordinates.json'
 HUTTUSUKOT = [
     "huttusukko10.png",
     "huttusukko20.png",
@@ -12,12 +12,9 @@ HUTTUSUKOT = [
 ]
 TRESHOLDS = [5, 10, 30, 50]
 
-with open('static/alko_coordinates.json', 'r') as f:
-    ALKO_COORDINATES = json.load(f)
 
-
-def find_store_with_coordinates(store_id):
-    for store in ALKO_COORDINATES:
+def find_store_with_coordinates(store_id, coordinates):
+    for store in coordinates:
         if store['id'] == store_id:
             return store
 
@@ -25,10 +22,13 @@ def find_store_with_coordinates(store_id):
 
 
 def check_huttunen(huttuset):
+    with open(ALKO_COORDINATES_PATH, 'r') as f:
+        alko_coordinates = json.load(f)
+
     res = []
 
     for h in huttuset:
-        store = find_store_with_coordinates(h['id'])
+        store = find_store_with_coordinates(h['id'], alko_coordinates)
 
         if not store or 'latitude' not in store:
             continue

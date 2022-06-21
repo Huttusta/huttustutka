@@ -7,7 +7,7 @@ class ScrapeHuttunen():
 
     def __init__(self):
         huttunen_id = '003732'
-        self.url = f'https://www.alko.fi/INTERSHOP/web/WFS/Alko-OnlineShop-Site/fi_FI/-/EUR/ViewProduct-Include?SKU={huttunen_id}'
+        self.url = 'https://www.alko.fi/INTERSHOP/web/WFS/Alko-OnlineShop-Site/fi_FI/-/EUR/ViewProduct-Include?SKU=' + huttunen_id
 
     def how_much_huttunen(self):
         response = requests.get(self.url)
@@ -23,7 +23,6 @@ class ScrapeHuttunen():
             data = store.find_all('span')
             stores.append({
                 'id': store_id,
-                # 'name': data[0].text,
                 'amount': data[1].text,
             })
 
