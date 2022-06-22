@@ -3,6 +3,8 @@ import json
 from flask import url_for
 
 ALKO_COORDINATES_PATH = 'static/alko_coordinates.json'
+PRODUCTS_PATH = 'static/alko_products.json'
+
 HUTTUSUKOT = [
     "huttusukko10.png",
     "huttusukko20.png",
@@ -58,3 +60,8 @@ def check_huttunen(huttuset):
         })
 
     return res
+
+
+def get_products():
+    with open(PRODUCTS_PATH, 'r') as f:
+        return json.load(f)

@@ -5,12 +5,19 @@ import requests
 
 class ScrapeHuttunen():
 
-    def __init__(self):
-        huttunen_id = '003732'
-        self.url = 'https://www.alko.fi/INTERSHOP/web/WFS/Alko-OnlineShop-Site/fi_FI/-/EUR/ViewProduct-Include?SKU=' + huttunen_id
 
-    def how_much_huttunen(self):
-        response = requests.get(self.url)
+    def __init__(self):
+        self.domain = 'https://www.alko.fi/'
+        self.product_path = 'INTERSHOP/web/WFS/Alko-OnlineShop-Site/fi_FI/-/EUR/ViewProduct-Include?SKU='
+
+
+    def product_url(self, product_id):
+        return f'{self.domain}{self.product_path}{product_id}'
+
+
+    def how_much_huttunen(self, product_id):
+
+        response = requests.get(self.product_url(product_id))
         response.raise_for_status()
 
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -27,8 +34,3 @@ class ScrapeHuttunen():
             })
 
         return stores
-
-
-scraper = ScrapeHuttunen()
-
-scraper.how_much_huttunen()

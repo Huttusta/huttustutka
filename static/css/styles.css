@@ -1,0 +1,15 @@
+.div-select-huttunen {
+  position: absolute;
+  top: 80;
+  left: 20;
+  height: 5%;
+  max-width: 80%;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  overflow-x: hidden;
+}
+
+#select-huttunen {
+  display: block;
+}

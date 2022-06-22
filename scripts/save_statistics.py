@@ -1,7 +1,7 @@
 import csv
 import os
 import datetime
-from ..scrape_huttunen import ScrapeHuttunen
+from huttustutka.scrape_huttunen import ScrapeHuttunen
 
 STATISTICS_FILE = 'static/huttusstatistics.csv'
 DELIMITER = ','
