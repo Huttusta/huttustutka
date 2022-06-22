@@ -1,0 +1,44 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: huttustutka-https
+  namespace: huttustutka
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: "Host(`huttusta.rotta.gt`)"
+      kind: Rule
+      services:
+        - name: huttustutka
+          port: 5000
+  tls:
+    secretName: huttusta-rotta-gt-cert-secret
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: huttustutka
+  namespace: huttustutka
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: "Host(`huttusta.rotta.gt`)"
+      kind: Rule
+      priority: 1
+      services:
+        - name: huttustutka
+          port: 5000
+      middlewares:
+        - name: https-redirect
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: https-redirect
+  namespace: huttustutka
+spec:
+  redirectScheme:
+    scheme: https
+    permanent: true

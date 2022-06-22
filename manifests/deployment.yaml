@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: huttustutka
+  namespace: huttustutka
+spec:
+  selector:
+    matchLabels:
+      app: huttustutka
+  template:
+    metadata:
+      labels:
+        app: huttustutka
+    spec:
+      containers:
+        - name: huttustutka
+          image: jvaalto/huttustutka:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+          env:
+            - name: GOOGLE_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: api-key
+                  key: key
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: huttustutka
+  namespace: huttustutka
+spec:
+  ports:
+    - name: http
+      port: 5000
+  selector:
+    app: huttustutka
