@@ -16,6 +16,9 @@ spec:
         - name: huttustutka
           image: jvaalto/huttustutka:latest
           imagePullPolicy: Always
+          volumeMounts:
+            - mountPath: /app/stats
+              name: json-volume
           ports:
             - containerPort: 5000
           env:
@@ -24,6 +27,10 @@ spec:
                 secretKeyRef:
                   name: api-key
                   key: key
+      volumes:
+        - name: json-volume
+          persistentVolumeClaim:
+            claimName: huttustutka-pvc
 ---
 apiVersion: v1
 kind: Service

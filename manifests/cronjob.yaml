@@ -1,0 +1,24 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: stat-updater
+  namespace: huttustutka
+spec:
+  schedule: "@weekly"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: huttustutka
+              image: jvaalto/huttustutka:latest
+              imagePullPolicy: Always
+              volumeMounts:
+                - mountPath: /app/static/stats
+                  name: json-volume
+              command: ["python3", "-m", "huttustutka.scripts.save_statistics"]
+          volumes:
+            - name: json-volume
+              persistentVolumeClaim:
+                claimName: huttustutka-pvc
+          restartPolicy: OnFailure
