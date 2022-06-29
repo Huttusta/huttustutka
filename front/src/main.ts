@@ -10,7 +10,7 @@ import {
 const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 const MAP_ID = "map";
 const APP_ID = "app";
-const API_URL = "http://localhost:5000";
+const API_URL = import.meta.env.VITE_API_URL;
 const AMOUNTS_URL = `${API_URL}/amounts`;
 
 // global storage

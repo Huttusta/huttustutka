@@ -1,6 +1,6 @@
 import ICONS from "./assets/data/product_icons.json"
-import COORDINATES from "./assets/data/alko_coordinates.json"
-import PRODUCT_NAMES from "./assets/data/alko_products.json"
+import COORDINATES from "./assets/data/alko_coordinates_no_noutopiste.json"
+import PRODUCT_NAMES from "./assets/data/alko_products_sorted.json"
 
 const IMG_PATH = "img/"
 const ALKO_ICON = "huttusukko.png"
@@ -32,11 +32,11 @@ export interface StoreAndProductNames {
   productName: string,
 }
 
-export function getStoreCoordinates(storeId: string): google.maps.LatLng | undefined {
-  const store = COORDINATES.find((store) => store.id === storeId)
-  if (store?.latitude) return new google.maps.LatLng(store.latitude, store.longitude)
-  return undefined
-}
+/* export function getStoreCoordinates(storeId: string): google.maps.LatLng | undefined { */
+/*   const store = COORDINATES.find((store) => store.id === storeId) */
+/*   if (store?.latitude) return new google.maps.LatLng(store.latitude, store.longitude) */
+/*   return undefined */
+/* } */
 
 function scaleImage(imgPath: string): Array<number> {
   const img = new Image()
@@ -58,6 +58,11 @@ export function getIcon(store: StoreAmount): google.maps.Icon {
       break
     }
   }
+  /* if (store.id === "2705") { */
+  /*   console.log(store) */
+  /*   console.log(scale) */
+  /*   console.log(TRESHOLDS) */
+  /* } */
 
   const imgSize = scaleImage(imgPath)
 
@@ -70,10 +75,10 @@ export function getIcon(store: StoreAmount): google.maps.Icon {
   }
 }
 
-export async function fetchMarkers(url: string): Promise<Array<StoreAmount>> {
+export async function fetchAmounts(url: string): Promise<Array<StoreAmount>> {
   const response = await fetch(url)
   if (!response.ok) throw new Error("Failed to fetch amounts!")
-  return response.json()
+  return await response.json()
 }
 
 export function getStoreName(storeId: string): string {

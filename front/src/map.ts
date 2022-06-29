@@ -1,8 +1,9 @@
-import ALKO_PRODUCTS from "./assets/data/alko_products.json";
-import { Loader } from "google-maps";
+import ALKO_PRODUCTS from "./assets/data/alko_products_sorted.json"
+import COORDINATES from "./assets/data/alko_coordinates_no_noutopiste.json"
+import { Loader } from 'google-maps'
 import {
-  fetchMarkers,
-  getStoreCoordinates,
+  fetchAmounts,
+  /* getStoreCoordinates, */
   getIcon,
   StoreAmount,
   getStoreName,
@@ -49,12 +50,10 @@ export async function createMap(
   mapId: string,
   googleApiKey: string
 ): Promise<google.maps.Map> {
-  const app = document.querySelector<HTMLDivElement>(`#${appId}`)!;
-  /* app.innerHTML = ` */
-  /*   <div id="${mapId}"></div> */
-  /* ` */
-  addMapElement(app, mapId);
-  addProductSelector(app);
+  const app = document.querySelector<HTMLDivElement>(`#${appId}`)!
+
+  addMapElement(app, mapId)
+  addProductSelector(app)
 
   const loader = new Loader(googleApiKey, { version: "weekly" });
   await loader.load();
@@ -87,23 +86,27 @@ export async function initMarkers(
   infoWindow: google.maps.InfoWindow,
   url: string
 ): Promise<MarkerStorage> {
-  let newMarkers: MarkerStorage = {};
-  const storeMarkers = await fetchMarkers(url);
+  let newMarkers: MarkerStorage = {}
+  const storeAmounts = await fetchAmounts(url)
 
-  storeMarkers.forEach((store) => {
-    const storeCoords = getStoreCoordinates(store.id);
+  COORDINATES.forEach((store) => {
+    const fetchedStore = storeAmounts.find((s) => s.id === store.id)
     const marker = new google.maps.Marker({
       map: map,
-      icon: getIcon(store),
-    });
-    if (storeCoords) marker.setPosition(storeCoords);
+      icon: fetchedStore ? getIcon(fetchedStore) : undefined,
+    })
+    if (store.latitude) marker.setPosition(new google.maps.LatLng(
+      store.latitude,
+      store.longitude,
+    ))
+
+    newMarkers[store.id] = marker
+    if (!fetchedStore) return
 
     marker.addListener("click", () => {
-      setInfowindow(map, marker, infoWindow, store);
-    });
-
-    newMarkers[store.id] = marker;
-  });
+      setInfowindow(map, marker, infoWindow, fetchedStore)  
+    })
+  })
 
   return newMarkers;
 }
@@ -114,12 +117,12 @@ async function setMarkers(
   markers: MarkerStorage,
   url: string
 ): Promise<void> {
-  const storeMarkers = await fetchMarkers(url);
+  const storeAmounts = await fetchAmounts(url)
 
-  storeMarkers.forEach((store) => {
-    const marker = markers[store.id];
-    console.log(marker);
-    console.log(store);
+  console.log(storeAmounts.find((s) => s.id === "2702"))
+
+  storeAmounts.forEach((store) => {
+    const marker = markers[store.id]
     marker.setIcon(getIcon(store)),
       marker.addListener("click", () => {
         setInfowindow(map, marker, infoWindow, store);
