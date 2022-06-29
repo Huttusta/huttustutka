@@ -1,5 +1,6 @@
 import ICONS from "./assets/data/product_icons.json"
 import COORDINATES from "./assets/data/alko_coordinates.json"
+import PRODUCT_NAMES from "./assets/data/alko_products.json"
 
 const IMG_PATH = "img/"
 const ALKO_ICON = "huttusukko.png"
@@ -24,6 +25,11 @@ export interface StoreAmount {
 export interface StoreIcon {
   id: string,
   icon: string,
+}
+
+export interface StoreAndProductNames {
+  storeName: string,
+  productName: string,
 }
 
 export function getStoreCoordinates(storeId: string): google.maps.LatLng | undefined {
@@ -74,4 +80,10 @@ export function getStoreName(storeId: string): string {
   const store = COORDINATES.find((s) => s.id === storeId)
   if (!store) throw new Error("Failed to find store!")
   return store.name
+}
+
+export function getProductName(productId: string): string {
+  const product = PRODUCT_NAMES.find((p) => p.id === productId)
+  if (!product) throw new Error("Failed to find product!")
+  return product.name
 }
