@@ -5,7 +5,7 @@ from .scrape_huttunen import ScrapeHuttunen
 
 app = Flask(__name__)
 api = Api(app)
-# CORS(app)
+CORS(app)
 scraper = ScrapeHuttunen()
 
 

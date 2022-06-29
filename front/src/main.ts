@@ -1,10 +1,15 @@
 import './assets/css/style.css'
 import { Loader } from 'google-maps'
-import { StoreCoordinates, StoreAmount, getStoreCoordinates, getIcon } from './util'
+import { 
+  getStoreCoordinates, 
+  getIcon,
+  fetchMarkers,
+  getStoreName,
+} from './util'
 
 const GOOGLE_API_KEY = "AIzaSyCrHBMGwEmJtbpZvNEsYfOUq6HVEopLdDQ"
 const MAP_ID = "map"
-const API_URL = "localhost:5000"
+const API_URL = "http://localhost:5000"
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 app.innerHTML = `
@@ -21,20 +26,26 @@ loader.load().then(() => {
   })
 })
 
-fetch(`${API_URL}/amounts/`).then(async (response) => {
-  if (!response.ok) throw new Error('Failed to fetch amounts!')
+const storeMarkers = await fetchMarkers(`${API_URL}/amounts`)
+storeMarkers.forEach((store) => {
+  const storeCoords = getStoreCoordinates(store.id)
+  if (!storeCoords) return
 
-  const coordinates: Array<StoreCoordinates> = await import("./assets/data/alko_coordinates.json")
+  const marker = new google.maps.Marker({
+    map: map,
+    position: storeCoords,
+    icon: getIcon(store),
+  })
 
-  response.json().then((stores: Array<StoreAmount>) => {
-    stores.forEach((store) => {
-      const storeCoords = getStoreCoordinates(store.id, coordinates)
-      if (!storeCoords) return
-      new google.maps.Marker({
-        map: map,
-        position: storeCoords,
-        icon: getIcon(store),
-      })
+  marker.addListener("click", () => {
+    const amount = store.min === store.max ? store.min : `${store.min}-${store.max}`
+    const infoWindow = new google.maps.InfoWindow({
+      content: `${getStoreName(store.id)} ${amount}`
+    })  
+    infoWindow.open({
+      anchor: marker,
+      map,
+      shouldFocus: false,
     })
   })
 })
