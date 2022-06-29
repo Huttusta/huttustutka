@@ -1,5 +1,7 @@
 beautifulsoup4==4.11.1
 requests==2.28.0
 Flask==2.1.2
+Flask-RESTful==0.3.9
+Flask-Cors==3.0.10
 geocoder==1.38.1
 git+https://github.com/flask-extensions/Flask-GoogleMaps.git
