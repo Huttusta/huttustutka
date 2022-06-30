@@ -10,11 +10,11 @@ scraper = ScrapeHuttunen()
 
 
 class Amounts(Resource):
-    def get(self, product_id=None):
+    def get(self, product_id):
         return scraper.how_much_huttunen(product_id)
 
 
-api.add_resource(Amounts, '/amounts/', '/amounts/<string:product_id>/')
+api.add_resource(Amounts, '/amounts/<string:product_id>/')
 
 
 if __name__ == "__main__":
