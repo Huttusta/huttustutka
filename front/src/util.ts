@@ -1,6 +1,6 @@
 import ICONS from "./assets/data/product_icons.json"
 import COORDINATES from "./assets/data/alko_coordinates_no_noutopiste.json"
-import PRODUCT_NAMES from "./assets/data/alko_products_sorted.json"
+import PRODUCT_NAMES from "./assets/data/alko_products_available.json"
 
 const IMG_PATH = "img/"
 const ALKO_ICON = "huttusukko.png"
