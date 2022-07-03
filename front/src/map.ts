@@ -10,6 +10,9 @@ const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 const MAP_ID = "map";
 const APP_ID = "app";
 const DIV_SELECTOR_ID = "product-selector";
+const SEARCH_ID = "product-search";
+const SEARCH_INPUT_ID = "input-search";
+const SEARCH_RESULT_ID = "search-results";
 const SELECT_ID = "select-huttunen";
 const LOADING_ID = "img-loading";
 const LOADING_IMG_PATH = "img/gambina.png"
@@ -48,6 +51,51 @@ function addProductSelector(app: HTMLDivElement, defaultId: string): void {
   app.appendChild(div);
 }
 
+function addProductSearch(app: HTMLDivElement): void {
+  const div = document.createElement("div");
+  div.id = SEARCH_ID;
+
+  const input = document.createElement("input");
+  input.id = SEARCH_INPUT_ID;
+  input.innerText = "Valitse janojuoma";
+  input.setAttribute("autofocus", "yes")
+  input.setAttribute("placeholder", "Etsi janojuomaa")
+  div.appendChild(input);
+
+  const table = document.createElement("table");
+  table.id = SEARCH_RESULT_ID;
+  table.style.display = "none";
+  div.appendChild(table);
+
+  input.addEventListener("onchange", function(ev) {
+    const searchString = <string>(ev.target.value.toLowerCase())
+    table.innerHTML = ""    
+
+    if (!searchString) {
+      table.style.display = "none"
+      return
+    }
+
+    const results = ALKO_PRODUCTS.filter(
+      (p) => p.name.toLowerCase().includes(searchString)
+    )
+    if (!results.length) {
+      table.style.display = "none"
+      return
+    }
+
+    results.forEach((r) => {
+      const newRow = document.createElement("tr")
+      newRow.innerText = r.name
+      table.appendChild(newRow)
+    })
+
+    table.style.display = "block"
+  })
+
+  app.appendChild(div);
+}
+
 function addLoadingElement(app: HTMLDivElement): void {
   const img = document.createElement("img");
   img.id = LOADING_ID
@@ -58,13 +106,12 @@ function addLoadingElement(app: HTMLDivElement): void {
   app.appendChild(img);
 }
 
-export async function createMap(
-  defaultId: string,
-): Promise<google.maps.Map> {
+export async function createMap(): Promise<google.maps.Map> {
   const app = document.querySelector<HTMLDivElement>(`#${APP_ID}`)!
 
   addMapElement(app, MAP_ID)
-  addProductSelector(app, defaultId)
+  /* addProductSelector(app, defaultId) */
+  addProductSearch(app)
   addLoadingElement(app)
 
   const loader = new Loader(GOOGLE_API_KEY, { version: "weekly" });

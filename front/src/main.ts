@@ -15,7 +15,7 @@ const DEFAULT_PRODUCT_ID = "003732";
 let markers: MarkerStorage;
 let infoWindow: google.maps.InfoWindow;
 
-const map = await createMap(DEFAULT_PRODUCT_ID);
+const map = await createMap();
 infoWindow = initInfoWindow();
 markers = await initMarkers(map, infoWindow, AMOUNTS_URL, DEFAULT_PRODUCT_ID);
-addProductSelectorOnChange(map, infoWindow, markers, AMOUNTS_URL);
+/* addProductSelectorOnChange(map, infoWindow, markers, AMOUNTS_URL); */
