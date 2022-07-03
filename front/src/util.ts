@@ -6,7 +6,7 @@ const IMG_PATH = "img/"
 const ALKO_ICON = "alko_logo.png"
 const SAD_FACE = "sadface.png"
 const TRESHOLDS = [5, 10, 30, 50]
-const MASTER_WIDTH_PX = 30
+const MAX_ICON_PX = 50
 const ICON_SCALING = [1, 1.5, 2.0, 2.4, 2.8] 
 
 export interface StoreCoordinates {
@@ -33,16 +33,10 @@ export interface StoreAndProductNames {
   productName: string,
 }
 
-/* export function getStoreCoordinates(storeId: string): google.maps.LatLng | undefined { */
-/*   const store = COORDINATES.find((store) => store.id === storeId) */
-/*   if (store?.latitude) return new google.maps.LatLng(store.latitude, store.longitude) */
-/*   return undefined */
-/* } */
-
 function scaleImage(imgPath: string): Array<number> {
   const img = new Image()
   img.src = imgPath
-  const imgScaler = MASTER_WIDTH_PX / img.width
+  const imgScaler = MAX_ICON_PX / Math.max(img.width, img.height)  
   img.width *= imgScaler
   img.height *= imgScaler
   return [img.width, img.height]
