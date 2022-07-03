@@ -5,9 +5,9 @@ import PRODUCT_NAMES from "./assets/data/alko_products_available.json"
 const IMG_PATH = "img/"
 const ALKO_ICON = "alko_logo.png"
 const SAD_FACE = "sadface.png"
-const TRESHOLDS = [5, 10, 30, 50]
+const TRESHOLDS = [10, 20, 30, 50]
 const MAX_ICON_PX = 50
-const ICON_SCALING = [1, 1.5, 2.0, 2.4, 2.8] 
+const ICON_SCALING = [1, 1.5, 1.9, 2.3, 2.6] 
 
 export interface StoreCoordinates {
   id: string,

@@ -162,6 +162,7 @@ async function setMarkers(
       )  
     });
   });
+
   loadingElement.style.display = "none"
 }
 
