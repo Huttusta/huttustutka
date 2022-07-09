@@ -9,11 +9,8 @@ import {
 const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 const MAP_ID = "map";
 const APP_ID = "app";
-/* const DIV_SELECTOR_ID = "product-selector"; */
-const SEARCH_ID = "product-search";
 const SEARCH_INPUT_ID = "input-search";
 const SEARCH_TABLE_ID = "search-results";
-/* const SELECT_ID = "select-huttunen"; */
 const LOADING_ID = "img-loading";
 const LOADING_IMG_PATH = "img/gambina.png"
 
@@ -28,20 +25,16 @@ function addMapElement(app: HTMLDivElement, mapId: string): void {
 }
 
 function addProductSearch(app: HTMLDivElement): void {
-  const div = document.createElement("div");
-  div.id = SEARCH_ID;
-
   const input = document.createElement("input");
   input.id = SEARCH_INPUT_ID;
   input.innerText = "Valitse janojuoma";
   input.setAttribute("autofocus", "yes")
   input.setAttribute("placeholder", "Etsi janojuomaa")
-  div.appendChild(input);
 
   const table = document.createElement("table");
   table.id = SEARCH_TABLE_ID;
 
-  app.appendChild(div);
+  app.appendChild(input);
   app.appendChild(table);
 }
 
@@ -59,7 +52,6 @@ export async function createMap(): Promise<google.maps.Map> {
   const app = document.querySelector<HTMLDivElement>(`#${APP_ID}`)!
 
   addMapElement(app, MAP_ID)
-
   addProductSearch(app)
   addLoadingElement(app)
 
@@ -88,9 +80,9 @@ export function handleInfowindowClick(
   let content = `${storeName}`
   if (min) {
       const amount = min === max ? min : `${min}-${max}`;
-      content += ` ${amount} kpl` 
+      content += ` ${amount} kpl`
   } else {
-      content += " Tuotetta ei saatavilla" 
+      content += " Tuotetta ei saatavilla"
   }
   infoWindow.setContent(content);
   infoWindow.open(map, marker);
@@ -105,12 +97,13 @@ export async function initMarkers(
   let newMarkers: MarkerStorage = {}
   const storeAmounts = await fetchAmounts(`${url}/${productId}/`)
 
-  COORDINATES.forEach((store) => {
+  COORDINATES.forEach(async (store) => {
     const fetchedStore = storeAmounts.find((s) => s.id === store.id)
     const marker = new google.maps.Marker({
       map: map,
-      icon: getIcon(fetchedStore, productId),
+      icon: await getIcon(fetchedStore, productId),
     })
+
     if (store.latitude) marker.setPosition(new google.maps.LatLng(
       store.latitude,
       store.longitude,
@@ -119,13 +112,13 @@ export async function initMarkers(
     newMarkers[store.id] = marker
     marker.addListener("click", () => {
       handleInfowindowClick(
-        map, 
-        marker, 
+        map,
+        marker,
         infoWindow,
         store.name,
         fetchedStore?.min,
         fetchedStore?.max,
-      )  
+      )
     })
   })
 
@@ -143,19 +136,19 @@ async function setMarkers(
   loadingElement.style.display = "block"
 
   const storeAmounts = await fetchAmounts(`${url}/${productId}/`)
-  COORDINATES.forEach((store) => {
+  COORDINATES.forEach(async (store) => {
     const fetchedStore = storeAmounts.find((s) => s.id === store.id)
     const marker = markers[store.id]
-    marker.setIcon(getIcon(fetchedStore, productId))
+    marker.setIcon(await getIcon(fetchedStore, productId))
     marker.addListener("click", () => {
       handleInfowindowClick(
-        map, 
-        marker, 
+        map,
+        marker,
         infoWindow,
         store.name,
         fetchedStore?.min,
         fetchedStore?.max,
-      )  
+      )
     });
   });
 
@@ -172,7 +165,7 @@ export function setProductChangeHandler(
   const table = <HTMLTableElement>(document.getElementById(SEARCH_TABLE_ID));
 
   input.addEventListener("input", function(ev) {
-    table.innerHTML = ""    
+    table.innerHTML = ""
     const searchString = <string>(ev.target.value.toLowerCase())
 
     if (!searchString) return
@@ -197,10 +190,10 @@ export function setProductChangeHandler(
         infoWindow.close();
         table.innerHTML = ""
         await setMarkers(
-          map, 
-          infoWindow, 
-          markers, 
-          url, 
+          map,
+          infoWindow,
+          markers,
+          url,
           <string>(row.getAttribute("data-value")),
         )
       })

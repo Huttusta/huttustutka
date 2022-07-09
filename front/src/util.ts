@@ -1,13 +1,13 @@
-import ICONS from "./assets/data/product_icons.json"
 import COORDINATES from "./assets/data/alko_coordinates_no_noutopiste.json"
 import PRODUCT_NAMES from "./assets/data/alko_products_available.json"
+import PRODUCT_ICONS from "./assets/data/product_icons.json"
 
 const IMG_PATH = "img/"
 const ALKO_ICON = "alko_logo.png"
 const SAD_FACE = "sadface.png"
 const TRESHOLDS = [10, 20, 30, 50]
 const MAX_ICON_PX = 50
-const ICON_SCALING = [1, 1.5, 1.9, 2.3, 2.6] 
+const ICON_SCALING = [1, 1.5, 1.9, 2.3, 2.6]
 
 export interface StoreCoordinates {
   id: string,
@@ -33,24 +33,28 @@ export interface StoreAndProductNames {
   productName: string,
 }
 
-function scaleImage(imgPath: string): Array<number> {
+async function getIconImage(productId: string): Promise<HTMLImageElement> {
+  const product = PRODUCT_ICONS.find((p) => p.id === productId)
+  const iconName = product ? product.icon : ALKO_ICON
   const img = new Image()
-  img.src = imgPath
-  const imgScaler = MAX_ICON_PX / Math.max(img.width, img.height)  
+  img.src = `${IMG_PATH}${iconName}`
+  await img.decode()
+  return img
+}
+
+function scaleImage(img: HTMLImageElement): Array<number> {
+  const imgScaler = MAX_ICON_PX / Math.max(img.width, img.height)
   img.width *= imgScaler
   img.height *= imgScaler
   return [img.width, img.height]
 }
 
-export function getIcon(
-    store: StoreAmount | undefined, 
-    productId: string
-): google.maps.Icon {
+export async function getIcon(
+  store: StoreAmount | undefined,
+  productId: string
+): Promise<google.maps.Icon> {
   if (!store) return { url: `${IMG_PATH}${SAD_FACE}` }
 
-  const storeIcon: StoreIcon | undefined = ICONS.find((p) => p.id === productId)   
-  const iconName = storeIcon ? storeIcon.icon : ALKO_ICON
-  const imgPath = `${IMG_PATH}/${iconName}`
   let scale = ICON_SCALING[ICON_SCALING.length - 1]
   for (let i = 0; i < TRESHOLDS.length; i++) {
     if (store.min <= TRESHOLDS[i]) {
@@ -59,12 +63,14 @@ export function getIcon(
     }
   }
 
-  const imgSize = scaleImage(imgPath)
+  const iconImage = await getIconImage(productId)
+  const imgSize = scaleImage(iconImage)
+
   return {
-    url: imgPath, 
+    url: iconImage.src,
     scaledSize: new google.maps.Size(
-      imgSize[0] * scale, 
-      imgSize[1] * scale, 
+      imgSize[0] * scale,
+      imgSize[1] * scale,
     ),
   }
 }
