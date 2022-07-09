@@ -4,7 +4,7 @@ import {
   initInfoWindow,
   initMarkers,
   MarkerStorage,
-  addProductSelectorOnChange,
+  setProductChangeHandler,
 } from "./map";
 
 const API_URL = import.meta.env.VITE_API_URL;
@@ -18,4 +18,4 @@ let infoWindow: google.maps.InfoWindow;
 const map = await createMap();
 infoWindow = initInfoWindow();
 markers = await initMarkers(map, infoWindow, AMOUNTS_URL, DEFAULT_PRODUCT_ID);
-/* addProductSelectorOnChange(map, infoWindow, markers, AMOUNTS_URL); */
+setProductChangeHandler(map, markers, infoWindow, AMOUNTS_URL)

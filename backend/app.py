@@ -15,7 +15,3 @@ class Amounts(Resource):
 
 
 api.add_resource(Amounts, '/amounts/<string:product_id>/')
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
