@@ -28,17 +28,30 @@ body {
   top: 10%;
   left: 1%;
   height: 5%;
-  max-width: 80%;
   padding: 5px;
   background-color: white;
   border-width: 2px;
   border-style: solid;
-  overflow-x: hidden;
 }
 
-/* #select-huttunen { */
-/*   display: block; */
-/* } */
+#input-search {
+  width: 300px;
+}
+
+#search-results {
+  display: block;
+  position: absolute;
+  top: 13%;
+  left: 2%;
+  max-height: 60vh;
+  background-color: white; 
+  overflow: auto;
+}
+
+.search-product-row:hover {
+  background-color: lightgrey; 
+  cursor: pointer;
+}
 
 @keyframes loading {
   from {transform: rotate(0);}

@@ -9,11 +9,11 @@ import {
 const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 const MAP_ID = "map";
 const APP_ID = "app";
-const DIV_SELECTOR_ID = "product-selector";
+/* const DIV_SELECTOR_ID = "product-selector"; */
 const SEARCH_ID = "product-search";
 const SEARCH_INPUT_ID = "input-search";
-const SEARCH_RESULT_ID = "search-results";
-const SELECT_ID = "select-huttunen";
+const SEARCH_TABLE_ID = "search-results";
+/* const SELECT_ID = "select-huttunen"; */
 const LOADING_ID = "img-loading";
 const LOADING_IMG_PATH = "img/gambina.png"
 
@@ -25,30 +25,6 @@ function addMapElement(app: HTMLDivElement, mapId: string): void {
   const el = document.createElement("div");
   el.id = mapId;
   app.appendChild(el);
-}
-
-function addProductSelector(app: HTMLDivElement, defaultId: string): void {
-  const div = document.createElement("div");
-  div.id = DIV_SELECTOR_ID;
-
-  const label = document.createElement("label");
-  label.htmlFor = div.id;
-  label.innerText = "Valitse janojuoma";
-  div.appendChild(label);
-
-  const select = document.createElement("select");
-  select.id = SELECT_ID;
-  div.appendChild(select);
-
-  ALKO_PRODUCTS.forEach((product) => {
-    const option = document.createElement("option");
-    option.value = product.id;
-    option.innerText = product.name;
-    if (defaultId === product.id) option.selected = true
-    select.appendChild(option);
-  });
-
-  app.appendChild(div);
 }
 
 function addProductSearch(app: HTMLDivElement): void {
@@ -63,37 +39,10 @@ function addProductSearch(app: HTMLDivElement): void {
   div.appendChild(input);
 
   const table = document.createElement("table");
-  table.id = SEARCH_RESULT_ID;
-  table.style.display = "none";
-  div.appendChild(table);
-
-  input.addEventListener("onchange", function(ev) {
-    const searchString = <string>(ev.target.value.toLowerCase())
-    table.innerHTML = ""    
-
-    if (!searchString) {
-      table.style.display = "none"
-      return
-    }
-
-    const results = ALKO_PRODUCTS.filter(
-      (p) => p.name.toLowerCase().includes(searchString)
-    )
-    if (!results.length) {
-      table.style.display = "none"
-      return
-    }
-
-    results.forEach((r) => {
-      const newRow = document.createElement("tr")
-      newRow.innerText = r.name
-      table.appendChild(newRow)
-    })
-
-    table.style.display = "block"
-  })
+  table.id = SEARCH_TABLE_ID;
 
   app.appendChild(div);
+  app.appendChild(table);
 }
 
 function addLoadingElement(app: HTMLDivElement): void {
@@ -110,7 +59,7 @@ export async function createMap(): Promise<google.maps.Map> {
   const app = document.querySelector<HTMLDivElement>(`#${APP_ID}`)!
 
   addMapElement(app, MAP_ID)
-  /* addProductSelector(app, defaultId) */
+
   addProductSearch(app)
   addLoadingElement(app)
 
@@ -213,18 +162,49 @@ async function setMarkers(
   loadingElement.style.display = "none"
 }
 
-export function addProductSelectorOnChange(
+export function setProductChangeHandler(
   map: google.maps.Map,
-  infoWindow: google.maps.InfoWindow,
   markers: MarkerStorage,
+  infoWindow: google.maps.InfoWindow,
   url: string
 ): void {
-  const select: HTMLSelectElement | null = <HTMLSelectElement>(
-    document.getElementById(SELECT_ID)
-  );
+  const input = <HTMLInputElement>(document.getElementById(SEARCH_INPUT_ID));
+  const table = <HTMLTableElement>(document.getElementById(SEARCH_TABLE_ID));
 
-  select.onchange = async () => {
-    infoWindow.close();
-    await setMarkers(map, infoWindow, markers, url, select.value);
-  };
+  input.addEventListener("input", function(ev) {
+    table.innerHTML = ""    
+    const searchString = <string>(ev.target.value.toLowerCase())
+
+    if (!searchString) return
+
+    const products = ALKO_PRODUCTS.filter(
+      (p) => p.name.toLowerCase().includes(searchString)
+    )
+    if (!products.length) {
+      const row = document.createElement("tr")
+      row.innerText = "Ei tuloksia"
+      table.appendChild(row)
+      return
+    }
+
+    products.forEach((product) => {
+      const row = document.createElement("tr")
+      row.innerText = product.name
+      row.setAttribute("data-value", product.id)
+      row.classList.add("search-product-row")
+      row.addEventListener("click", async () => {
+        input.value = product.name
+        infoWindow.close();
+        table.innerHTML = ""
+        await setMarkers(
+          map, 
+          infoWindow, 
+          markers, 
+          url, 
+          <string>(row.getAttribute("data-value")),
+        )
+      })
+      table.appendChild(row)
+    })
+  })
 }
