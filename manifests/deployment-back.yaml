@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: huttustutka-back
+  namespace: huttustutka
+spec:
+  selector:
+    matchLabels:
+      app: huttustutka-back
+  template:
+    metadata:
+      labels:
+        app: huttustutka-back
+    spec:
+      containers:
+        - name: huttustutka-back
+          image: jvaalto/huttustutka-back:latest
+          imagePullPolicy: Always
+          volumeMounts:
+            - mountPath: /app/stats
+              name: json-volume
+          ports:
+            - containerPort: 5000
+      volumes:
+        - name: json-volume
+          persistentVolumeClaim:
+            claimName: huttustutka-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: huttustutka-back
+  namespace: huttustutka
+spec:
+  ports:
+    - name: http
+      port: 5000
+  selector:
+    app: huttustutka-back

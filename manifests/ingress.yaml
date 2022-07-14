@@ -10,8 +10,8 @@ spec:
     - match: "Host(`huttusta.rotta.gt`)"
       kind: Rule
       services:
-        - name: huttustutka
-          port: 5000
+        - name: huttustutka-front
+          port: 80
   tls:
     secretName: huttusta-rotta-gt-cert-secret
 ---
@@ -28,8 +28,8 @@ spec:
       kind: Rule
       priority: 1
       services:
-        - name: huttustutka
-          port: 5000
+        - name: huttustutka-front
+          port: 80
       middlewares:
         - name: https-redirect
 ---

@@ -11,7 +11,7 @@ spec:
         spec:
           containers:
             - name: huttustutka
-              image: jvaalto/huttustutka:latest
+              image: jvaalto/huttustutka-back:latest
               imagePullPolicy: Always
               volumeMounts:
                 - mountPath: /app/static/stats
