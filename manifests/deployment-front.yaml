@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: huttustutka-front
+  namespace: huttustutka
+spec:
+  selector:
+    matchLabels:
+      app: huttustutka-front
+  template:
+    metadata:
+      labels:
+        app: huttustutka-front
+    spec:
+      containers:
+        - name: huttustutka-front
+          image: jvaalto/huttustutka-front:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          env:
+            - name: VITE_GOOGLE_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: api-key
+                  key: key
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: huttustutka-front
+  namespace: huttustutka
+spec:
+  ports:
+    - name: http
+      port: 80
+  selector:
+    app: huttustutka-front
