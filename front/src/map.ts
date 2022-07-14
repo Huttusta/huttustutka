@@ -164,9 +164,9 @@ export function setProductChangeHandler(
   const input = <HTMLInputElement>(document.getElementById(SEARCH_INPUT_ID));
   const table = <HTMLTableElement>(document.getElementById(SEARCH_TABLE_ID));
 
-  input.addEventListener("input", function(ev) {
+  input.addEventListener("input", function() {
     table.innerHTML = ""
-    const searchString = <string>(ev.target.value.toLowerCase())
+    const searchString: string = input.value.toLowerCase();;
 
     if (!searchString) return
 
