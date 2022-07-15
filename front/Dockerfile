@@ -10,9 +10,6 @@ COPY package-lock.json ./
 
 RUN npm install
 
-ARG VITE_GOOGLE_API_KEY
-ENV VITE_GOOGLE_API_KEY=$VITE_GOOGLE_API_KEY
-
 COPY . ./
 RUN npm run build
 
