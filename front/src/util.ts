@@ -8,6 +8,7 @@ const SAD_FACE = "sadface.png"
 const TRESHOLDS = [10, 20, 30, 50]
 const MAX_ICON_PX = 50
 const ICON_SCALING = [1, 1.5, 1.9, 2.3, 2.6]
+const ALKO_CDN_URL = "https://images.alko.fi/images/cs_srgb,f_auto,t_medium/cdn/"
 
 export interface StoreCoordinates {
   id: string,
@@ -34,10 +35,9 @@ export interface StoreAndProductNames {
 }
 
 async function getIconImage(productId: string): Promise<HTMLImageElement> {
-  const product = PRODUCT_ICONS.find((p) => p.id === productId)
-  const iconName = product ? product.icon : ALKO_ICON
+  const productImage = `${ALKO_CDN_URL}/${productId}/a`
   const img = new Image()
-  img.src = `${IMG_PATH}${iconName}`
+  img.src = productImage ? productImage : `${IMG_PATH}${ALKO_ICON}`
   await img.decode()
   return img
 }
