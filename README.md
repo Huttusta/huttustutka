@@ -16,6 +16,6 @@ cd front
 npm i
 touch .env
 echo "VITE_GOOGLE_API_KEY=your-key" >> .env
-echo "VITE_API_URL=http://localhost:5000" >> .env
+echo "VITE_API_URL=http://127.0.0.1:5000" >> .env
 npm run dev
 ```
