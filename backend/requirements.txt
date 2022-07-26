@@ -4,3 +4,4 @@ Flask==2.1.2
 Flask-RESTful==0.3.9
 Flask-Cors==3.0.10
 geocoder==1.38.1
+Wand==0.6.8
