@@ -3,12 +3,12 @@ import PRODUCT_NAMES from "./assets/data/alko_products_available.json"
 //import PRODUCT_ICONS from "./assets/data/product_icons.json"
 
 const IMG_PATH = "img/"
-const ALKO_ICON = "alko_logo.png"
+//const ALKO_ICON = "alko_logo.png"
 const SAD_FACE = "sadface.png"
 const TRESHOLDS = [10, 20, 30, 50]
-const MAX_ICON_PX = 50
+const MAX_ICON_PX = 60
 const ICON_SCALING = [1, 1.5, 1.9, 2.3, 2.6]
-const ALKO_CDN_URL = "https://images.alko.fi/images/cs_srgb,f_auto,t_medium/cdn/"
+const CDN_URL = "https://storage.googleapis.com/alko_products_transparent_bg"
 
 export interface StoreCoordinates {
   id: string,
@@ -35,9 +35,8 @@ export interface StoreAndProductNames {
 }
 
 async function getIconImage(productId: string): Promise<HTMLImageElement> {
-  const productImage = `${ALKO_CDN_URL}/${productId}/a`
   const img = new Image()
-  img.src = productImage ? productImage : `${IMG_PATH}${ALKO_ICON}`
+  img.src = `${CDN_URL}/${productId}.png`
   await img.decode()
   return img
 }
@@ -51,7 +50,7 @@ function scaleImage(img: HTMLImageElement): Array<number> {
 
 export async function getIcon(
   store: StoreAmount | undefined,
-  productId: string
+  productId: string,
 ): Promise<google.maps.Icon> {
   if (!store) return { url: `${IMG_PATH}${SAD_FACE}` }
 
