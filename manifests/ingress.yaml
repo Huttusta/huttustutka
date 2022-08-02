@@ -18,7 +18,7 @@ spec:
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
-  name: huttustutka
+  name: huttustutka-http
   namespace: huttustutka
 spec:
   entryPoints:
