@@ -166,13 +166,18 @@ export function setProductChangeHandler(
 
   input.addEventListener("input", function() {
     table.innerHTML = ""
-    const searchString: string = input.value.toLowerCase();;
+    const searchString: string = input.value.toLowerCase();
 
     if (!searchString) return
 
     const products = ALKO_PRODUCTS.filter(
       (p) => p.name.toLowerCase().includes(searchString)
+    ).sort(
+      (a, b) => {
+        return a.name.toLowerCase().indexOf(searchString) - b.name.toLowerCase().indexOf(searchString)
+      }
     )
+
     if (!products.length) {
       const row = document.createElement("tr")
       row.innerText = "Ei tuloksia"
