@@ -58,10 +58,21 @@ export async function createMap(): Promise<google.maps.Map> {
   const loader = new Loader(GOOGLE_API_KEY, { version: "weekly" });
   await loader.load();
 
-  return new google.maps.Map(document.getElementById(MAP_ID) as HTMLElement, {
+  const map = new google.maps.Map(document.getElementById(MAP_ID) as HTMLElement, {
     center: { lat: 60.1707368, lng: 24.9347073 },
     zoom: 10,
   });
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+        map.setCenter({
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        })
+    })
+  }
+
+  return map
 }
 
 export function initInfoWindow(): google.maps.InfoWindow {
