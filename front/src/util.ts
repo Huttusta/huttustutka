@@ -1,9 +1,7 @@
-import COORDINATES from "./assets/data/alko_coordinates_no_noutopiste.json"
-import PRODUCT_NAMES from "./assets/data/alko_products_available.json"
-//import PRODUCT_ICONS from "./assets/data/product_icons.json"
+// import COORDINATES from "./assets/data/alko_coordinates_no_noutopiste.json"
+// import PRODUCT_NAMES from "./assets/data/products-sorted.json"
 
 const IMG_PATH = "img/"
-//const ALKO_ICON = "alko_logo.png"
 const SAD_FACE = "sadface.png"
 const TRESHOLDS = [10, 20, 30, 50]
 const MAX_ICON_PX = 60
@@ -80,14 +78,14 @@ export async function fetchAmounts(url: string): Promise<Array<StoreAmount>> {
   return await response.json()
 }
 
-export function getStoreName(storeId: string): string {
-  const store = COORDINATES.find((s) => s.id === storeId)
-  if (!store) throw new Error("Failed to find store!")
-  return store.name
-}
+// export function getStoreName(storeId: string): string {
+//   const store = COORDINATES.find((s) => s.id === storeId)
+//   if (!store) throw new Error("Failed to find store!")
+//   return store.name
+// }
 
-export function getProductName(productId: string): string {
-  const product = PRODUCT_NAMES.find((p) => p.id === productId)
-  if (!product) throw new Error("Failed to find product!")
-  return product.name
-}
+// export function getProductName(productId: string): string {
+//   const product = PRODUCT_NAMES.find((p) => p.id === productId)
+//   if (!product) throw new Error("Failed to find product!")
+//   return product.name
+// }

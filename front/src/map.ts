@@ -1,4 +1,4 @@
-import ALKO_PRODUCTS from "./assets/data/alko_products_available.json"
+import ALKO_PRODUCTS from "./assets/data/products-sorted.json"
 import COORDINATES from "./assets/data/alko_coordinates_no_noutopiste.json"
 import { Loader } from 'google-maps'
 import {
