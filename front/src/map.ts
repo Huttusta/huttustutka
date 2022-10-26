@@ -179,7 +179,7 @@ export function setProductChangeHandler(
     table.innerHTML = ""
     const searchString: string = input.value.toLowerCase();
 
-    if (!searchString) return
+    if (searchString.length < 3) return
 
     const products = ALKO_PRODUCTS.filter(
       (p) => p.name.toLowerCase().includes(searchString)
