@@ -4,6 +4,8 @@ import { Loader } from 'google-maps'
 import {
   fetchAmounts,
   getIcon,
+  addProductToSearchHistory,
+  getSearchHistory,
 } from "./util";
 
 const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
@@ -212,8 +214,44 @@ export function setProductChangeHandler(
           url,
           <string>(row.getAttribute("data-value")),
         )
+        addProductToSearchHistory(product)
       })
       table.appendChild(row)
     })
+  })
+
+  input.addEventListener("focus", function() {
+    if (input.value) return
+
+    table.innerHTML = ""
+
+    const searchHistory = getSearchHistory()
+
+    searchHistory.forEach((product) => {
+      const row = document.createElement("tr")
+      row.innerText = product.name
+      row.setAttribute("data-value", product.id)
+      row.classList.add("search-product-row")
+      row.addEventListener("click", async () => {
+        input.value = product.name
+        infoWindow.close();
+        table.innerHTML = ""
+        await setMarkers(
+          map,
+          infoWindow,
+          markers,
+          url,
+          <string>(row.getAttribute("data-value")),
+        )
+      })
+      table.appendChild(row)
+    })
+  })
+
+  input.addEventListener("blur", function() {
+    // wait that click event for row has fired
+    setTimeout(function() {
+      if (!input.value) table.innerHTML = ""
+    }, 100)
   })
 }

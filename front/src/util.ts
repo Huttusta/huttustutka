@@ -7,6 +7,7 @@ const TRESHOLDS = [10, 20, 30, 50]
 const MAX_ICON_PX = 60
 const ICON_SCALING = [1, 1.5, 1.9, 2.3, 2.6]
 const CDN_URL = "https://storage.googleapis.com/alko_products_transparent_bg"
+const SEARCH_HISTORY_LENGTH= 20
 
 export interface StoreCoordinates {
   id: string,
@@ -30,6 +31,11 @@ export interface StoreIcon {
 export interface StoreAndProductNames {
   storeName: string,
   productName: string,
+}
+
+export interface Product {
+  id: string,
+  name: string,
 }
 
 async function getIconImage(productId: string): Promise<HTMLImageElement> {
@@ -76,4 +82,28 @@ export async function fetchAmounts(url: string): Promise<Array<StoreAmount>> {
   const response = await fetch(url)
   if (!response.ok) throw new Error("Failed to fetch amounts!")
   return await response.json()
+}
+
+export function getSearchHistory(): Array<Product> {
+  let historyString = localStorage.getItem("searchHistory")
+
+  let searchHistory = []
+  if (historyString) {
+    searchHistory = JSON.parse(historyString)
+  }
+
+  return searchHistory
+}
+
+export function addProductToSearchHistory(product: Product): void {
+  const searchHistory = getSearchHistory()
+
+  if (searchHistory.find((p) => p.name === product.name)) return
+
+  if (searchHistory.length >= SEARCH_HISTORY_LENGTH) {
+    searchHistory.shift()
+  }
+
+  searchHistory.push(product)
+  localStorage.setItem("searchHistory", JSON.stringify(searchHistory))
 }
