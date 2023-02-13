@@ -22,5 +22,10 @@ class Amounts(Resource):
     def get(self, product_id):
         return scraper.how_much_huttunen(product_id)
 
+class Details(Resource):
+    @cache.cached()
+    def get(self, product_id):
+        return scraper.get_product_details(product_id)
 
 api.add_resource(Amounts, '/amounts/<string:product_id>/')
+api.add_resource(Details, '/details/<string:product_id>/')

@@ -2,10 +2,11 @@ import ALKO_PRODUCTS from "./assets/data/products-sorted.json"
 import COORDINATES from "./assets/data/alko_coordinates_no_noutopiste.json"
 import { Loader } from 'google-maps'
 import {
-  fetchAmounts,
+  fetchUrl,
   getIcon,
   addProductToSearchHistory,
   getSearchHistory,
+  StoreAmount,
 } from "./util";
 
 const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
@@ -15,9 +16,14 @@ const SEARCH_INPUT_ID = "input-search";
 const SEARCH_TABLE_ID = "search-results";
 const LOADING_ID = "img-loading";
 const LOADING_IMG_PATH = "img/gambina.png"
+const PRICE_BOX_ID = "price-box"
 
 export interface MarkerStorage {
   [key: string]: google.maps.Marker;
+}
+
+export interface ProductDetails {
+  price: string,
 }
 
 function addMapElement(app: HTMLDivElement, mapId: string): void {
@@ -50,12 +56,20 @@ function addLoadingElement(app: HTMLDivElement): void {
   app.appendChild(img);
 }
 
+function addPriceBox(app: HTMLDivElement): void {
+  const div = document.createElement("div")
+  div.id = PRICE_BOX_ID
+
+  app.appendChild(div)
+}
+
 export async function createMap(): Promise<google.maps.Map> {
   const app = document.querySelector<HTMLDivElement>(`#${APP_ID}`)!
 
   addMapElement(app, MAP_ID)
   addProductSearch(app)
   addLoadingElement(app)
+  addPriceBox(app)
 
   const loader = new Loader(GOOGLE_API_KEY, { version: "weekly" });
   await loader.load();
@@ -101,14 +115,24 @@ export function handleInfowindowClick(
   infoWindow.open(map, marker);
 }
 
+function updatePriceBox(productDetails: ProductDetails): void {
+  const priceBox = <HTMLDivElement>document.getElementById(PRICE_BOX_ID)
+  priceBox.innerHTML = `<b>${productDetails.price}e</b>`
+  priceBox.style.display = "block"
+}
+
 export async function initMarkers(
   map: google.maps.Map,
   infoWindow: google.maps.InfoWindow,
-  url: string,
+  amountsUrl: string,
+  detailsUrl: string,
   productId: string,
 ): Promise<MarkerStorage> {
   let newMarkers: MarkerStorage = {}
-  const storeAmounts = await fetchAmounts(`${url}/${productId}/`)
+  const storeAmounts = <Array<StoreAmount>>await fetchUrl(`${amountsUrl}/${productId}/`)
+  const productDetails = <ProductDetails>await fetchUrl(`${detailsUrl}/${productId}/`)
+
+  updatePriceBox(productDetails)
 
   COORDINATES.forEach(async (store) => {
     const fetchedStore = storeAmounts.find((s) => s.id === store.id)
@@ -142,13 +166,18 @@ async function setMarkers(
   map: google.maps.Map,
   infoWindow: google.maps.InfoWindow,
   markers: MarkerStorage,
-  url: string,
+  amountsUrl: string,
+  detailsUrl: string,
   productId: string,
 ): Promise<void> {
-  const loadingElement = <HTMLDivElement>(document.getElementById(LOADING_ID))
+  const loadingElement = <HTMLDivElement>document.getElementById(LOADING_ID)
   loadingElement.style.display = "block"
 
-  const storeAmounts = await fetchAmounts(`${url}/${productId}/`)
+  const storeAmounts = <Array<StoreAmount>>await fetchUrl(`${amountsUrl}/${productId}/`)
+  const productDetails = <ProductDetails>await fetchUrl(`${detailsUrl}/${productId}/`)
+
+  updatePriceBox(productDetails)
+
   COORDINATES.forEach(async (store) => {
     const fetchedStore = storeAmounts.find((s) => s.id === store.id)
     const marker = markers[store.id]
@@ -172,10 +201,11 @@ export function setProductChangeHandler(
   map: google.maps.Map,
   markers: MarkerStorage,
   infoWindow: google.maps.InfoWindow,
-  url: string
+  amountsUrl: string,
+  detailsUrl: string,
 ): void {
-  const input = <HTMLInputElement>(document.getElementById(SEARCH_INPUT_ID));
-  const table = <HTMLTableElement>(document.getElementById(SEARCH_TABLE_ID));
+  const input = <HTMLInputElement>document.getElementById(SEARCH_INPUT_ID)
+  const table = <HTMLTableElement>document.getElementById(SEARCH_TABLE_ID)
 
   input.addEventListener("input", function() {
     table.innerHTML = ""
@@ -211,7 +241,8 @@ export function setProductChangeHandler(
           map,
           infoWindow,
           markers,
-          url,
+          amountsUrl,
+          detailsUrl,
           <string>(row.getAttribute("data-value")),
         )
         addProductToSearchHistory(product)
@@ -240,7 +271,8 @@ export function setProductChangeHandler(
           map,
           infoWindow,
           markers,
-          url,
+          amountsUrl,
+          detailsUrl,
           <string>(row.getAttribute("data-value")),
         )
       })

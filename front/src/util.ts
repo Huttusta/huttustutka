@@ -78,9 +78,9 @@ export async function getIcon(
   }
 }
 
-export async function fetchAmounts(url: string): Promise<Array<StoreAmount>> {
+export async function fetchUrl(url: string): Promise<object> {
   const response = await fetch(url)
-  if (!response.ok) throw new Error("Failed to fetch amounts!")
+  if (!response.ok) throw new Error("Failed to fetch data!")
   return await response.json()
 }
 

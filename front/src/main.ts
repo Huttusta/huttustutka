@@ -9,6 +9,7 @@ import {
 
 const API_URL = import.meta.env.VITE_API_URL;
 const AMOUNTS_URL = `${API_URL}/amounts`
+const DETAILS_URL = `${API_URL}/details`
 const DEFAULT_PRODUCT_ID = "003732";
 
 // global storage
@@ -17,5 +18,5 @@ let infoWindow: google.maps.InfoWindow;
 
 const map = await createMap();
 infoWindow = initInfoWindow();
-markers = await initMarkers(map, infoWindow, AMOUNTS_URL, DEFAULT_PRODUCT_ID);
-setProductChangeHandler(map, markers, infoWindow, AMOUNTS_URL)
+markers = await initMarkers(map, infoWindow, AMOUNTS_URL, DETAILS_URL, DEFAULT_PRODUCT_ID);
+setProductChangeHandler(map, markers, infoWindow, AMOUNTS_URL, DETAILS_URL)
