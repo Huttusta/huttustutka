@@ -11,5 +11,6 @@ RUN pip3 install -r requirements.txt --no-cache-dir
 COPY . .
 
 EXPOSE 5000
+ENV FLASK_ENV=production
 
 CMD [ "python3", "-m", "flask", "run", "--host=0.0.0.0"]
