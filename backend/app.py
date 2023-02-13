@@ -27,5 +27,5 @@ class Details(Resource):
     def get(self, product_id):
         return scraper.get_product_details(product_id)
 
-api.add_resource(Amounts, '/amounts/<string:product_id>/')
-api.add_resource(Details, '/details/<string:product_id>/')
+api.add_resource(Amounts, '/api/amounts/<string:product_id>/')
+api.add_resource(Details, '/api/details/<string:product_id>/')
