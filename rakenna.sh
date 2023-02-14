@@ -14,7 +14,7 @@ PALVELIN_AJO=aja.sh
 while [[ "$1" =~ ^- ]]; do case $1 in
   -h )
     echo "rakenna.sh [VALITSIMET]"
-    echo "Rakenna docker kuvat huttustutkasta ja tallenna ne tar-tiedostoon."
+    echo "Rakenna docker kuvat huttustutkasta ja lähetä aja aja ne serverillä"
     echo
     echo "VALITSIMET:"
     echo "-b : rakennetaan backend ($BACK_ULOS)"
