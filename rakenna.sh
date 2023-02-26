@@ -8,7 +8,9 @@ BACK_ULOS=huttustutka-back.tar
 FRONT_ULOS=huttustutka-front.tar
 BACK_NIMI=huttustutka-back
 FRONT_NIMI=huttustutka-front
-LAHETA=
+OSOITE=
+KAYTTAJA=root
+KANSIO=/root/
 PALVELIN_AJO=aja.sh
 
 while [[ "$1" =~ ^- ]]; do case $1 in
@@ -19,7 +21,9 @@ while [[ "$1" =~ ^- ]]; do case $1 in
     echo "VALITSIMET:"
     echo "-b : rakennetaan backend ($BACK_ULOS)"
     echo "-f : rakennetaan frontend ($FRONT_ULOS)"
-    echo "-l <kayttaja>@<osoite>:/kansio/ : lähetä ja aja kontit serverillä"
+    echo "-o <osoite> : serveri jossa kontit ajetaan"
+    echo "-k <kayttaja> : käyttäjä serverillä"
+    echo "-d <kansio> : kansio serverillä johon kontit siirretään"
     echo "-h : näytä ohjeet"
     exit
     ;;
@@ -29,20 +33,29 @@ while [[ "$1" =~ ^- ]]; do case $1 in
   -f )
     RAKENNA_FRONT=true
     ;;
-  -l )
-    shift; LAHETA="$1"
+  -o )
+    shift; OSOITE="$1"
+    ;;
+  -k )
+    shift; KAYTTAJA="$1"
+    ;;
+  -d )
+    shift; KANSIO="$1"
     ;;
 esac; shift; done
 if [[ "$1" == '-' ]]; then shift; fi
 
+RSYNC_OSOITE="$KAYTTAJA@$OSOITE:$KANSIO"
+SSH_OSOITE="$KAYTTAJA@$OSOITE"
+
 if $RAKENNA_BACK; then
   docker build backend/ -t "$BACK_NIMI" && docker save -o "$BACK_ULOS" "$BACK_NIMI" &&
-    [[ -n "$LAHETA" ]] && rsync "$BACK_ULOS" "$LAHETA"
+    [[ -n "$OSOITE" ]] && rsync "$BACK_ULOS" "$RSYNC_OSOITE"
 fi
 
 if $RAKENNA_FRONT; then
   docker build front/ -t "$FRONT_NIMI" && docker save -o "$FRONT_ULOS" "$FRONT_NIMI" &&
-    [[ -n "$LAHETA" ]] && rsync "$FRONT_ULOS" "$LAHETA"
+    [[ -n "$OSOITE" ]] && rsync "$FRONT_ULOS" "$RSYNC_OSOITE"
 fi
 
 AJA_BACK=
@@ -51,4 +64,5 @@ AJA_FRONT=
 if $RAKENNA_BACK; then AJA_BACK="-b"; fi
 if $RAKENNA_FRONT; then AJA_FRONT="-f"; fi
 
-[[ -n "$LAHETA" ]] && rsync "$PALVELIN_AJO" "$LAHETA" && ssh "${LAHETA%:*}" "./$PALVELIN_AJO $AJA_BACK $AJA_FRONT"
+
+[[ -n "$OSOITE" ]] && rsync "$PALVELIN_AJO" "$RSYNC_OSOITE" && ssh "$SSH_OSOITE" "./$PALVELIN_AJO $AJA_BACK $AJA_FRONT"
