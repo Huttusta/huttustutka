@@ -21,10 +21,3 @@ echo "VITE_GOOGLE_API_KEY=your-key" >> .env
 echo "VITE_API_URL=http://127.0.0.1:5000" >> .env
 npm run dev
 ```
-
-## tuotanto
-
-```
-docker run -d --name back huttustutka-back
-docker run -v /etc/letsencrypt/archive/huttusta.rotta.gt:/etc/nginx/certs -d --name front -p 80:80 -p 443:443 huttustutka-front
-```
