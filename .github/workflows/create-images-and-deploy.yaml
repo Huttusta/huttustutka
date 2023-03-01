@@ -5,10 +5,11 @@ env:
   ip: ${{ vars.TUOTANTO_IP }}
   kayttaja: ${{ vars.TUOTANTO_KAYTTAJA }}
   repon_sijainti: ${{ vars.TUOTANTO_KANSIO }}
-  osoite: $kayttaja@$ip:$repon_sijainti
 jobs:
   create-images-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      osoite: $kayttaja@$ip:$repon_sijainti
     steps:
       - run: ssh $osoite "git pull"
       - run: ssh $osoite "./rakenna.sh -b huttustutka-back -f huttustutka-front"
