@@ -1,0 +1,15 @@
+name: Create docker images and deploy
+run-name: Create docker images and deploy
+on: push
+env:
+  ip: ${{ vars.TUOTANTO_IP }}
+  kayttaja: ${{ vars.TUOTANTO_KAYTTAJA }}
+  repon_sijainti: ${{ vars.TUOTANTO_KANSIO }}
+  osoite: $kayttaja@$ip:$repon_sijainti
+jobs:
+  create-images-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ssh $osoite "git pull"
+      - run: ssh $osoite "./rakenna.sh -b huttustutka-back -f huttustutka-front"
+      - run: ssh $osoite "./aja.sh -b huttustutka-back -f huttustutka-front"

@@ -2,33 +2,29 @@
 
 set -o pipefail
 
-AJA_BACK=false
-AJA_FRONT=false
-BACK_SISAAN=huttustutka-back.tar
-FRONT_SISAAN=huttustutka-front.tar
-BACK_NIMI=huttustutka-back
-FRONT_NIMI=huttustutka-front
+BACK_NIMI=
+FRONT_NIMI=
 SSL_CERTIT_HOSTISSA=/etc/letsencrypt/archive/huttusta.rotta.gt
 SSL_CERTIT_KONTISSA=/etc/nginx/certs
 
 while [[ "$1" =~ ^- ]]; do case $1 in
   -h )
     echo "aja.sh [VALITSIMET]"
-    echo "Lataa huttustutkan docker-kuvat tar-tiedostoista ja laittaa ne ajoon."
+    echo "Laittaa huttustutkan docker-kuvat ajoon."
     echo
     echo "VALITSIMET:"
-    echo "-b : ladataan ja ajetaan backend ($BACK_SISAAN)"
-    echo "-f : ladataan ja ajetaan frontend ($FRONT_SISAAN)"
+    echo "-b <back-nimi> : laita backend ajoon"
+    echo "-f <front-nimi> : laita frontend ajoon"
     echo "-h <polku> : ssl-avainten kansio serverillä"
     echo "-k <polku> : ssl-avainten kansio kontissa"
     echo "-h : näytä ohjeet"
     exit
     ;;
   -b )
-    AJA_BACK=true
+    shift; BACK_NIMI="$1"
     ;;
   -f )
-    AJA_FRONT=true
+    shift; FRONT_NIMI="$1"
     ;;
   -h )
     shift; SSL_CERTIT_HOSTISSA="$1"
@@ -39,12 +35,11 @@ while [[ "$1" =~ ^- ]]; do case $1 in
 esac; shift; done
 if [[ "$1" == '-' ]]; then shift; fi
 
-if $AJA_BACK; then
-  docker load -i "$BACK_SISAAN" && docker rm "$BACK_NIMI" -f &&
-    docker run -d --name "$BACK_NIMI" "$BACK_NIMI"
+if [[ -n "$BACK_NIMI" ]]; then
+  docker rm "$BACK_NIMI" -f && docker run -d --name "$BACK_NIMI" "$BACK_NIMI"
 fi
 
-if $AJA_FRONT; then
-  docker load -i "$FRONT_SISAAN" && docker rm "$FRONT_NIMI" -f &&
+if [[ -n "$FRONT_NIMI" ]]; then
+  docker rm "$FRONT_NIMI" -f &&
     docker run -d --name "$FRONT_NIMI" -v "$SSL_CERTIT_HOSTISSA:$SSL_CERTIT_KONTISSA" -p 80:80 -p 443:443 "$FRONT_NIMI"
 fi
