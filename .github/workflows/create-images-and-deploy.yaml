@@ -9,6 +9,6 @@ jobs:
   create-images-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: ssh $KAYTTAJA@$IP:$REPON_SIJAINTI "git pull"
-      - run: ssh $KAYTTAJA@$IP:$REPON_SIJAINTI "./rakenna.sh -b huttustutka-back -f huttustutka-front"
-      - run: ssh $KAYTTAJA@$IP:$REPON_SIJAINTI "./aja.sh -b huttustutka-back -f huttustutka-front"
+      - run: ssh $KAYTTAJA@$IP "cd $REPON_SIJAINTI; git pull"
+      - run: ssh $KAYTTAJA@$IP "./rakenna.sh -b huttustutka-back -f huttustutka-front"
+      - run: ssh $KAYTTAJA@$IP "./aja.sh -b huttustutka-back -f huttustutka-front"
