@@ -10,8 +10,8 @@ jobs:
   create-images-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: "echo ${{ secrets.HUTTUSTUTKA_PRIVATE_KEY }} > ~/.ssh/id_ed25519"
-      - run: "ssh-keyscan $HT_HOST > ~/.ssh/known_hosts"
+      - run: echo "${{ secrets.HUTTUSTUTKA_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+      - run: ssh-keyscan $HT_HOST > ~/.ssh/known_hosts
       - run: ssh $KAYTTAJA@$IP "cd $REPON_SIJAINTI; git pull"
       - run: ssh $KAYTTAJA@$IP "./rakenna.sh -b huttustutka-back -f huttustutka-front"
       - run: ssh $KAYTTAJA@$IP "./aja.sh -b huttustutka-back -f huttustutka-front"
