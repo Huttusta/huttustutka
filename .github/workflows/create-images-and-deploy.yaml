@@ -2,13 +2,16 @@ name: Create docker images and deploy
 run-name: Create docker images and deploy
 on: push
 env:
-  IP: ${{ vars.TUOTANTO_IP }}
-  KAYTTAJA: ${{ vars.TUOTANTO_KAYTTAJA }}
-  REPON_SIJAINTI: ${{ vars.TUOTANTO_KANSIO }}
+  IP: ${{ vars.HUTTUSTUTKA_IP }}
+  KAYTTAJA: ${{ vars.HUTTUSTUTKA_KAYTTAJA }}
+  REPON_SIJAINTI: ${{ vars.HUTTUSTUTKA_KANSIO }}
+  HT_HOST: ${{ vars.HUTTUSTUTKA_HOST }}
 jobs:
   create-images-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - run: "echo ${{ secrets.HUTTUSTUTKA_PRIVATE_KEY }} > ~/.ssh/id_ed25519"
+      - run: "ssh-keyscan $HT_HOST > ~/.ssh/known_hosts"
       - run: ssh $KAYTTAJA@$IP "cd $REPON_SIJAINTI; git pull"
       - run: ssh $KAYTTAJA@$IP "./rakenna.sh -b huttustutka-back -f huttustutka-front"
       - run: ssh $KAYTTAJA@$IP "./aja.sh -b huttustutka-back -f huttustutka-front"
