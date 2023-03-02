@@ -12,3 +12,4 @@ jobs:
       - run: ssh $KAYTTAJA@$IP "cd $REPON_SIJAINTI; git pull"
       - run: ssh $KAYTTAJA@$IP "./rakenna.sh -b huttustutka-back -f huttustutka-front"
       - run: ssh $KAYTTAJA@$IP "./aja.sh -b huttustutka-back -f huttustutka-front"
+      - run: ssh $KAYTTAJA@$IP "docker image prune -a -f"
