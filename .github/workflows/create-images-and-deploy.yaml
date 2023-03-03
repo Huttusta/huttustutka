@@ -12,6 +12,7 @@ jobs:
     steps:
       - run: mkdir ~/.ssh
       - run: echo "${{ secrets.HUTTUSTUTKA_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+      - run: sudo chmod 600 ~/.ssh/id_ed25519
       - run: ssh $KAYTTAJA@$IP -o StrictHostKeyChecking=no "rm -rf $REPON_SIJAINTI"
       - run: ssh $KAYTTAJA@$IP -o StrictHostKeyChecking=no "git clone https://github.com/Huttusta/huttustutka"
       - run: ssh $KAYTTAJA@$IP -o StrictHostKeyChecking=no "cd $REPON_SIJAINTI"
