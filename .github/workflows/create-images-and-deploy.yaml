@@ -2,10 +2,9 @@ name: Create docker images and deploy
 run-name: Create docker images and deploy
 on: push
 env:
-  IP: ${{ vars.HUTTUSTUTKA_IP }}
   KAYTTAJA: ${{ vars.HUTTUSTUTKA_KAYTTAJA }}
   REPON_SIJAINTI: ${{ vars.HUTTUSTUTKA_KANSIO }}
-  HT_HOST: ${{ vars.HUTTUSTUTKA_HOST }}
+  HT_DOMAIN: ${{ vars.HUTTUSTUTKA_DOMAIN }}
   API_URL: ${{ vars.HUTTUSTUTKA_API_URL }}
 jobs:
   create-images-and-deploy:
@@ -14,9 +13,10 @@ jobs:
       - run: mkdir ~/.ssh
       - run: echo "${{ secrets.HUTTUSTUTKA_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
       - run: sudo chmod 600 ~/.ssh/id_ed25519
-      - run: ssh $KAYTTAJA@$IP -o StrictHostKeyChecking=no "rm -rf $REPON_SIJAINTI"
-      - run: ssh $KAYTTAJA@$IP -o StrictHostKeyChecking=no "git clone https://github.com/Huttusta/huttustutka $REPON_SIJAINTI"
-      - run: ssh $KAYTTAJA@$IP -o StrictHostKeyChecking=no "cd $REPON_SIJAINTI/front/; echo \"VITE_GOOGLE_API_KEY=${{ secrets.GMAPS_API_KEY }}\" >> .env.production; echo \"VITE_API_URL=$API_URL\" >> .env.production"
-      - run: ssh $KAYTTAJA@$IP -o StrictHostKeyChecking=no "cd $REPON_SIJAINTI; ./rakenna.sh -b huttustutka-back -f huttustutka-front"
-      - run: ssh $KAYTTAJA@$IP -o StrictHostKeyChecking=no "cd $REPON_SIJAINTI; ./aja.sh -b huttustutka-back -f huttustutka-front"
-      - run: ssh $KAYTTAJA@$IP -o StrictHostKeyChecking=no "docker image prune -a -f"
+      - run: ssh-keyscan -H $HT_DOMAIN > ~/.ssh/known_hosts
+      - run: ssh $KAYTTAJA@$HT_DOMAIN "rm -rf $REPON_SIJAINTI"
+      - run: ssh $KAYTTAJA@$HT_DOMAIN -o StrictHostKeyChecking=no "git clone https://github.com/Huttusta/huttustutka $REPON_SIJAINTI"
+      - run: ssh $KAYTTAJA@$HT_DOMAIN -o StrictHostKeyChecking=no "cd $REPON_SIJAINTI/front/; echo \"VITE_GOOGLE_API_KEY=${{ secrets.GMAPS_API_KEY }}\nVITE_API_URL=$API_URL\" >> .env.production"
+      - run: ssh $KAYTTAJA@$HT_DOMAIN -o StrictHostKeyChecking=no "cd $REPON_SIJAINTI; ./rakenna.sh -b huttustutka-back -f huttustutka-front"
+      - run: ssh $KAYTTAJA@$HT_DOMAIN -o StrictHostKeyChecking=no "cd $REPON_SIJAINTI; ./aja.sh -b huttustutka-back -f huttustutka-front"
+      - run: ssh $KAYTTAJA@$HT_DOMAIN -o StrictHostKeyChecking=no "docker image prune -a -f"
