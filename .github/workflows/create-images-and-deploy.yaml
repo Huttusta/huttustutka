@@ -6,7 +6,7 @@ env:
   REPON_SIJAINTI: ${{ vars.HUTTUSTUTKA_KANSIO }}
   HT_DOMAIN: ${{ vars.HUTTUSTUTKA_DOMAIN }}
   API_URL: ${{ vars.HUTTUSTUTKA_API_URL }}
-  REPO_URL: ${{ github.server_url }}${{ github.repository }}
+  REPO_URL: ${{ github.server_url }}/${{ github.repository }}
 jobs:
   create-images-and-deploy:
     runs-on: ubuntu-latest
