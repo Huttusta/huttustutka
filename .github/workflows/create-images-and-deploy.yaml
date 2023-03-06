@@ -6,6 +6,7 @@ env:
   REPON_SIJAINTI: ${{ vars.HUTTUSTUTKA_KANSIO }}
   HT_DOMAIN: ${{ vars.HUTTUSTUTKA_DOMAIN }}
   API_URL: ${{ vars.HUTTUSTUTKA_API_URL }}
+  REPO_URL: ${{ github.server_url }}${{ github.repository }}
 jobs:
   create-images-and-deploy:
     runs-on: ubuntu-latest
@@ -15,8 +16,8 @@ jobs:
       - run: sudo chmod 600 ~/.ssh/id_ed25519
       - run: ssh-keyscan -H $HT_DOMAIN > ~/.ssh/known_hosts
       - run: ssh $KAYTTAJA@$HT_DOMAIN "rm -rf $REPON_SIJAINTI"
-      - run: ssh $KAYTTAJA@$HT_DOMAIN -o StrictHostKeyChecking=no "git clone https://github.com/Huttusta/huttustutka $REPON_SIJAINTI"
-      - run: ssh $KAYTTAJA@$HT_DOMAIN -o StrictHostKeyChecking=no "cd $REPON_SIJAINTI/front/; echo \"VITE_GOOGLE_API_KEY=${{ secrets.GMAPS_API_KEY }}\nVITE_API_URL=$API_URL\" >> .env.production"
-      - run: ssh $KAYTTAJA@$HT_DOMAIN -o StrictHostKeyChecking=no "cd $REPON_SIJAINTI; ./rakenna.sh -b huttustutka-back -f huttustutka-front"
-      - run: ssh $KAYTTAJA@$HT_DOMAIN -o StrictHostKeyChecking=no "cd $REPON_SIJAINTI; ./aja.sh -b huttustutka-back -f huttustutka-front"
-      - run: ssh $KAYTTAJA@$HT_DOMAIN -o StrictHostKeyChecking=no "docker image prune -a -f"
+      - run: ssh $KAYTTAJA@$HT_DOMAIN "git clone $REPO_URL $REPON_SIJAINTI"
+      - run: ssh $KAYTTAJA@$HT_DOMAIN "cd $REPON_SIJAINTI/front/; echo \"VITE_GOOGLE_API_KEY=${{ secrets.GMAPS_API_KEY }}\nVITE_API_URL=$API_URL\" >> .env.production"
+      - run: ssh $KAYTTAJA@$HT_DOMAIN "cd $REPON_SIJAINTI; ./rakenna.sh -b huttustutka-back -f huttustutka-front"
+      - run: ssh $KAYTTAJA@$HT_DOMAIN "cd $REPON_SIJAINTI; ./aja.sh -b huttustutka-back -f huttustutka-front"
+      - run: ssh $KAYTTAJA@$HT_DOMAIN "docker image prune -a -f"
