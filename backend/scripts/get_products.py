@@ -6,16 +6,36 @@ from bs4 import BeautifulSoup, SoupStrainer
 
 
 URL = 'https://www.alko.fi/tuotteet/tuotelistaus/'
-PARAMS = {
-    "PageNumber": 967,  # 967
-    "SearchTerm": "*",
-    "PageSize": 12,
-}
 ALKO_PRODUCTS_PATH = f'resources/products-{datetime.now()}.json'
+
+
+
+def haeSivujenMaara():
+    response1 = requests.get(URL)
+    response1.raise_for_status()
+
+    keitto = BeautifulSoup(response1.text, 'lxml')
+    tuotemaararivi = keitto.find("h3", class_="product-count")
+
+    #Selvittää tuotemäärän HTML:stä olettaen että .text palauttaa pelkkiä lukuja ja lopussa olevan sanan, joka unohdetaan.
+    tuotemaara = int(''.join(tuotemaararivi.text.split()[0:-1]))
+
+    #Yhdellä alkon sivulla on 12 tuotetta ja sivujen indeksointi alkaa nollasta.
+    sivujenmaara = int(tuotemaara/12)
+
+    return sivujenmaara
 
 
 def run():
     start = datetime.now()
+
+    sivujenmaara = haeSivujenMaara()
+
+    PARAMS = {
+        "PageNumber": sivujenmaara, 
+        "SearchTerm": "*",
+        "PageSize": 12,
+    }
 
     response = requests.get(URL, params=PARAMS)
     response.raise_for_status()
