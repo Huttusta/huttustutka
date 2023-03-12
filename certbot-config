@@ -1,6 +1,0 @@
-PUID=1000
-PGID=1000
-TZ=Etc/UTC
-URL=huttusta.rotta.gt
-VALIDATION=http
-EMAIL=lauri.mauranen@gmail.com
