@@ -26,7 +26,7 @@ esac; shift; done
 if [[ "$1" == '-' ]]; then shift; fi
 
 if [[ -n "$BACK_NIMI" ]]; then
-  docker rm "$BACK_NIMI" -f && docker run -d --name "$BACK_NIMI" "$BACK_NIMI"
+  docker rm "$BACK_NIMI" -f && docker run -d --name "$BACK_NIMI" -p 5000:5000 "$BACK_NIMI"
 fi
 
 if [[ -n "$FRONT_NIMI" ]]; then
