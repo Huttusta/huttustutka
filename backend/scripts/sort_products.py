@@ -2,7 +2,7 @@ import json
 import sys
 
 PRODUCTS_INPUT = "resources/alko-products.json"
-PRODUCTS_OUTPUT = sys.argv[1] + "/products-sorted.json"
+PRODUCTS_OUTPUT = sys.argv[1] #resources/products-sorted.json
 
 
 def run():

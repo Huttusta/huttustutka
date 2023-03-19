@@ -7,9 +7,9 @@ import aiohttp
 from wand.image import Image
 from wand.color import Color
 
-OUTPUT_FOLDER = "/home/lauri/projektit/alko_images_small"
+OUTPUT_FOLDER = sys.argv[2] 
 ALKO_CDN_URL = "https://images.alko.fi/images/cs_srgb,f_auto,t_medium/cdn"
-PRODUCTS_JSON = "/home/lauri/projektit/huttustutka/backend/resources/products-sorted.json"
+PRODUCTS_JSON = sys.argv[1] #resources/products-sorted.json
 NEW_WIDTH = 100
 
 with open(PRODUCTS_JSON, "r") as f:
