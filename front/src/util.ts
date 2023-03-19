@@ -1,5 +1,4 @@
-// import COORDINATES from "./assets/data/alko_coordinates_no_noutopiste.json"
-// import PRODUCT_NAMES from "./assets/data/products-sorted.json"
+import DEV_PRODUCTS from "./assets/data/products-sorted.json"
 
 const IMG_PATH = "img/"
 const SAD_FACE = "sadface.png"
@@ -8,6 +7,7 @@ const MAX_ICON_PX = 60
 const ICON_SCALING = [1, 1.5, 1.9, 2.3, 2.6]
 const CDN_URL = "https://storage.googleapis.com/alko_products_transparent_bg"
 const SEARCH_HISTORY_LENGTH= 20
+const PRODUCTS_URL = "/products-sorted.json"
 
 export interface StoreCoordinates {
   id: string,
@@ -106,4 +106,12 @@ export function addProductToSearchHistory(product: Product): void {
 
   searchHistory.push(product)
   localStorage.setItem("searchHistory", JSON.stringify(searchHistory))
+}
+
+export async function getProducts(): Promise<Array<Product>> {
+  if (import.meta.env.PROD) {
+    return  <Promise<Array<Product>>>fetchUrl(PRODUCTS_URL)
+  }
+
+  return DEV_PRODUCTS
 }

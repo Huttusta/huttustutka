@@ -1,4 +1,4 @@
-import ALKO_PRODUCTS from "./assets/data/products-sorted.json"
+// import ALKO_PRODUCTS from "./assets/data/products-sorted.json"
 import COORDINATES from "./assets/data/alko_coordinates_no_noutopiste.json"
 import { Loader } from 'google-maps'
 import {
@@ -7,6 +7,7 @@ import {
   addProductToSearchHistory,
   getSearchHistory,
   StoreAmount,
+  Product,
 } from "./util";
 
 const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
@@ -203,6 +204,7 @@ export function setProductChangeHandler(
   infoWindow: google.maps.InfoWindow,
   amountsUrl: string,
   detailsUrl: string,
+  alkoProducts: Array<Product>,
 ): void {
   const input = <HTMLInputElement>document.getElementById(SEARCH_INPUT_ID)
   const table = <HTMLTableElement>document.getElementById(SEARCH_TABLE_ID)
@@ -213,7 +215,7 @@ export function setProductChangeHandler(
 
     if (searchString.length < 3) return
 
-    const products = ALKO_PRODUCTS.filter(
+    const products = alkoProducts.filter(
       (p) => p.name.toLowerCase().includes(searchString)
     ).sort(
       (a, b) => {
