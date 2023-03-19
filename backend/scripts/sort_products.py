@@ -1,8 +1,8 @@
 import json
+import sys
 
-
-PRODUCTS_INPUT = "resources/products-2022-10-15 02:21:25.212684.json"
-PRODUCTS_OUTPUT = "resources/products-sorted.json"
+PRODUCTS_INPUT = "resources/alko-products.json"
+PRODUCTS_OUTPUT = sys.argv[1] + "/products-sorted.json"
 
 
 def run():
