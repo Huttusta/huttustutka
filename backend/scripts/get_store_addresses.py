@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 
 URL = 'https://www.alko.fi/myymalat-palvelut'
-ALKO_ADDRESSES_PATH = 'static/alko_addresses.json'
+ALKO_ADDRESSES_PATH = 'resources/alko_addresses.json'
 
 
 def run():
@@ -18,6 +18,8 @@ def run():
     store_rows = soup.find_all('div', attrs={
         'class': 'column details tiny-6 medium-3 large-3'
     })
+
+    print("Löydetty {} myymälää".format(len(store_rows)))
 
     for row in store_rows:
         store_id = re.search(r'/(\d+)\?', row.a['href'])[1]
