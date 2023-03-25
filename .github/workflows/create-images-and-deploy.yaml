@@ -18,6 +18,6 @@ jobs:
       - run: ssh $KAYTTAJA@$HT_DOMAIN "rm -rf $REPON_SIJAINTI"
       - run: ssh $KAYTTAJA@$HT_DOMAIN "git clone $REPO_URL $REPON_SIJAINTI"
       - run: ssh $KAYTTAJA@$HT_DOMAIN "cd $REPON_SIJAINTI/front/; printf \"VITE_GOOGLE_API_KEY=${{ secrets.GMAPS_API_KEY }}\nVITE_API_URL=$API_URL\" >> .env.production"
-      - run: ssh $KAYTTAJA@$HT_DOMAIN "cd $REPON_SIJAINTI; ./rakenna.sh -b huttustutka-back -f huttustutka-front -c huttustutka-cron"
-      - run: ssh $KAYTTAJA@$HT_DOMAIN "cd $REPON_SIJAINTI; ./aja.sh -b huttustutka-back -f huttustutka-front -c huttustutka-cron"
+      - run: ssh $KAYTTAJA@$HT_DOMAIN "cd $REPON_SIJAINTI; ./rakenna.sh -b huttustutka-back -f huttustutka-front"
+      - run: ssh $KAYTTAJA@$HT_DOMAIN "cd $REPON_SIJAINTI; ./aja.sh -b huttustutka-back -f huttustutka-front"
       - run: ssh $KAYTTAJA@$HT_DOMAIN "docker image prune -a -f"
