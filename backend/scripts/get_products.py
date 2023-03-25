@@ -1,6 +1,5 @@
 from datetime import datetime
 import json
-import sys
 import os
 import requests
 from bs4 import BeautifulSoup, SoupStrainer
@@ -8,7 +7,7 @@ from bs4 import BeautifulSoup, SoupStrainer
 
 URL = 'https://www.alko.fi/tuotteet/tuotelistaus/'
 ALKO_PRODUCTS_PATH = f'resources/products-{datetime.now()}.json'
-ALKO_PRODUCTS_PATH_FINAL = sys.argv[1]  # resources/products-sorted.json
+ALKO_PRODUCTS_PATH_FINAL = "resources/products-sorted.json"
 
 def haeSivujenMaara():
     response1 = requests.get(URL)

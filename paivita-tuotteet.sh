@@ -1,6 +1,6 @@
 #! /bin/bash
 
-TUOTTEET_TIEDOSTO="$1"
+DATA_KANSIO="$1"
 
 cd backend/
 
@@ -12,4 +12,6 @@ else
   source venv/bin/activate
 fi
 
-python3 scripts/get_products.py "$TUOTTEET_TIEDOSTO"
+python3 scripts/get_products.py
+
+cp resources/products-sorted.json "$DATA_KANSIO"

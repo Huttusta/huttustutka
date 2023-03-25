@@ -4,6 +4,7 @@ set -o pipefail
 
 BACK_NIMI=
 FRONT_NIMI=
+CRON_NIMI=
 
 while [[ "$1" =~ ^- ]]; do case $1 in
   -h )
@@ -13,6 +14,7 @@ while [[ "$1" =~ ^- ]]; do case $1 in
     echo "VALITSIMET:"
     echo "-b <kuvan-nimi> : rakennetaan backend"
     echo "-f <kuvan-nimi> : rakennetaan frontend"
+    echo "-c <kuvan-nimi> : rakennetaan cron"
     echo "-h : näytä ohjeet"
     exit
     ;;
@@ -21,6 +23,9 @@ while [[ "$1" =~ ^- ]]; do case $1 in
     ;;
   -f )
     shift; FRONT_NIMI="$1"
+    ;;
+  -c )
+    shift; CRON_NIMI="$1"
     ;;
 esac; shift; done
 if [[ "$1" == '-' ]]; then shift; fi
@@ -31,4 +36,8 @@ fi
 
 if [[ -n "$FRONT_NIMI" ]]; then
   docker build front/ -t "$FRONT_NIMI"
+fi
+
+if [[ -n "$CRON_NIMI" ]]; then
+  docker build cron/ -t "$CRON_NIMI"
 fi
