@@ -13,4 +13,10 @@ COPY . .
 EXPOSE 5000
 ENV FLASK_ENV=production
 
+RUN apt install -y cron
+COPY cron /opt/huttustutka/cron
+RUN crontab /opt/huttustutka/cron/cronjobs
+
+CMD ["cron"]
+
 CMD [ "python3", "-m", "flask", "run", "--host=0.0.0.0"]

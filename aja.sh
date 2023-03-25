@@ -4,7 +4,6 @@ set -o pipefail
 
 BACK_NIMI=
 FRONT_NIMI=
-CRON_NIMI=
 DATA_KANSIO=/opt/huttustutka/data
 
 while [[ "$1" =~ ^- ]]; do case $1 in
@@ -15,7 +14,6 @@ while [[ "$1" =~ ^- ]]; do case $1 in
     echo "VALITSIMET:"
     echo "-b <back-nimi> : laita backend ajoon"
     echo "-f <front-nimi> : laita frontend ajoon"
-    echo "-c <cron-nimi> : laita cron ajoon"
     echo "-d <kansio> : absoluuttinen polku datakansioon"
     echo "-h : näytä ohjeet"
     exit
@@ -26,9 +24,6 @@ while [[ "$1" =~ ^- ]]; do case $1 in
   -f )
     shift; FRONT_NIMI="$1"
     ;;
-  -c )
-    shift; CRON_NIMI="$1"
-    ;;
   -d )
     shift; DATA_KANSIO="$1"
     ;;
@@ -37,16 +32,11 @@ if [[ "$1" == '-' ]]; then shift; fi
 
 if [[ -n "$BACK_NIMI" ]]; then
   docker rm "$BACK_NIMI" -f
-  docker run -d --name "$BACK_NIMI" -p 5000:5000 "$BACK_NIMI"
+  docker run -d --name "$BACK_NIMI" -p 5000:5000 -v "$DATA_KANSIO:$DATA_KANSIO" "$BACK_NIMI"
 fi
 
 if [[ -n "$FRONT_NIMI" ]]; then
   docker rm "$FRONT_NIMI" -f
   docker run -d --name "$FRONT_NIMI" -v "/etc/letsencrypt:/etc/letsencrypt" \
     -v "$DATA_KANSIO:$DATA_KANSIO" -p 80:80 -p 443:443 "$FRONT_NIMI"
-fi
-
-if [[ -n "$CRON_NIMI" ]]; then
-  docker rm "$CRON_NIMI" -f
-  docker run -d --name "$CRON_NIMI" "$CRON_NIMI"
 fi

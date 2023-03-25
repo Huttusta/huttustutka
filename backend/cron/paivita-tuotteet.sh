@@ -1,8 +1,9 @@
 #! /bin/bash
 
-DATA_KANSIO="$1"
+TYOKANSIO="$1"
+DATA_KANSIO="$2"
 
-cd backend/
+cd "$TYOKANSIO"
 
 if [ ! -d "venv" ]; then
   python3 -m venv venv
