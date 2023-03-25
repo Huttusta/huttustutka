@@ -36,15 +36,17 @@ esac; shift; done
 if [[ "$1" == '-' ]]; then shift; fi
 
 if [[ -n "$BACK_NIMI" ]]; then
-  docker rm "$BACK_NIMI" -f && docker run -d --name "$BACK_NIMI" -p 5000:5000 "$BACK_NIMI"
+  docker rm "$BACK_NIMI" -f
+  docker run -d --name "$BACK_NIMI" -p 5000:5000 "$BACK_NIMI"
 fi
 
 if [[ -n "$FRONT_NIMI" ]]; then
-  docker rm "$FRONT_NIMI" -f &&
-    docker run -d --name "$FRONT_NIMI" -v "/etc/letsencrypt:/etc/letsencrypt" \
-      -v "$DATA_KANSIO:$DATA_KANSIO" -p 80:80 -p 443:443 "$FRONT_NIMI"
+  docker rm "$FRONT_NIMI" -f
+  docker run -d --name "$FRONT_NIMI" -v "/etc/letsencrypt:/etc/letsencrypt" \
+    -v "$DATA_KANSIO:$DATA_KANSIO" -p 80:80 -p 443:443 "$FRONT_NIMI"
 fi
 
 if [[ -n "$CRON_NIMI" ]]; then
-  docker rm "$CRON_NIMI" -f && docker run -d --name "$CRON_NIMI" "$CRON_NIMI"
+  docker rm "$CRON_NIMI" -f
+  docker run -d --name "$CRON_NIMI" "$CRON_NIMI"
 fi
