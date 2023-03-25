@@ -1,14 +1,14 @@
 from datetime import datetime
 import json
+import sys
 import os
-import re
 import requests
 from bs4 import BeautifulSoup, SoupStrainer
 
 
 URL = 'https://www.alko.fi/tuotteet/tuotelistaus/'
 ALKO_PRODUCTS_PATH = f'resources/products-{datetime.now()}.json'
-ALKO_PRODUCTS_PATH_FINAL = f'resources/alko-products.json'
+ALKO_PRODUCTS_PATH_FINAL = sys.argv[1]  # resources/products-sorted.json
 
 def haeSivujenMaara():
     response1 = requests.get(URL)
@@ -31,13 +31,13 @@ def run():
 
     sivujenmaara = haeSivujenMaara()
 
-    PARAMS = {
-        "PageNumber": sivujenmaara, 
+    params = {
+        "PageNumber": sivujenmaara,
         "SearchTerm": "*",
         "PageSize": 12,
     }
 
-    response = requests.get(URL, params=PARAMS)
+    response = requests.get(URL, params=params)
     response.raise_for_status()
 
     data_time = datetime.now()
@@ -68,6 +68,8 @@ def run():
     print(f"Datan käsittelyssä kesti {datetime.now() - data_time}")
     print(f"Koko operaatiossa kesti {datetime.now() - start}")
     print(f"Ladattu {len(product_divs)} tuotetta")
+
+    products.sort(key=lambda x: x["name"])
 
     with open(ALKO_PRODUCTS_PATH, 'w') as f:
         json.dump(products, f)

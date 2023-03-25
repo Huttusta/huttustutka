@@ -4,6 +4,7 @@ set -o pipefail
 
 BACK_NIMI=
 FRONT_NIMI=
+DATA_KANSIO=/opt/huttustutka/data
 
 while [[ "$1" =~ ^- ]]; do case $1 in
   -h )
@@ -31,5 +32,6 @@ fi
 
 if [[ -n "$FRONT_NIMI" ]]; then
   docker rm "$FRONT_NIMI" -f &&
-    docker run -d --name "$FRONT_NIMI" -v "/etc/letsencrypt:/etc/letsencrypt" -p 80:80 -p 443:443 "$FRONT_NIMI"
+    docker run -d --name "$FRONT_NIMI" -v "/etc/letsencrypt:/etc/letsencrypt" \
+      -v "$DATA_KANSIO:$DATA_KANSIO" -p 80:80 -p 443:443 "$FRONT_NIMI"
 fi
