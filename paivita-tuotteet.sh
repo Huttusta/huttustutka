@@ -1,3 +1,5 @@
+#! /bin/bash
+
 TUOTTEET_TIEDOSTO="$1"
 
 cd backend/
