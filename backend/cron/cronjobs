@@ -1,1 +1,1 @@
-05 01 * * * source /opt/huttustutka/cron/paivita-tuotteet.sh /app /opt/huttustutka/data > /proc/1/fd/1 2>/proc/1/fd/2
+28 * * * * cd /app; ./paivita-tuotteet.sh /app /opt/huttustutka/data > /proc/1/fd/1 2>/proc/1/fd/2
