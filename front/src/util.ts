@@ -5,7 +5,7 @@ const SAD_FACE = "sadface.png"
 const TRESHOLDS = [10, 20, 30, 50]
 const MAX_ICON_PX = 60
 const ICON_SCALING = [1, 1.5, 1.9, 2.3, 2.6]
-const CDN_URL = "https://storage.googleapis.com/alko_products_transparent_bg"
+const ICONS_URL = "/kuvat"
 const SEARCH_HISTORY_LENGTH= 20
 const PRODUCTS_URL = "/products-sorted.json"
 
@@ -40,7 +40,7 @@ export interface Product {
 
 async function getIconImage(productId: string): Promise<HTMLImageElement> {
   const img = new Image()
-  img.src = `${CDN_URL}/${productId}.png`
+  img.src = `${ICONS_URL}/${productId}.png`
   await img.decode()
   return img
 }

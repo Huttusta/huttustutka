@@ -7,9 +7,9 @@ import aiohttp
 from wand.image import Image
 from wand.color import Color
 
-OUTPUT_FOLDER = sys.argv[2] 
+OUTPUT_FOLDER = sys.argv[2]
 ALKO_CDN_URL = "https://images.alko.fi/images/cs_srgb,f_auto,t_medium/cdn"
-PRODUCTS_JSON = sys.argv[1] #resources/products-sorted.json
+PRODUCTS_JSON = sys.argv[1]  # resources/products-sorted.json
 NEW_WIDTH = 100
 
 with open(PRODUCTS_JSON, "r") as f:
@@ -67,8 +67,7 @@ def resize_img(img):
     img.resize(*new_size)
 
 
-async def run2():
-    previous = 0
+async def run():
     work_queue = asyncio.Queue()
 
     products = [p['id'] for p in PRODUCTS]
@@ -91,4 +90,4 @@ async def run2():
 
 
 if __name__ == "__main__":
-    asyncio.run(run2())
+    asyncio.run(run())
