@@ -47,7 +47,7 @@ async def task(name, work_queue, n_products):
 
 async def get_img(product_id, session, name):
     async with session.get(f"{ALKO_CDN_URL}/{product_id}/a") as res:
-        if res.status!= 200:
+        if res.status != 200:
             print(f"Tuotteen {product_id} kuvaa ei voinut ladata {name}")
             return None
 
@@ -71,11 +71,6 @@ async def run():
     work_queue = asyncio.Queue()
 
     products = [p['id'] for p in PRODUCTS]
-    if len(sys.argv) > 1:
-        products = [
-            p for p in products if p in sys.argv[1:]
-        ]
-
     for work in products:
         await work_queue.put(work)
 
