@@ -1,1 +1,1 @@
-30 * * * * cd /app/cron; ./paivita-tuotteet.sh /app/backend /opt/huttustutka/data > /proc/1/fd/1 2>/proc/1/fd/2
+55 * * * * cd /app/cron; ./paivita-tuotteet.sh /opt/huttustutka/data > /proc/1/fd/1 2>/proc/1/fd/2

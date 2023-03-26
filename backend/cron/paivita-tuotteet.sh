@@ -1,10 +1,7 @@
 #! /bin/bash
 
-TYOKANSIO="$1"
-DATA_KANSIO="$2"
+DATA_KANSIO="$1"
 
-cd "$TYOKANSIO"
+python3 ../scripts/get_products.py
 
-python3 scripts/get_products.py
-
-cp resources/products-sorted.json "$DATA_KANSIO"
+cp ../resources/products-sorted.json "$DATA_KANSIO"
