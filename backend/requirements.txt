@@ -9,3 +9,4 @@ Wand==0.6.8
 flake8==6.0.0
 pylint==2.16.2
 lxml==4.9.2
+aiohttp==3.8.4
